@@ -1,0 +1,3344 @@
+AMD Ryzen 9 7950X3D
+Intel Core i9 13900KS
+AMD Ryzen 9 7900X3D
+Intel Core i9 13900K
+Intel Core i9 13900KF
+Intel Core i7 13700K
+Intel Core i7 13700KF
+AMD Ryzen 9 7950X
+Intel Core i9 13900F
+AMD Ryzen 9 7900X
+Intel Core i9 13900
+AMD Ryzen 7 7700X
+Intel Core i5 13600K
+Intel Core i5 13600KF
+Intel Core i7 13700
+Intel Core i7 13700F
+AMD Ryzen 5 7600X
+AMD Ryzen 9 7900
+AMD Ryzen 7 7700
+Intel Core i9 12900KS
+Intel Core i9 13980HX
+Intel Core i9 12900K
+Intel Core i9 12900KF
+AMD Ryzen 5 7600
+Intel Core i9 13950HX
+Intel Core i9 13900HX
+Intel Core i5 13600
+AMD Ryzen 7 5800X3D
+Intel Core i7 12700K
+Intel Core i7 12700KF
+Intel Core i9 12900F
+Intel Core i5 13500
+Intel Core i9 12900
+AMD Ryzen 9 5950X
+Intel Core i7 12700F
+Intel Core i5 12600K
+Intel Core i5 12600KF
+AMD Ryzen 9 5900X
+Intel Core i7 12700
+AMD Ryzen 7 5800X
+Intel Core i9 12950HX
+Intel Core i7 12650HX
+Intel Core i9 13900H
+AMD Ryzen 9 5900
+Intel Core i5 13400F
+AMD Ryzen 7 5800
+AMD Ryzen 7 5700X
+AMD Ryzen 5 5600X
+Intel Core i9 12900HX
+Intel Core i5 13400
+Intel Core i9 11900K
+Intel Core i9 11900KF
+AMD Ryzen 5 5600
+Intel Core i5 12600
+Intel Core i7 11700K
+Intel Core i7 11700KF
+Intel Core i9 12900HK
+Intel Core i9 10900K
+Intel Core i9 11900
+AMD Ryzen 7 5700G
+AMD Ryzen 7 4700G
+Intel Core i9 12900H
+Intel Core i9 10900KF
+Intel Core i9 10850K
+Intel Core i5 12500
+Intel Core i9 9900KS
+Intel Core i5 11600KF
+Intel Core i5 11600K
+Intel Core i7 12800H
+Intel Core i9 11900F
+Intel Core i7 11700
+Intel Core i5 12400
+Intel Core i5 12400F
+Intel Core i9 9900K
+Intel Core i9 9900KF
+AMD Ryzen 9 3950X
+AMD Ryzen 9 3900XT
+Intel Core i7 13700H
+Intel Core i7 12700H
+Intel Core i7 10700K
+Intel Core i5 11600
+Intel Core i7 9700K
+Intel Core i7 9700KF
+AMD Ryzen 9 3900X
+AMD Ryzen 7 3800XT
+AMD Ryzen 7 7735HS
+AMD Ryzen 5 5600G
+Intel Core i5 12600H
+Intel Core i7 12650H
+Intel Core i7 10700KF
+Intel Core i3 12300
+Intel Core i3 13100
+Intel Core i3 13100F
+Intel Core i5 11500
+AMD Ryzen TR 3960X
+AMD Ryzen 7 3800X
+Intel Core i9 10900F
+AMD Ryzen TR 3970X
+AMD Ryzen TR 3990X
+AMD Ryzen 7 3700X
+AMD Ryzen 5 5500
+Intel Core i5 12500H
+Intel Core i9 10900
+Intel Core i3 12100
+Intel Core i3 12100F
+Intel Core i5 12100
+Intel Core i5 12100F
+Intel Core i5 11400F
+Intel Core i5 11400
+AMD Ryzen 5 3600XT
+Intel Core i9 11980HK
+Intel Core i7 11700F
+Intel Core i7 10700F
+Intel Core i7 10700
+Intel Core i5 9600K
+Intel Core i5 9600KF
+AMD Ryzen 5 3600X
+Intel Core i9 11950H
+Intel Core i5 10600K
+Intel Core i5 10600KF
+Intel Core i7 9700
+Intel Core i7 9700F
+Intel Core i5 9600
+AMD Ryzen 5 3600
+Intel Core i9 9900
+Intel Core i7 8086K
+Intel Core i5 8600K
+AMD Ryzen 5 3500X
+Intel Core i9 11900H
+Intel Core i5 10600
+Intel Core i3 10320
+AMD Ryzen TR 2950X
+AMD Ryzen TR 2920X
+Intel Core i7 11850H
+AMD Ryzen 5 3500
+Intel Core i3 9350KF
+Intel Core i7 11800H
+AMD Ryzen 9 6900HX
+AMD Ryzen 7 4800U
+Intel Core i7 8700K
+AMD Ryzen 3 3300X
+Intel Core i5 8600
+Intel Core i9 10920X
+Intel Core i7 6950X
+Intel Core i7 8700
+Intel Core i7 7740X
+Intel Core i3 10300
+Intel Core i5 9500
+AMD Ryzen TR 2990WX
+AMD Ryzen TR 2970WX
+Intel Core i9 10940X
+Intel Core i9 9920X
+Intel Core i7 6900K
+Intel Core i5 9400
+AMD Ryzen TR 1920X
+AMD Ryzen 9 5980HS
+AMD Ryzen 7 6800H
+AMD Ryzen 9 5900HX
+Intel Core i9 9960X
+Intel Core i9 9940X
+Intel Core i9 10900X
+Intel Core i9 10900T
+Intel Core i7 10700T
+Intel Core i5 10400F
+Intel Core i5 10600T
+Intel Core i7 5775C
+Intel Core i5 9400F
+AMD Ryzen TR 1950X
+AMD Ryzen 5 6600H
+AMD Ryzen 3 5300G
+Intel Core i9 10980XE
+Intel Core i9 9900X
+Intel Core i9 10980HK
+Intel Core i5 10500
+Intel Core i5 10400
+Intel Core i7 6850K
+Intel Core i7 7700K
+Intel Core i5 7640X
+AMD Ryzen TR 1900X
+AMD Ryzen 9 6900HS
+AMD Ryzen 9 5900HS
+AMD Ryzen 7 2700X
+Intel Core i9 9980XE
+Intel Core i9 7960X
+Intel Core i9 7940X
+Intel Core i7 9800X
+AMD Ryzen 7 5800H
+AMD Ryzen 5 4600U
+AMD Ryzen 7 4700U
+AMD Ryzen 3 3100
+Intel Core i9 7920X
+Intel Core i9 9820X
+Intel Core i9 7900X
+Intel Core i9 9980HK
+Intel Core i3 10105F
+Intel Xeon E3 1245 v6
+Intel Xeon E3 1270 v6
+Intel Core i5 8500
+Intel Core i5 8600T
+Intel Core i5 8400
+Intel Core i3 8350K
+AMD Ryzen 7 4800H
+AMD Ryzen 9 4900H
+AMD Ryzen 7 2700
+AMD Ryzen 5 2600X
+AMD Ryzen 5 1600X
+Intel Core i9 10885H
+Intel Core i7 6800K
+Intel Core i7 6700K
+Intel Core i3 9100F
+Intel Core i5 5675C
+AMD Ryzen 7 5800HS
+AMD Ryzen 5 5600H
+AMD Ryzen 5 2600
+AMD Ryzen 5 2500X
+Intel Core i9 7980XE
+Intel Core i7 7820X
+Intel Core i7 5960X
+Intel Core i3 10100
+Intel Core i3 10100F
+Intel Core i7 5775R
+Intel Core i7 5930K
+Intel Core i7 8809G
+Intel Core i7 5950HQ
+Intel Core i3 9100
+Intel Core i3 8300
+AMD Ryzen 7 1800X
+AMD Ryzen 9 4900HS
+AMD Ryzen 7 4800HS
+AMD Ryzen 5 1600AF
+Intel Core i7 10870H
+Intel Core i7 10875H
+Intel Core i9 9880H
+Intel Core i7 10850H
+Intel Core i5 10400H
+Intel Core i5 9400H
+Intel Core i7 4790K
+Intel Xeon E3 1230 v6
+Intel Core i3 10300T
+Intel Core i7 X 000
+Intel Core i7 7800X
+AMD Ryzen 7 1700X
+Intel Core i5 10500H
+Intel Core i5 10500T
+Intel Core i7 8559U
+AMD Ryzen 5 4500U
+Intel Core i5 10400T
+Intel Core i7 4960X
+Intel Core i7 8706G
+Intel Core i7 3970X
+Intel Xeon E3 1286 v3
+Intel Core i3 10100T
+Intel Core i7 3960X
+Intel Core i7 5850HQ
+Intel Core i7 X 990
+AMD Ryzen 5 4600H
+Intel Core i7 9850H
+Intel Core i7 10750H
+AMD Ryzen 5 1600
+AMD Ryzen 5 4600HS
+Intel Core i5 8400H
+Intel Xeon E5 1650 V3
+Intel Xeon E3 1230 v5
+Intel Core i7 5820K
+Intel Core i7 4930K
+Intel Xeon E3 1276 v3
+Intel Xeon E3 1275 v3
+Intel Xeon W3690
+Intel Core i7 7700
+Intel Core i5 7600K
+Intel Xeon E3 1271 v3
+Intel Xeon E5 1650 v2
+Intel Core i7 X 980
+AMD Ryzen 7 1700
+Intel Core i7 11375H
+Intel Xeon E3 1241 v3
+Intel Xeon E3 1270 v3
+Intel Core i5 7600T
+Intel Core i5 8400T
+Intel Core i7 980
+Intel Xeon X5690
+Intel Xeon W3680
+AMD Ryzen 9 4900U
+AMD Ryzen 7 5800U
+AMD Ryzen 5 3400G
+AMD Ryzen 3 4300U
+Intel Core i7 1260P
+Intel Core i5 11400H
+Intel Core i9 8950HK
+Intel Xeon E5 2687W 0
+Intel Core i5 8279U
+Intel Core i7 3930K
+Intel Core i7 4770K
+Intel Xeon E3 1275 v2
+Intel Core i5 2550K
+AMD Ryzen 7 5700U
+Intel Core i7 9750H
+Intel Pentium Gold G6600
+Intel Core i5 10200H
+Intel Core i3 7320
+Intel Core i5 8259U
+Intel Xeon E3 1246 v3
+Intel Core i7 4771
+Intel Core i7 8705G
+Intel Core i5 8305G
+Intel Xeon E5 1650 0
+Intel Xeon E3 1231 v3
+Intel Xeon E3 1230 v3
+Intel Core i5 8500T
+Intel Xeon E3 1245 v2
+Intel Core i7 2700K
+Intel Xeon E3 1270 v2
+Intel Core i5 6600T
+Intel Xeon E3 1220 v5
+Intel Core i7 970
+Intel Xeon W3570
+AMD Ryzen 5 5600U
+AMD Ryzen 5 1500X
+Intel Core i3 7350K
+Intel Core i7 6700
+Intel Core i7 7700T
+Intel Core i5 6600K
+Intel Core i5 7600
+Intel Core i7 7820HK
+Intel Xeon E3 1240 v3
+Intel Core i7 4790S
+Intel Core i7 3770K
+Intel Core i7 4820K
+Intel Core i5 4670S
+Intel Core i7 975
+AMD Ryzen 5 2600H
+AMD Ryzen 3 1300X
+Intel Xeon E5 2690 v2
+Intel Core i7 8850H
+Intel Core i7 7920HQ
+Intel Pentium Gold G6500
+Intel Xeon E3 1245 v3
+Intel Core i7 4790
+Intel Core i7 4790T
+Intel Core i7 4770S
+Intel Core i3 8100
+Intel Xeon E3 1265L v3
+Intel Xeon E3 1240 v2
+Intel Xeon E5 1620 v2
+Intel Xeon E3 1226 v3
+Intel Core i7 2600K
+Intel Xeon E31270
+Intel Core i3 8100T
+Intel Xeon X5660
+Intel Core i7 880
+Intel Core i5 2450P
+Intel Xeon X5667
+Intel Core i7 965
+AMD Ryzen 5 5500U
+AMD Ryzen 7 2800H
+Intel Core i7 8750H
+Intel Core i5 10300H
+Intel Xeon E3 1505M v6
+Intel Core i3 7300
+Intel Core i7 4770
+Intel Core i7 6920HQ
+Intel Pentium Gold G5600
+Intel Core i7 6700T
+Intel Core i7 4770T
+Intel Core i7 3940XM
+Intel Core i5 4690K
+Intel Xeon E3 1230 v2
+Intel Xeon E5 1620 0
+Intel Core i7 3820
+Intel Xeon E3 1240
+Intel Xeon E3 1225 v2
+Intel Core i7 K 875
+Intel Xeon X5650
+AMD Ryzen 5 2400G
+AMD Ryzen 3 3200G
+AMD FX 9590
+Intel Core i7 11370H
+Intel Xeon E5 2630 V3
+Intel Core i7 4940MX
+Intel Core i7 5700HQ
+Intel Core i3 6320
+Intel Core i7 4930MX
+Intel Pentium Gold G5500
+Intel Core i7 6820HK
+Intel Core i7 3770
+Intel Core i7 3770S
+Intel Xeon E3 1225 v3
+Intel Xeon E31230
+Intel Xeon E5 2643 0
+Intel Xeon E3 1220 v3
+Intel Core i5 3550
+Intel Core i5 3475S
+Intel Core i5 3450S
+Intel Xeon E3 1220 v2
+Intel Xeon X3470
+Intel Xeon E31225
+Intel Xeon X5570
+AMD FX 9370
+AMD FX 8370
+Intel Pentium Gold G7400
+Intel Core i7 10710U
+Intel Core i3 7101E
+Intel Pentium Gold G6400
+Intel Core i7 4960HQ
+Intel Core i7 4900MQ
+Intel Core i5 6600
+Intel Core i7 3920XM
+Intel Core i5 4670K
+Intel Core i5 3570K
+Intel Core i7 960
+Intel Xeon X3460
+Intel Xeon E31220
+Intel Xeon X5560
+Intel Xeon L5639
+Intel Core i7 1185G7
+AMD Ryzen 3 5400U
+AMD Ryzen 5 1400
+Intel Xeon E5 2670
+Intel Core i7 4910MQ
+Intel Core i3 6300
+Intel Pentium G4620
+Intel Core i5 7500
+Intel Core i3 7300T
+Intel Core i5 4690
+Intel Core i7 2600
+Intel Core i5 4590S
+Intel Core i7 2600S
+Intel Xeon W3565
+AMD FX 8350
+Intel Core i5 11300H
+Intel Core i7 1165G7
+Intel Core i5 1130G7
+Intel Xeon E5 2670 v2
+AMD Ryzen 3 2200G
+Intel Core i7 3820QM
+Intel Core i3 4370
+Intel Core i7 4722HQ
+Intel Core i7 4850HQ
+Intel Core i5 4670
+Intel Core i3 4350
+Intel Core i7 3840QM
+Intel Core i5 7500T
+Intel Core i5 4570S
+Intel Core i5 2500K
+Intel Core i5 3450
+Intel Core i5 4460S
+Intel Core i5 3340
+Intel Core i7 870
+Intel Core i7 950
+Intel Xeon W3550
+Intel Xeon X3450
+Intel Core i7 940
+AMD FX 8370E
+AMD FX 8310
+Intel Core i7 1160G7
+Intel Core i5 9300H
+Intel Core i5 8300H
+Intel Core i3 8109U
+Intel Core i3 4360
+Intel Core i3 6300T
+Intel Core i7 3720QM
+Intel Core i5 3570
+Intel Core i7 2960XM
+Intel Core i5 4570R
+Intel Core i5 7400T
+Intel Core i5 3470S
+Intel Core i5 4430
+Intel Core i5 3350P
+Intel Core i5 2310
+Intel Xeon X3440
+Intel Xeon W3530
+AMD Athlon 240GE
+AMD FX 8150
+AMD FX 6350 Six Core
+AMD FX 8320
+AMD Phenom II X6 1100T
+Intel Core i7 7567U
+Intel Core i7 4770HQ
+Intel Core i5 6500
+Intel Core i3 4340
+Intel Core i5 7400
+Intel Core i7 3740QM
+Intel Pentium G5400T
+Intel Core i5 2500S
+Intel Core i5 2320
+Intel Core i5 3330S
+Intel Core i7 860
+Intel Core i5 2300
+Intel Core i7 930
+Intel Core i5 2405S
+Intel Core i5 760
+AMD Athlon 220GE
+AMD FX 6200 Six Core
+AMD FX 8300
+AMD FX 8320E
+AMD Phenom II X4 980
+AMD Phenom II X4 B65
+Intel Core i5 1145G7
+Intel Core i5 10310U
+Intel Core i7 7820HQ
+Intel Core i7 4800MQ
+Intel Pentium G4600
+Intel Core i5 4590
+Intel Core i7 4750HQ
+Intel Pentium G5500T
+Intel Core i5 3470
+Intel Core i5 2500
+Intel Xeon W3520
+Intel Xeon E5540
+AMD Ryzen 3 1200
+AMD FX 4350
+AMD Phenom II X6 1090T
+AMD Phenom II X4 975
+AMD Athlon II X4 555
+Intel Core i7 7700HQ
+Intel Pentium Gold G5400
+Intel Core i3 6098P
+Intel Core i7 4810MQ
+Intel Core i5 7260U
+Intel Core i7 4700HQ
+Intel Core i5 4570
+Intel Core i3 4330
+Intel Core i7 4702HQ
+Intel Core i7 3615QM
+Intel Core i5 4460
+Intel Core i7 3635QM
+Intel Core i7 2920XM
+Intel Core i7 3610QM
+Intel Core i7 2860QM
+Intel Core i7 920
+Intel Core i5 750
+AMD FX 8120
+AMD FX 4170 Quad Core
+AMD Phenom II X6 1075T
+AMD Phenom II X4 970
+AMD Phenom II X4 B60
+Intel Core i7 5557U
+Intel Core i3 7100T
+Intel Core i7 4712HQ
+Intel Core i5 6400
+Intel Core i7 4702MQ
+Intel Core i7 3630QM
+Intel Core i5 4440
+Intel Core i7 3632QM
+Intel Core i5 2400
+Intel Core i5 3330
+Intel Xeon E5530
+Intel Xeon X3430
+AMD Ryzen 3 2300U
+AMD FX 6120 Six Core
+AMD FX 6300
+Intel Core i5 1135G7
+Intel Core i7 8665U
+Intel Pentium G4520
+Intel Core i7 6820HQ
+Intel Core i7 4710MQ
+Intel Core i7 5550U
+Intel Pentium G4560T
+Intel Core i7 2760QM
+Intel Core i3 2125
+Intel Core i7 3612QM
+Intel Xeon E5 2620 v2
+Intel Xeon E5 1603 0
+Intel Core i5 2400S
+Intel Core i7 X 940
+Intel Xeon L5520
+AMD Ryzen 7 3750H
+AMD Ryzen 3 3300U
+AMD Athlon 200GE
+AMD FX 6100
+AMD Phenom II X6 1055T
+AMD Phenom II X4 B55
+AMD Phenom II X6 1045T
+AMD Phenom II X4 960T
+AMD Phenom II X4 20
+Intel Pentium G3470
+Intel Core i7 6700HQ
+Intel Core i7 4700MQ
+Intel Core i3 3250
+Intel Core i3 3225
+Intel Core i3 7167U
+Intel Xeon E5 2630 0
+Intel Core i7 2820QM
+Intel Core i3 2105
+Intel Core X 920
+Intel Xeon E5620
+Intel Xeon E5520
+AMD Ryzen 5 3550H
+AMD Athlon 3000G
+AMD A10 6790K APU (2013 D.Ri)
+AMD Phenom II X4 965
+AMD Phenom II X6 1035T
+AMD Phenom II X4 840T
+Intel Core i5 1035G7
+Intel Core i5 10210Y
+Intel Core i5 5287U
+Intel Core i7 4720HQ
+Intel Core i7 4710HQ
+Intel Pentium G3460
+Intel Core i3 6100T
+Intel Core i5 4570T
+Intel Core i7 4610M
+Intel Core i7 4558U
+Intel Core i7 2720QM
+Intel Xeon E5 2620 0
+Intel Core i7 2675QM
+AMD Ryzen 7 2700U
+AMD A10 5800B APU (2012 D.Tr)
+AMD FX 4130 Quad Core
+AMD FX 4300
+AMD Phenom II X4 B50
+AMD Phenom II X4 830
+AMD Phenom II X4 910e
+Intel Celeron G6900
+Intel Core i7 10510Y
+Intel Core i5 8365U
+Intel Core i7 6567U
+Intel Core i3 7100
+Intel Pentium G4560
+Intel Core i3 4170
+Intel Core i5 7300HQ
+Intel Pentium G3440
+Intel Pentium G3430
+Intel Core i5 4200H
+Intel Core i3 2130
+Intel Core i3 3210
+Intel Core i7 2635QM
+Intel Core i7 X 920
+Intel Core 2 Extreme X9770
+Intel Pentium G4500
+Intel Core i7 10510U
+Intel Celeron G5900
+Intel Celeron G3950
+Intel Core i7 5650U
+Intel Pentium G3450
+Intel Core i7 4600M
+Intel Core i5 3470T
+Intel Core i7 3540M
+Intel Core i3 6167U
+Intel Core i5 6260U
+Intel Core i3 4130T
+Intel Core i5 4258U
+Intel Core i7 2670QM
+AMD A10 6800K APU (2013 D.Ri)
+AMD Athlon II X4 760K (2013 D.Ri)
+Intel Core i7 Q 840
+Intel Xeon E5 2609 0
+AMD Athlon II X4 750K
+AMD FX 4100
+AMD Phenom II X4 955
+AMD Phenom II X4 B45
+AMD Phenom II X4 945
+AMD Phenom II X4 B40
+AMD Phenom II X4 925
+AMD Phenom II X4 905e
+Intel Core i5 1035G4
+Intel Core i7 8565U
+Intel Core i7 7560U
+Intel Core i3 6100
+Intel Core i3 4160
+Intel Core i5 5257U
+Intel Core i3 4150
+Intel Core i5 3380M
+Intel Core i3 3240
+Intel Core i3 7130U
+AMD A10 6700 APU (2013 D.Ri)
+Intel Core i3 3220T
+Intel Core i7 2630QM
+AMD A8 6600K APU
+AMD A10 5800K APU (2012 D.Tr)
+AMD A8 6500 APU
+Intel Xeon E5507
+AMD Athlon II X4 651
+AMD Phenom II X4 920
+Intel Celeron G5920
+Intel Core i7 7660U
+Intel Pentium G3420
+Intel Core i5 6300HQ
+Intel Pentium G2130
+Intel Core i5 3360M
+Intel Core i7 2640M
+Intel Core i3 6157U
+Intel Xeon X5470
+Intel Core i7 Q 740
+Intel Xeon E5506
+AMD Ryzen 7 3700U
+AMD Ryzen 5 2500U
+AMD A8 5600K APU
+AMD Athlon II X4 740K
+AMD Phenom II X4 850
+AMD Phenom II X4 940
+AMD Phenom II X4 810
+Intel Core i7 1065G7
+Intel Core i5 10210U
+Intel Core i3 8145U
+Intel Core i5 8265U
+Intel Core i7 8550U
+Intel Core i5 8250U
+Intel Core i7 6650U
+Intel Pentium G3258
+Intel Core i7 3520M
+Intel Celeron G1850
+Intel Pentium G2120
+Intel Core i5 3340M
+Intel Core i7 3687U
+Intel Core i5 2435M
+Intel Core i3 2120T
+Intel Core 2 Extreme X9650
+AMD Ryzen 5 3500U
+AMD A10 5700 APU (2012 D.Tr)
+AMD A8 5500 APU
+AMD Athlon II X4 641
+AMD Phenom II X2 565
+AMD Phenom II X3 720
+Intel Core i7 8650U
+Intel Core i5 8350U
+Intel Celeron G4900
+Intel Core i5 680
+Intel Xeon E5 2680 v2
+Intel Core i3 4130
+Intel Pentium G3260
+Intel Celeron G1830
+Intel Core i3 3220
+Intel Pentium G870
+Intel Core i7 2620M
+Intel Core i5 2540M
+Intel Core i7 3537U
+Intel Core i7 Q 820
+Intel Xeon X5460
+Intel Xeon E5504
+AMD A10 7890K APU (2014 D.Ka)
+AMD A8 7670K APU (2014 D.Ka)
+AMD Phenom II X4 840
+AMD A10 6700T APU (2013 D.Ri)
+AMD A8 3870 APU
+AMD Phenom II X3 710
+Intel Core i5 1035G1
+Intel Pentium G3250
+Intel Core i5 K 655
+Intel Core i5 4300M
+Intel Core i5 4210M
+Intel Core i7 4650U
+Intel Core i7 3667U
+Intel Core i3 2120
+Intel Pentium G860
+Intel Pentium G2010
+Intel Core i3 2100
+Intel Pentium G850
+Intel Pentium G840
+Intel Core i3 4000M
+Intel Core i5 2415M
+Intel Core i7 3517U
+Intel Core i7 2677M
+Intel Core i7 2637M
+Intel Xeon E5450
+Intel Core i7 Q 720
+Intel Core 2 Quad Q9650
+Intel Xeon E5472
+Intel Xeon X5472
+AMD Athlon X4 880K
+AMD A10 7870K APU (2014 D.Ka)
+AMD Athlon II X4 870K
+AMD Athlon II X4 645
+AMD Athlon II X3 460
+AMD A8 3850 APU
+AMD A6 3670 APU
+AMD Athlon II X4 631
+AMD Phenom II X2 560
+AMD Phenom II X2 550
+AMD Phenom 9950
+AMD Phenom 9850
+Intel Core i3 1115G4
+Intel Core i7 8500Y
+Intel Core i7 7600U
+Intel Core i5 661
+Intel Xeon E7  4870
+Intel Core i7 5600U
+Intel Pentium G3240
+Intel Core i5 4200M
+Intel Core i7 4550U
+Intel Pentium G645
+Intel Core i7 4500U
+Intel Pentium 5405U
+Intel Core i5 4250U
+Intel Core i5 2430M
+Intel Core i3 3120M
+Intel Xeon W3505
+Intel Core i5 2557M
+Intel Xeon E5 2603 0
+Intel Xeon X5450
+AMD Ryzen 3 2200U
+AMD Athlon 300U
+AMD Athlon X4 845
+AMD Athlon II X4 860K
+AMD A10 7850K APU (2014 D.Ka)
+AMD A10 7700K APU (2014 D.Ka)
+AMD A8 7500 APU (2014 M.Ka)
+AMD Athlon II X3 455
+AMD Athlon II X4 640
+AMD Athlon II X4 635
+AMD Athlon II X4 630
+AMD Athlon II X2 265
+AMD Phenom II X2 555
+AMD Phenom II X2 545
+Intel Core i5 8210Y
+Intel Core i5 8200Y
+Intel Celeron G3900
+Intel Core i5 660
+Intel Core i5 5250U
+Intel Celeron G1840
+Intel Pentium G2030
+Intel Celeron G1820
+Intel Core i7 4600U
+Intel Pentium G2020
+Intel Celeron G1620
+Intel Core i5 3230M
+Intel Core i5 4310U
+Intel Core i5 2450M
+Intel Celeron G1610
+Intel Core i5 3437U
+Intel Pentium 4415U
+Intel Core i5 3427U
+Intel Pentium 3550M
+Intel Core i7 3689Y
+Intel Core i3 2370M
+Intel Xeon W3503
+Intel Core i3 2348M
+Intel Core 2 Quad Q9550
+Intel Xeon E5440
+Intel Core 2 Quad Q9450
+AMD A12 9800 APU (2016 M.BR)
+AMD FX 770K (2014 D.Ka)
+AMD A10 9700E APU (2016 D.BR)
+AMD A8 7650K APU (2014 D.Ka)
+AMD A4 6320 APU
+AMD A10 5757M APU
+AMD Athlon II X3 450
+AMD Athlon II X3 445
+AMD A6 3650 APU
+AMD Athlon 64 X2 Dual Core 6400+
+AMD Athlon II X4 620
+AMD Phenom 9750
+Intel Celeron G3930
+Intel Core i7 7500U
+Intel Core i3 8130U
+Intel Pentium G3220
+Intel Core i5 3320M
+Intel Pentium G640
+Intel Pentium 4417U
+Intel Core i5 2520M
+Intel Core i5 3210M
+Intel Celeron G550
+Intel Core i3 5010U
+Intel Core i5 2410M
+Intel Pentium 4405U
+Intel Core i3 5015U
+Intel Core i3 3110M
+Intel Core 2 Quad Q9500
+Intel Xeon E5430
+Intel Xeon E5462
+AMD A10 7860K APU (2014 D.Ka)
+AMD A12 9730P APU (2016 M.BR)
+AMD Athlon II X2 270
+AMD A10 4600M APU
+AMD Athlon II X3 440
+AMD Athlon II X3 435
+AMD A8 3800 APU
+AMD Phenom 9650
+AMD Phenom 9550
+Intel Core i3 10110U
+Intel Pentium G4400
+Intel Xeon E5 2660 v2
+Intel Core m3 7Y32
+Intel Core m3 8100Y
+Intel Core i3 550
+Intel Core i5 7Y54
+Intel Core i7 4510U
+Intel Pentium G630
+Intel Celeron G540
+Intel Core i5 3337U
+Intel Pentium 2020M
+Intel Core i5 3317U
+Intel Core M 5Y10
+Intel Core i3 2350M
+Intel Core i3 2328M
+Intel Core i3 2330M
+Intel Core 2 Quad Q9505
+Intel Xeon L5420
+Intel Core 2 Extreme Q6850
+AMD A10 9700 APU (2016 M.BR)
+AMD A8 7600 APU (2014 D.Ka)
+AMD A10 9630P APU (2016 M.BR)
+AMD A8 5550M APU
+AMD Athlon II X2 260
+AMD Athlon II X2 255
+AMD Athlon II X2 B24
+AMD Athlon II X3 425
+AMD Phenom II N660
+Intel Core i5 650
+Intel Core i7 5500U
+Intel Core i7 6500U
+Intel Core i3 540
+Intel Core i3 530
+Intel Core m3 7Y30
+Intel Pentium G620
+Intel Core M 5Y70
+Intel Celeron G530
+Intel Core M 5Y10a
+Intel Pentium B980
+Intel Pentium B970
+Intel Core i3 2310M
+Intel Core 2 Quad Q9400
+Intel Core 2 Quad Q9300
+Intel Core 2 Extreme Q9300
+AMD Ryzen 3 3200U
+Intel Core i5 7300U
+Intel Core i5 7200U
+Intel Core i7 6600U
+AMD A12 9800E APU (2016 M.BR)
+Intel Core M 5Y71
+AMD A10 7800 APU (2014 D.Ka)
+AMD A10 5750M APU
+Intel Core i3 4030U
+Intel Core i3 3227U
+Intel Core i5 2467M
+Intel Core 2 Quad Q8400
+AMD Athlon 64 X2 Dual Core 6000+
+AMD A6 3620 APU
+AMD Athlon II X2 245
+Intel Xeon E5420
+AMD Athlon 7850
+AMD Athlon X2 240
+AMD A8 3530MX APU
+AMD Phenom 8650 Triple Core
+AMD Phenom X3 8650
+AMD Phenom II N950
+Intel Core i3 1005G1
+Intel Core i7 7Y75
+AMD A8 9600 APU (2016 D.BR)
+AMD FX 9830P APU (2016 M.BR)
+Intel Core i5 4300U
+AMD A6 6400K APU
+Intel Core M 5Y51
+Intel Core m3 6Y30
+Intel Core M 5Y10c
+AMD A4 6300 APU
+AMD A6 5400K APU
+Intel Pentium 3805U
+AMD A4 5300 APU
+Intel Core i5 4300Y
+Intel Pentium B960
+Intel Core 2 Duo E8600
+Intel Celeron 1005M
+Intel Pentium 2127U
+Intel Pentium B940
+Intel Core i5 4210Y
+Intel Core i3 4010U
+Intel Core i5 3339Y
+Intel Core 2 Quad Q8300
+AMD Athlon II X2 250 (2013 D.Ri)
+Intel Core i5 2537M
+AMD Athlon II X2 240
+AMD A8 3510MX APU
+Intel Core 2 Quad Q6700
+AMD Phenom II N850
+AMD Phenom II N930
+AMD Phenom 9150e
+Intel Core i7 M 640
+Intel Core i5 M 580
+Intel Core m5 6Y57
+Intel Core m7 6Y75
+Intel Core m5 6Y54
+Intel Core i3 7100U
+Intel Core i3 6100U
+Intel Core i5 4200U
+Intel Pentium B950
+Intel Celeron 1037U
+Intel Core i5 4202Y
+Intel Pentium 2117U
+Intel Celeron B830
+Intel Core i3 3217U
+Intel Core 2 Quad Q8200
+Intel Core i3 4012Y
+Intel Core i3 2375M
+Intel Core 2 Quad
+Intel Xeon X3220
+AMD A6 7470K APU (2014 D.Ka)
+AMD FX 7600P APU (2014 M.Ka)
+AMD A4 4000 APU
+AMD A8 4500M APU
+AMD Athlon 64 X2 Dual Core 5600+
+AMD Athlon II X2 220
+AMD Athlon 7750
+AMD A6 3500 APU
+AMD Phenom 8450 Triple Core
+AMD Phenom X3 8450
+Intel Core i7 M 620
+Intel Core i5 5300U
+Intel Core i5 5200U
+Intel Core i3 M 390
+Intel Core 2 Duo E8500
+Intel Celeron 1000M
+Intel Xeon E3110
+Intel Celeron B820
+Intel Celeron B815
+Intel Core 2 Quad Q6600
+Intel Core i3 2367M
+Intel Xeon E5405
+Intel Core 2 Quad Q9000
+AMD Athlon 64 X2 Dual Core 5400+
+AMD Athlon II X2 215
+AMD A8 3520M APU
+AMD Turion II Ultra Mobile M600
+AMD A6 3410MX APU
+AMD Phenom II N830
+Intel Core i5 M 560
+Intel Pentium G6950
+Intel Core i5 M 480
+Intel Core i5 6200U
+Intel Core i5 M 540
+Intel Core i7 L 640
+Intel Core i5 4210U
+Intel Pentium E6800
+Intel Core 2 Duo T9900
+Intel Core 2 Extreme X9100
+Intel Core 2 Duo E8300
+Intel Core 2 Duo T9800
+Intel Celeron 1017U
+Intel Celeron 887
+Intel Celeron 877
+Intel Core i3 2365M
+Intel Xeon E5345
+AMD A8 7200P APU (2014 M.Ka)
+AMD A10 4655M APU
+AMD Athlon 64 X2 Dual Core 5200+
+AMD Athlon Dual Core 4850e
+AMD A8 3500M APU
+AMD Opteron 4171 HE
+Intel Core i5 6300U
+Intel Pentium Silver J5005
+Intel Core i5 M 460
+Intel Core i5 M 450
+Intel Core i5 M 520
+Intel Core i3 M 380
+Intel Core i3 7020U
+Intel Pentium E6700
+Intel Celeron 3205U
+Intel Core 2 Duo E8400
+Intel Core 2 Duo E7600
+Intel Core 2 Duo P9700
+Intel Core 2 Duo E8200
+Intel Celeron B800
+Intel Pentium 987
+Intel Core 2 Duo E6850
+Intel Core 2 X6800
+Intel Core i3 2357M
+Intel Xeon E5335
+AMD FX 9800P APU (2016 M.BR)
+AMD A10 7400P APU (2014 M.Ka)
+AMD A10 5745M APU
+AMD A4 3400 APU
+AMD A8 5545M APU
+AMD Athlon 64 X2 Dual Core 5000+
+AMD Athlon 64 X2 Dual Core 4600+
+AMD A6 3420M APU
+AMD Athlon II P360
+AMD Athlon X2 Dual Core BE 2400
+AMD Sempron 145
+AMD Phenom II P960
+Intel Core i5 M 430
+Intel Core i7 L 620
+Intel Core i3 M 370
+Intel Pentium Gold 4425Y
+Intel Pentium 4410Y
+Intel Core 2 Duo E7500
+Intel Pentium E6600
+Intel Pentium E6500
+Intel Core i3 4005U
+Intel Core 2 Duo T9600
+Intel Core 2 Duo E7300
+Intel Celeron 1007U
+Intel Core 2 Duo T9500
+Intel Core 2 Duo T9400
+Intel Core 2 Duo T9550
+Intel Core 2 Duo P9500
+Intel Core 2 Duo P9600
+Intel Core 2 6700
+AMD A6 7400K APU (2014 D.Ka)
+AMD A12 9720P APU (2016 M.BR)
+AMD A6 9500E APU (2016 D.BR)
+AMD A10 9620P APU (2016 M.BR)
+AMD A6 4400M APU
+AMD A4 4300M APU
+AMD A4 3300 APU
+AMD Athlon 64 X2 Dual Core 4800+
+AMD Athlon Dual Core 4450B
+AMD Athlon Dual Core 4450e
+AMD Athlon 64 X2 Dual Core 4200+
+AMD Athlon II P340
+AMD Athlon LE 1640
+AMD Sempron 140
+AMD A6 3400M APU
+AMD Turion II Neo N54L
+AMD Phenom II P940
+Intel Core M 5Y31
+Intel Core i3 M 350
+Intel Core i3 5005U
+Intel Core i3 M 330
+Intel Pentium Gold 4415Y
+Intel Core 2 Duo E7400
+Intel Pentium 4405Y
+Intel Pentium E6300
+Intel Core 2 Duo E7200
+Intel Celeron 2957U
+Intel Core 2 Duo P8800
+Intel Core 2 Duo T9300
+Intel Core 2 Duo P9400
+Intel Pentium D 3.73GHz
+Intel Core 2 Duo E6750
+Intel Pentium 967
+AMD A6 9500 APU (2016 D.BR)
+AMD A9 9430 APU (2016 M.SR)
+AMD A12 9700P APU (2016 M.BR)
+AMD Athlon 5350 APU R3
+AMD A4 7210 APU (2015 M.Ca)
+AMD A4 3330MX APU
+AMD A8 4555M APU
+AMD Athlon 64 X2 Dual Core 4400+
+AMD Turion II Mobile M500
+AMD Athlon 64 3400+
+AMD Athlon II P320
+AMD Athlon 64 X2 Dual Core 3800+
+AMD V140
+Intel Pentium E5800
+Intel Pentium E5500
+Intel Core 2 Duo P8700
+Intel Core 2 Duo P8600
+Intel Core 2 Duo T8300
+Intel Core 2 Duo P8400
+Intel Core 2 Duo T7700
+Intel Core 2 Duo P7570
+Intel Core 2 Duo P9300
+Intel Core 2 Duo L9600
+Intel Core 2 6600
+Intel Core 2 Duo E6550
+AMD A10 9600P APU (2016 M.BR)
+AMD FX 7500 APU (2014 M.Ka)
+AMD Athlon II M320
+AMD A4 3300M APU
+AMD Turion 64 X2 Mobile Technology TL 60
+AMD Athlon 64 3800+
+AMD Turion X2 Ultra Mobile ZM 82
+AMD V120
+AMD Athlon 64 3500+
+AMD Athlon 64 3000+
+Intel Celeron J4105
+Intel Pentium P6200
+Intel Core i3 6006U
+Intel Pentium E5700
+Intel Pentium E5400
+Intel Pentium E5300
+Intel Pentium E5200
+Intel Celeron E3300
+Intel Celeron E3200
+Intel Core 2 Duo P7550
+Intel Core 2 Duo P7450
+Intel Core 2 Duo L9400
+Intel Core 2 6420
+Intel Xeon E5320
+Intel Atom Z3740D
+AMD A8 7100 APU (2014 M.Ka)
+AMD A6 7310 APU (2015 M.Ca)
+AMD A8 6410 APU R5 Graphics
+AMD A6 4455M APU
+AMD Athlon 64 4000+
+AMD A4 4355M APU
+AMD Athlon II M300
+AMD Athlon 64 X2 Dual Core 3600+
+AMD Turion 64 X2 Mobile Technology TL 58
+AMD Athlon 64 3200+
+AMD Turion 64 Mobile Technology ML 32
+Intel Pentium P6100
+Intel Celeron E3400
+Intel Core 2 Duo T6600
+Intel Core 2 Duo T6670
+Intel Core 2 Duo E4700
+Intel Core 2 Duo T8100
+Intel Pentium J2900
+Intel Celeron Dual Core T3300
+Intel Core 2 Duo P7350
+Intel Pentium N3530
+Intel Core 2 Duo T7500
+Intel Core 2 6400
+Intel Core 2 6320
+Intel Pentium Silver N5000
+AMD A10 7300 APU (2014 M.Ka)
+AMD A8 7410 APU (2015 M.Ca)
+AMD A4 3305M APU
+Intel Pentium T4500
+Intel Pentium T4400
+AMD Athlon 64 X2 Dual Core 4000+
+Intel Core 2 Duo T6500
+Intel Pentium T4300
+Intel Core 2 Duo E4600
+Intel Core 2 Duo T6400
+Intel Core 2 Duo T6570
+Intel Pentium T4200
+Intel Celeron Dual Core T3100
+Intel Celeron 847
+Intel Core 2 T7600
+AMD Turion 64 X2 Mobile Technology TL 56
+Intel Celeron J1900
+Intel Pentium N3520
+Intel Core 2 Duo T5900
+Intel Celeron N2930
+Intel Core 2 6300
+Intel Core 2 Duo T5870
+Intel Core 2 Duo T7250
+Intel Core 2 Duo T7300
+Intel Core 2 Duo T5800
+Intel Xeon E5310
+Intel Core 2 Duo T5670
+Intel Celeron N4100
+Intel Pentium J4205
+AMD A9 9410 APU (2016 M.SR)
+AMD A9 9400 APU (2016 M.SR)
+AMD A6 9210 APU (2016 M.SR)
+AMD A6 5200 APU
+AMD A4 6210 APU R3 Graphics
+Intel Core 2 Duo E4500
+AMD E2 3000M APU
+Intel Pentium Dual E2200
+AMD Turion X2 Dual Core Mobile RM 70
+Intel Pentium N3540
+Intel Core 2 T7400
+Intel Pentium Dual E2180
+Intel Pentium Dual T3400
+Intel Core 2 4400
+Intel Core 2 Duo E4400
+AMD Turion 64 X2 Mobile Technology TL 52
+Intel Core 2 Duo L9300
+Intel Core 2 Duo U9600
+Intel Core 2 4300
+Intel Core 2 Duo T7100
+Intel Core 2 Duo L7500
+Intel Pentium D 3.40GHz
+Intel Pentium 4 3.80GHz
+Intel Atom Z3775
+Intel Core 2 Duo T5850
+Intel Pentium Dual T3200
+Intel Core 2 T7200
+Intel Core 2 Duo T5750
+Intel Pentium Dual E2160
+Intel Pentium N3510
+Intel Core 2 Duo U9400
+Intel T2500
+Intel T2600
+Intel Core 2 T5500
+Intel T2400
+Intel T2300
+AMD A6 9220 APU (2016 M.SR)
+AMD A6 9200 APU (2016 M.SR)
+AMD A4 9120 APU (2016 M.SR)
+AMD E2 7110 APU (2015 M.Ca)
+AMD Athlon X2 Dual Core QL 65
+AMD Sempron 3400+
+AMD Turion II Neo N40L
+Intel Core i5 U 470
+Intel Core i3 U 380
+Intel Pentium 4 3.40GHz
+Intel Pentium D 3.20GHz
+Intel Atom Z3770
+Intel Celeron N2920
+Intel Core 2 T5600
+Intel Core 2 Duo T5550
+Intel Core 2 Duo T5450
+Intel 2140
+Intel Pentium Dual E2140
+Intel Core 2 Duo T5250
+Intel T2080
+Intel Core 2 Duo L7100
+AMD A9 9420 APU (2016 M.SR)
+AMD E2 9010 APU (2016 M.SR)
+AMD E2 9000 APU (2016 M.SR)
+AMD Athlon X2 Dual Core QL 64
+AMD Athlon 64 X2 Dual Core TK 55
+AMD AthlonX2 DualCore QL 60
+AMD Sempron 3600+
+AMD Athlon Neo X2 Dual Core L335
+Intel Pentium N4200
+Intel Core i3 U 330
+Intel Celeron 900
+Intel Pentium D 3.00GHz
+Intel Celeron E1500
+Intel Pentium 4 3.20GHz
+Intel Celeron E1400
+Intel Atom Z3740
+Intel U7300
+Intel 575
+Intel Core 2 T5300
+Intel Pentium Dual T2370
+Intel Core Duo T2350
+Intel U2300
+Intel T2250
+AMD A9 9425 APU (2016 M.SR)
+AMD Athlon X2 Dual Core BE 2300
+AMD A4 5000 APU
+AMD Athlon 64 X2 Dual Core TK 53
+AMD Sempron 3000+
+AMD E2 2000 APU (2012 M.Za)
+AMD Sempron 2800+
+AMD E 350D APU
+Intel Celeron J3455
+Intel Pentium 4 3.00GHz
+Intel Pentium D 2.80GHz
+Intel Celeron N2830
+Intel Pentium Dual T2390
+Intel U4100
+Intel Core 2 T5200
+Intel Pentium Dual T2330
+Intel Pentium Dual T2310
+AMD A6 7000 APU (2014 M.Ka)
+AMD E2 9000e APU (2016 M.SR)
+AMD Athlon 2650e
+AMD Athlon Neo MV 40
+AMD E 450 APU
+Intel Celeron J4005
+Intel Celeron N3160
+Intel Pentium 4 2.80GHz
+Intel Celeron N2840
+Intel Pentium M processor 1.86GHz
+Intel Pentium M processor 1.73GHz
+AMD E2 1800 APU (2012 M.Za)
+AMD E 350
+Intel Celeron N3450
+Intel Atom x7 Z8750
+Intel Atom x5 Z8550
+Intel Atom x7 Z8700
+Intel Celeron N2820
+Intel Celeron N2815
+Intel Pentium N3700
+Intel Atom x5 Z8500
+Intel Celeron N3150
+Intel Atom x5 Z8330
+Intel Pentium D 2.66GHz
+Intel Pentium 4 2.93GHz
+Intel Celeron 723
+Intel Atom D2700
+Intel Atom N2800
+AMD E1 1200 APU
+AMD C 60 APU
+AMD E 300 APU
+Intel Celeron J3355
+Intel Pentium N3710
+Intel Pentium 4 2.60GHz
+Intel Pentium 4 3.06GHz
+Intel Celeron M 430
+Intel Pentium M processor 1.60GHz
+AMD E1 7010 APU (2015 M.Ca)
+Intel Celeron N4000
+Intel Celeron N3010
+Intel Atom x5 Z8300
+Intel Pentium 4 2.66GHz
+Intel Pentium 4 2.40GHz
+AMD E1 2500 APU
+Intel Celeron N3000
+AMD C 50
+Intel Atom D525
+Intel Atom N2600
+Intel Celeron N4020
+Intel Celeron N3350
+Intel Celeron D 3.06GHz
+Intel Atom x5 Z8350
+Intel Celeron 2.80GHz
+Intel Celeron M processor 1.50GHz
+Intel Atom N570
+Intel Atom 330
+Intel Atom N455
+Intel Atom N550
+AMD Z 60 APU
+Intel Atom D510
+Intel Atom D410
+Intel Atom N270
+Intel Atom N280
+Intel Atom N450
+Intel Atom N435
+Intel Celeron N3050
+Intel Atom 230
+AMD A4 1200 APU
+AMD A4 1250 APU
+AMD E1 2100 APU
+Intel Celeron N3060
+AMD Phenom 9600
+Intel Atom Z2760
+Intel Atom Z520
+AMD Phenom 9500
+AMD EPYC 7763
+AMD EPYC 7702
+AMD EPYC 7702P
+AMD EPYC 7502P
+AMD Ryzen 9 7945HX
+Intel Xeon W 3175X
+Intel Core i9 12900T
+Intel Xeon E5 2697 V3
+Intel Xeon E5 2683 V3
+AMD EPYC 7351
+AMD Ryzen 7 7840HS
+Intel Core i5 13490F
+AMD Ryzen 9 6980HS
+AMD Ryzen 9 6980HX
+AMD Ryzen 9 PRO 6950H
+AMD Ryzen 9 PRO 6950HS
+AMD Ryzen 7 PRO 5750G
+Intel Core i7 1280P
+AMD Ryzen 7 PRO 6850U
+AMD Ryzen 7 PRO 6850H
+AMD Ryzen 7 PRO 4750G
+Intel Xeon W 11955M
+AMD A10 PRO 7800B
+AMD A10 PRO 7850B
+AMD A10 4600M
+AMD A10 4655M
+AMD A10 5700
+AMD A10 5745M
+AMD A10 5750M
+AMD A10 5757M
+AMD A10 5800B
+AMD A10 5800K
+AMD A10 6700
+AMD A10 6700T
+AMD A10 6790B
+AMD A10 6790K
+AMD A10 6800K
+AMD A10 7700K
+AMD A10 7800
+AMD A10 7850K
+AMD A10 7860K
+AMD A10 7870K
+AMD A10 7890K
+AMD A10 9700
+AMD A10 9700E
+Intel A100
+Intel A110
+AMD A12 9800
+AMD A12 9800E
+AMD A4 PRO 7300B
+AMD A4 PRO 7350B
+AMD A4 1200
+AMD A4 1250
+AMD A4 1350
+AMD A4 3300
+AMD A4 3300M
+AMD A4 3305M
+AMD A4 3310MX
+AMD A4 3320M
+AMD A4 3330MX
+AMD A4 3400
+AMD A4 3420
+AMD A4 4000
+AMD A4 4020
+AMD A4 4300M
+AMD A4 4355M
+AMD A4 5000
+AMD A4 5050
+AMD A4 5145M
+AMD A4 5150M
+AMD A4 5300
+AMD A4 5300B
+AMD A4 6300
+AMD A4 6300B
+AMD A4 6320
+AMD A4 6320B
+AMD A4 7300
+AMD A6 PRO 7400B
+AMD A6 1450
+AMD A6 3400M
+AMD A6 3410MX
+AMD A6 3420M
+AMD A6 3430MX
+AMD A6 3500
+AMD A6 3600
+AMD A6 3620
+AMD A6 3650
+AMD A6 3670K
+AMD A6 4400M
+AMD A6 4455M
+AMD A6 5200
+AMD A6 5345M
+AMD A6 5350M
+AMD A6 5357M
+AMD A6 5400B
+AMD A6 5400K
+AMD A6 6400B
+AMD A6 6400K
+AMD A6 6420K
+AMD A6 7400K
+AMD A6 7470K
+AMD A6 7480
+AMD A6 9120C SoC
+AMD A6 9220C SoC
+AMD A6 9400
+AMD A6 9500
+AMD A6 9500E
+AMD A6 9550
+AMD A8 PRO 7600B
+AMD A8 3500M
+AMD A8 3510MX
+AMD A8 3520M
+AMD A8 3530MX
+AMD A8 3550MX
+AMD A8 3800
+AMD A8 3820
+AMD A8 3850
+AMD A8 3870K
+AMD A8 4500M
+AMD A8 4555M
+AMD A8 5500
+AMD A8 5500B
+AMD A8 5545M
+AMD A8 5550M
+AMD A8 5557M
+AMD A8 5600K
+AMD A8 6500
+AMD A8 6500B
+AMD A8 6500T
+AMD A8 6600K
+AMD A8 7600
+AMD A8 7650K
+AMD A8 7670K
+AMD A8 7680
+AMD A8 9600
+AMD A9 9400 SoC
+AMD A9 9410 SoC
+AMD A9 9420 SoC
+AMD A9 9425 SoC
+AMD Athlon 1000
+AMD Athlon 1100
+AMD Athlon 1133
+AMD Athlon 1200
+AMD Athlon 1300
+AMD Athlon 1333
+AMD Athlon 1400
+AMD Athlon 5150
+AMD Athlon 5350
+AMD Athlon 5370
+AMD Athlon 600
+AMD Athlon 64 1500+
+AMD Athlon 64 2000+
+AMD Athlon 64 2600+
+AMD Athlon 64 2650e
+AMD Athlon 64 2700+
+AMD Athlon 64 2800+
+AMD Athlon 64 2850e
+AMD Athlon 64 3100+
+AMD Athlon 64 3300+
+AMD Athlon 64 3500+ (F3)
+AMD Athlon 64 3500+ EE
+AMD Athlon 64 3600+
+AMD Athlon 64 3700+
+AMD Athlon 64 3800+ (F3)
+AMD Athlon 64 4000+ (F3)
+AMD Athlon 64 FX 51
+AMD Athlon 64 FX 53
+AMD Athlon 64 FX 55
+AMD Athlon 64 FX 57
+AMD Athlon 64 FX 60
+AMD Athlon 64 FX 62
+AMD Athlon 64 FX 70
+AMD Athlon 64 FX 72
+AMD Athlon 64 FX 74
+AMD Athlon 64 FX 76
+AMD Athlon 64 LE 1600
+AMD Athlon 64 LE 1620
+AMD Athlon 64 LE 1640
+AMD Athlon 64 LE 1640B
+AMD Athlon 64 LE 1660
+AMD Athlon 64 X2 3600+
+AMD Athlon 64 X2 3600+ EE
+AMD Athlon 64 X2 3800+
+AMD Athlon 64 X2 3800+ EE
+AMD Athlon 64 X2 3800+ EE SFF
+AMD Athlon 64 X2 4000+
+AMD Athlon 64 X2 4000+ EE
+AMD Athlon 64 X2 4200+
+AMD Athlon 64 X2 4200+ EE
+AMD Athlon 64 X2 4400+
+AMD Athlon 64 X2 4400+ EE
+AMD Athlon 64 X2 4600+
+AMD Athlon 64 X2 4600+ EE
+AMD Athlon 64 X2 4800+
+AMD Athlon 64 X2 4800+ EE
+AMD Athlon 64 X2 5000+
+AMD Athlon 64 X2 5000+ BE
+AMD Athlon 64 X2 5000+ EE
+AMD Athlon 64 X2 5200+
+AMD Athlon 64 X2 5200+ EE
+AMD Athlon 64 X2 5400+
+AMD Athlon 64 X2 5400+ BE
+AMD Athlon 64 X2 5600+
+AMD Athlon 64 X2 5800+
+AMD Athlon 64 X2 6000+
+AMD Athlon 64 X2 6400+ BE
+AMD Athlon 650
+AMD Athlon 700
+AMD Athlon 750
+AMD Athlon 800
+AMD Athlon 850
+AMD Athlon 900
+AMD Athlon 950
+AMD Athlon Gold 3150G
+AMD Athlon Gold 3150GE
+AMD Athlon Gold PRO 3150G
+AMD Athlon Gold PRO 3150GE
+AMD Athlon II X2 210e
+AMD Athlon II X2 235e
+AMD Athlon II X2 240e
+AMD Athlon II X2 245e
+AMD Athlon II X2 250
+AMD Athlon II X2 250e
+AMD Athlon II X2 250u
+AMD Athlon II X2 260u
+AMD Athlon II X2 270u
+AMD Athlon II X2 280
+AMD Athlon II X3 400e
+AMD Athlon II X3 405e
+AMD Athlon II X3 415e
+AMD Athlon II X3 420e
+AMD Athlon II X3 425e
+AMD Athlon II X4 600e
+AMD Athlon II X4 605e
+AMD Athlon II X4 610e
+AMD Athlon II X4 615e
+AMD Athlon II X4 620e
+AMD Athlon II X4 638
+AMD Athlon II X4 651K
+AMD Athlon PRO 200GE
+AMD Athlon PRO 300U
+AMD Athlon Silver 3050GE
+AMD Athlon Silver PRO 3125GE
+AMD Athlon X2 340
+AMD Athlon X2 4050e
+AMD Athlon X2 4450e
+AMD Athlon X2 450
+AMD Athlon X2 4850e
+AMD Athlon X2 5050e
+AMD Athlon X2 6500 BE
+AMD Athlon X2 7450
+AMD Athlon X2 7550
+AMD Athlon X2 7750 BE
+AMD Athlon X2 7850 BE
+AMD Athlon X2 BE 2300
+AMD Athlon X2 BE 2350
+AMD Athlon X2 BE 2400
+AMD Athlon X2 QL 60
+AMD Athlon X2 QL 62
+AMD Athlon X2 QL 64
+AMD Athlon X2 QL 65
+AMD Athlon X2 QL 67
+AMD Athlon X4 730
+AMD Athlon X4 740
+AMD Athlon X4 750
+AMD Athlon X4 750K
+AMD Athlon X4 760K
+AMD Athlon X4 830
+AMD Athlon X4 840
+AMD Athlon X4 850
+AMD Athlon X4 860K
+AMD Athlon X4 870K
+AMD Athlon X4 940
+AMD Athlon X4 950
+AMD Athlon X4 970
+AMD Athlon XP 1500+
+AMD Athlon XP 1600+
+AMD Athlon XP 1700+
+AMD Athlon XP 1800+
+AMD Athlon XP 1900+
+AMD Athlon XP 2000+
+AMD Athlon XP 2100+
+AMD Athlon XP 2200+
+AMD Athlon XP 2400+
+AMD Athlon XP 2500+
+AMD Athlon XP 2500+ DTR
+AMD Athlon XP 2600+
+AMD Athlon XP 2600+ DTR
+AMD Athlon XP 2700+
+AMD Athlon XP 2800+
+AMD Athlon XP 2800+ DTR
+AMD Athlon XP 3000+ (333FSB)
+AMD Athlon XP 3000+ (400FSB)
+AMD Athlon XP 3100+
+AMD Athlon XP 3200+ (333FSB)
+AMD Athlon XP 3200+ (400FSB)
+AMD Athlon XP M 1800+ (25W)
+AMD Athlon XP M 2000+ (25W)
+AMD Athlon XP M 2000+ (35W)
+AMD Athlon XP M 2200+
+AMD Athlon XP M 2400+
+AMD Athlon XP M 2400+ (35W)
+AMD Athlon XP M 2400+ (72W)
+AMD Athlon XP M 2500+
+AMD Athlon XP M 2500+ (35W)
+AMD Athlon XP M 2500+ (72W)
+AMD Athlon XP M 2600+
+AMD Athlon XP M 2600+ (72W)
+AMD Athlon XP M 2800+
+AMD Athlon XP M 2800+ (72W)
+AMD Athlon XP M 3000+
+Intel Atom CE4100
+Intel Atom CE4130
+Intel Atom CE4150
+Intel Atom D2500
+Intel Atom D2550
+Intel Atom D425
+Intel Atom E3815
+Intel Atom E3825
+Intel Atom E3826
+Intel Atom E3827
+Intel Atom E3845
+Intel Atom E620
+Intel Atom E620T
+Intel Atom E625C
+Intel Atom E625CT
+Intel Atom E640
+Intel Atom E640T
+Intel Atom E645C
+Intel Atom E645CT
+Intel Atom E660
+Intel Atom E660T
+Intel Atom E665C
+Intel Atom E665CT
+Intel Atom E680
+Intel Atom E680T
+Intel Atom N470
+Intel Atom N475
+Intel Atom S1220
+Intel Atom S1240
+Intel Atom S1260
+Intel Atom Z2420
+Intel Atom Z2460
+Intel Atom Z2480
+Intel Atom Z2520
+Intel Atom Z2560
+Intel Atom Z2580
+Intel Atom Z3735G
+Intel Atom Z500
+Intel Atom Z510
+Intel Atom Z510P
+Intel Atom Z510PT
+Intel Atom Z515
+Intel Atom Z520PT
+Intel Atom Z530
+Intel Atom Z530P
+Intel Atom Z540
+Intel Atom Z550
+Intel Atom Z560
+Intel Atom Z600
+Intel Atom Z605
+Intel Atom Z610
+Intel Atom Z612
+Intel Atom Z615
+Intel Atom Z620
+Intel Atom Z625
+Intel Atom Z650
+Intel Atom Z670
+Intel Atom x3 3205RK
+Intel Atom x5 E3930
+Intel Atom x5 E3940
+Intel Atom x7 E3950
+Intel Atom x7211E
+Intel Atom x7213E
+Intel Atom x7425E
+Intel Aubrey Isle
+AMD C 30
+AMD C 60
+AMD C 70
+Intel Celeron 1020E
+Intel Celeron 1020M
+Intel Celeron 1047UE
+Intel Celeron 2.0
+Intel Celeron 2.10
+Intel Celeron 2.20
+Intel Celeron 2.30
+Intel Celeron 2.40
+Intel Celeron 2.60
+Intel Celeron 2.70
+Intel Celeron 2.80
+Intel Celeron 220
+Intel Celeron 2950M
+Intel Celeron 2955U
+Intel Celeron 2961Y
+Intel Celeron 2980U
+Intel Celeron 3755U
+Intel Celeron 420
+Intel Celeron 430
+Intel Celeron 440
+Intel Celeron 445
+Intel Celeron 450
+Intel Celeron 725C
+Intel Celeron 7300
+Intel Celeron 7305
+Intel Celeron 787
+Intel Celeron 797
+Intel Celeron 807
+Intel Celeron 857
+Intel Celeron 867
+Intel Celeron 947UE
+Intel Celeron B710
+Intel Celeron B720
+Intel Celeron B730
+Intel Celeron B810
+Intel Celeron B840
+Intel Celeron D 325
+Intel Celeron D 326
+Intel Celeron D 330
+Intel Celeron D 335
+Intel Celeron D 340
+Intel Celeron D 341
+Intel Celeron D 346
+Intel Celeron D 350
+Intel Celeron D 352
+Intel Celeron E1200
+Intel Celeron E1600
+Intel Celeron E3500
+Intel Celeron G1101
+Intel Celeron G1610T
+Intel Celeron G1620T
+Intel Celeron G1630
+Intel Celeron G1820T
+Intel Celeron G1820TE
+Intel Celeron G1840T
+Intel Celeron G3920
+Intel Celeron G3930T
+Intel Celeron G440
+Intel Celeron G460
+Intel Celeron G465
+Intel Celeron G4920
+Intel Celeron G530T
+Intel Celeron G540T
+Intel Celeron G550T
+Intel Celeron G555
+Intel Celeron G6900E
+Intel Celeron G6900T
+Intel Celeron G6900TE
+Intel Celeron N2805
+Intel Celeron N2806
+Intel Celeron N2807
+Intel Celeron N2808
+Intel Celeron N2810
+Intel Celeron N2910
+Intel Celeron N2940
+Intel Celeron P1053
+Intel Core 2 Duo E4300
+Intel Core 2 Duo E4400
+Intel Core 2 Duo E4500
+Intel Core 2 Duo E4600
+Intel Core 2 Duo E4700
+Intel Core 2 Duo E6300
+Intel Core 2 Duo E6320
+Intel Core 2 Duo E6400
+Intel Core 2 Duo E6420
+Intel Core 2 Duo E6550
+Intel Core 2 Duo E6600
+Intel Core 2 Duo E6700
+Intel Core 2 Duo E6750
+Intel Core 2 Duo E6850
+Intel Core 2 Duo E7200
+Intel Core 2 Duo E7300
+Intel Core 2 Duo E7400
+Intel Core 2 Duo E7500
+Intel Core 2 Duo E7600
+Intel Core 2 Duo E8135
+Intel Core 2 Duo E8190
+Intel Core 2 Duo E8200
+Intel Core 2 Duo E8235
+Intel Core 2 Duo E8300
+Intel Core 2 Duo E8335
+Intel Core 2 Duo E8400
+Intel Core 2 Duo E8435
+Intel Core 2 Duo E8500
+Intel Core 2 Duo E8600
+Intel Core 2 Duo P8400
+Intel Core 2 Duo P8600
+Intel Core 2 Duo P8700
+Intel Core 2 Duo P8800
+Intel Core 2 Duo P9500
+Intel Core 2 Duo P9600
+Intel Core 2 Duo P9700
+Intel Core 2 Duo T5200
+Intel Core 2 Duo T5500
+Intel Core 2 Duo T5600
+Intel Core 2 Duo T7100
+Intel Core 2 Duo T7200
+Intel Core 2 Duo T7250
+Intel Core 2 Duo T7300
+Intel Core 2 Duo T7400
+Intel Core 2 Duo T7500
+Intel Core 2 Duo T7600
+Intel Core 2 Duo T7600G
+Intel Core 2 Duo T7700
+Intel Core 2 Duo T7800
+Intel Core 2 Duo T8100
+Intel Core 2 Duo T8300
+Intel Core 2 Duo T9300
+Intel Core 2 Duo T9400
+Intel Core 2 Duo T9500
+Intel Core 2 Duo T9550
+Intel Core 2 Duo T9600
+Intel Core 2 Duo T9800
+Intel Core 2 Duo T9900
+Intel Core 2 Duo U7500
+Intel Core 2 Duo U7600
+Intel Core 2 Duo U7700
+Intel Core 2 Extreme QX6700
+Intel Core 2 Extreme QX6800
+Intel Core 2 Extreme QX6850
+Intel Core 2 Extreme QX9300
+Intel Core 2 Extreme QX9650
+Intel Core 2 Extreme QX9770
+Intel Core 2 Extreme QX9775
+Intel Core 2 Extreme X6800
+Intel Core 2 Extreme X7900
+Intel Core 2 Extreme X9000
+Intel Core 2 Extreme X9100
+Intel Core 2 Quad Q6600 (105W)
+Intel Core 2 Quad Q6600 (95W)
+Intel Core 2 Quad Q6700
+Intel Core 2 Quad Q7600
+Intel Core 2 Quad Q8200
+Intel Core 2 Quad Q8200S
+Intel Core 2 Quad Q8300
+Intel Core 2 Quad Q8400
+Intel Core 2 Quad Q8400S
+Intel Core 2 Quad Q9100
+Intel Core 2 Quad Q9300
+Intel Core 2 Quad Q9400
+Intel Core 2 Quad Q9400S
+Intel Core 2 Quad Q9450
+Intel Core 2 Quad Q9505
+Intel Core 2 Quad Q9550
+Intel Core 2 Quad Q9550S
+Intel Core 2 Quad Q9650
+Intel Core 2 Solo ULV SU3300
+Intel Core 2 Solo ULV SU3500
+Intel Core 2 Solo ULV U2100
+Intel Core 2 Solo ULV U2200
+Intel Core Duo LV L2300
+Intel Core Duo LV L2400
+Intel Core Duo LV L2500
+Intel Core Duo T2050
+Intel Core Duo T2250
+Intel Core Duo T2300
+Intel Core Duo T2400
+Intel Core Duo T2500
+Intel Core Duo T2600
+Intel Core Duo T2700
+Intel Core Duo ULV L2400
+Intel Core Duo ULV L2500
+Intel Core Solo T1200
+Intel Core Solo T1300
+Intel Core Solo T1350
+Intel Core Solo T1400
+Intel Core Solo ULV U1300
+Intel Core Solo ULV U1400
+Intel Core Solo ULV U1500
+Intel Core i3 1000G1
+Intel Core i3 1000G4
+Intel Core i3 10105
+Intel Core i3 10105T
+Intel Core i3 10110Y
+Intel Core i3 10305
+Intel Core i3 10305T
+Intel Core i3 10325
+Intel Core i3 10350K
+Intel Core i3 1110G4
+Intel Core i3 1120G4
+Intel Core i3 1125G4
+Intel Core i3 12100E
+Intel Core i3 12100T
+Intel Core i3 12100TE
+Intel Core i3 1210U
+Intel Core i3 1215U
+Intel Core i3 1215U (IPU)
+Intel Core i3 1220P
+Intel Core i3 12300HE
+Intel Core i3 12300T
+Intel Core i3 1305U
+Intel Core i3 13100E
+Intel Core i3 13100T
+Intel Core i3 13100TE
+Intel Core i3 1315U
+Intel Core i3 1315UE
+Intel Core i3 2100T
+Intel Core i3 2102
+Intel Core i3 2115C
+Intel Core i3 2310E
+Intel Core i3 2312M
+Intel Core i3 2330E
+Intel Core i3 2332M
+Intel Core i3 2340UE
+Intel Core i3 2377M
+Intel Core i3 3120ME
+Intel Core i3 3130M
+Intel Core i3 3217UE
+Intel Core i3 3229Y
+Intel Core i3 3240T
+Intel Core i3 350M
+Intel Core i3 370M
+Intel Core i3 380M
+Intel Core i3 390M
+Intel Core i3 4010Y
+Intel Core i3 4100E
+Intel Core i3 4100U
+Intel Core i3 4102E
+Intel Core i3 4150T
+Intel Core i3 4158U
+Intel Core i3 4160T
+Intel Core i3 4330T
+Intel Core i3 4360T
+Intel Core i3 5020U
+Intel Core i3 5157U
+Intel Core i3 530
+Intel Core i3 540
+Intel Core i3 550
+Intel Core i3 560
+Intel Core i3 7120
+Intel Core i3 7120T
+Intel Core i3 7320T
+Intel Core i3 7340
+Intel Core i3 7360X
+Intel Core i3 8000
+Intel Core i3 8020
+Intel Core i3 8120
+Intel Core i3 8121U
+Intel Core i3 8300T
+Intel Core i3 9000
+Intel Core i3 9300
+Intel Core i3 9320
+Intel Core i3 9350K
+Intel Core i3 N300
+Intel Core i3 N305
+Intel Core i5 1030G4
+Intel Core i5 1030G7
+Intel Core i5 10310Y
+Intel Core i5 1038NG7
+Intel Core i5 11260H
+Intel Core i5 11320H
+Intel Core i5 11400T
+Intel Core i5 11500H
+Intel Core i5 11500T
+Intel Core i5 1155G7
+Intel Core i5 11600T
+Intel Core i5 1230U
+Intel Core i5 1235U
+Intel Core i5 1235U (IPU)
+Intel Core i5 12400T
+Intel Core i5 1240P
+Intel Core i5 1240U
+Intel Core i5 12450H
+Intel Core i5 12450HX
+Intel Core i5 1245U
+Intel Core i5 12490F
+Intel Core i5 12500E
+Intel Core i5 12500T
+Intel Core i5 12500TE
+Intel Core i5 1250P
+Intel Core i5 12600HE
+Intel Core i5 12600HX
+Intel Core i5 12600T
+Intel Core i5 1334U
+Intel Core i5 1335U
+Intel Core i5 1335UE
+Intel Core i5 13400E
+Intel Core i5 13400T
+Intel Core i5 1340P
+Intel Core i5 13420H
+Intel Core i5 13450HX
+Intel Core i5 1345U
+Intel Core i5 1345UE
+Intel Core i5 13500E
+Intel Core i5 13500H
+Intel Core i5 13500HX
+Intel Core i5 13500T
+Intel Core i5 13500TE
+Intel Core i5 13505H
+Intel Core i5 1350P
+Intel Core i5 13600H
+Intel Core i5 13600HX
+Intel Core i5 13600T
+Intel Core i5 2390T
+Intel Core i5 2500T
+Intel Core i5 2510E
+Intel Core i5 2515E
+Intel Core i5 3335S
+Intel Core i5 3365M
+Intel Core i5 3439Y
+Intel Core i5 3550S
+Intel Core i5 3570S
+Intel Core i5 3570T
+Intel Core i5 3610ME
+Intel Core i5 4200Y
+Intel Core i5 4288U
+Intel Core i5 430M
+Intel Core i5 4330M
+Intel Core i5 4350U
+Intel Core i5 4430S
+Intel Core i5 4440S
+Intel Core i5 450M
+Intel Core i5 4570TE
+Intel Core i5 460M
+Intel Core i5 4670R
+Intel Core i5 4670T
+Intel Core i5 480M
+Intel Core i5 5350H
+Intel Core i5 5350U
+Intel Core i5 540M
+Intel Core i5 5575R
+Intel Core i5 560M
+Intel Core i5 5675R
+Intel Core i5 580M
+Intel Core i5 6350HQ
+Intel Core i5 650
+Intel Core i5 655K
+Intel Core i5 660
+Intel Core i5 661
+Intel Core i5 670
+Intel Core i5 680
+Intel Core i5 750s
+Intel Core i5 760
+Intel Core i5 8269U
+Intel Core i5 8420
+Intel Core i5 8420T
+Intel Core i5 8500B
+Intel Core i5 8550
+Intel Core i5 8650
+Intel Core i5 8650K
+Intel Core i5 9400T
+Intel Core i5 9500F
+Intel Core i7 1060G7
+Intel Core i7 10610U
+Intel Core i7 1068NG7
+Intel Core i7 10810U
+Intel Core i7 11390H
+Intel Core i7 11600H
+Intel Core i7 11700T
+Intel Core i7 1195G7
+Intel Core i7 1250U
+Intel Core i7 1255U
+Intel Core i7 1260U
+Intel Core i7 1265U
+Intel Core i7 12700E
+Intel Core i7 12700T
+Intel Core i7 12700TE
+Intel Core i7 1270P
+Intel Core i7 12800HE
+Intel Core i7 12800HX
+Intel Core i7 12850HX
+Intel Core i7 1355U
+Intel Core i7 1360P
+Intel Core i7 13620H
+Intel Core i7 13650HX
+Intel Core i7 1365U
+Intel Core i7 1365UE
+Intel Core i7 13700E
+Intel Core i7 13700HX
+Intel Core i7 13700T
+Intel Core i7 13700TE
+Intel Core i7 13705H
+Intel Core i7 1370P
+Intel Core i7 13790F
+Intel Core i7 13800H
+Intel Core i7 13850HX
+Intel Core i7 2710QE
+Intel Core i7 2715QE
+Intel Core i7 3517UE
+Intel Core i7 3525M
+Intel Core i7 3555LE
+Intel Core i7 3610QE
+Intel Core i7 3612QE
+Intel Core i7 3615QE
+Intel Core i7 3770T
+Intel Core i7 3910K
+Intel Core i7 4700EQ
+Intel Core i7 4712MQ
+Intel Core i7 4760HQ
+Intel Core i7 4765T
+Intel Core i7 4770R
+Intel Core i7 4770TE
+Intel Core i7 4785T
+Intel Core i7 4850EQ
+Intel Core i7 4860EQ
+Intel Core i7 4860HQ
+Intel Core i7 4870HQ
+Intel Core i7 4950HQ
+Intel Core i7 4980HQ
+Intel Core i7 5750HQ
+Intel Core i7 620M
+Intel Core i7 640M
+Intel Core i7 6700TE
+Intel Core i7 860
+Intel Core i7 860S
+Intel Core i7 8670
+Intel Core i7 8670T
+Intel Core i7 870
+Intel Core i7 8700B
+Intel Core i7 8700T
+Intel Core i7 8709G
+Intel Core i7 870S
+Intel Core i7 875K
+Intel Core i7 880
+Intel Core i7 930
+Intel Core i7 940
+Intel Core i7 960
+Intel Core i7 965
+Intel Core i7 970
+Intel Core i7 975
+Intel Core i7 9750HF
+Intel Core i7 980
+Intel Core i7 980X
+Intel Core i7 9850HE
+Intel Core i7 9850HL
+Intel Core i7 990X
+Intel Core i9 10800F
+Intel Core i9 10990XE
+Intel Core i9 11900KB
+Intel Core i9 11900T
+Intel Core i9 12900E
+Intel Core i9 12900TE
+Intel Core i9 13900E
+Intel Core i9 13900HK
+Intel Core i9 13900T
+Intel Core i9 13900TE
+Intel Core i9 13905H
+Intel Core i9 9990XE
+Intel Core m3 8114Y
+AMD E 240
+AMD E 300
+AMD E 450
+AMD E1 1200
+AMD E1 1500
+AMD E1 2100
+AMD E1 2150
+AMD E1 2500
+AMD E2 1800
+AMD E2 2000
+AMD E2 3000
+AMD E2 3000M
+AMD E2 3200
+AMD E2 3800
+AMD EPYC 7232P
+AMD EPYC 7251
+AMD EPYC 7252
+AMD EPYC 7261
+AMD EPYC 7262
+AMD EPYC 7272
+AMD EPYC 7281
+AMD EPYC 7282
+AMD EPYC 72F3
+AMD EPYC 7301
+AMD EPYC 7302
+AMD EPYC 7302P
+AMD EPYC 7313
+AMD EPYC 7313P
+AMD EPYC 7343
+AMD EPYC 7351P
+AMD EPYC 7352
+AMD EPYC 7371
+AMD EPYC 7373X
+AMD EPYC 73F3
+AMD EPYC 7401
+AMD EPYC 7401P
+AMD EPYC 7402
+AMD EPYC 7402P
+AMD EPYC 7413
+AMD EPYC 7443
+AMD EPYC 7443P
+AMD EPYC 7451
+AMD EPYC 7452
+AMD EPYC 7453
+AMD EPYC 7473X
+AMD EPYC 74F3
+AMD EPYC 7501
+AMD EPYC 7502
+AMD EPYC 7513
+AMD EPYC 7542
+AMD EPYC 7543
+AMD EPYC 7543P
+AMD EPYC 7551
+AMD EPYC 7551P
+AMD EPYC 7552
+AMD EPYC 7573X
+AMD EPYC 75F3
+AMD EPYC 7601
+AMD EPYC 7642
+AMD EPYC 7643
+AMD EPYC 7663
+AMD EPYC 7713
+AMD EPYC 7713P
+AMD EPYC 7742
+AMD EPYC 7773X
+AMD EPYC 7F32
+AMD EPYC 7F52
+AMD EPYC 7F72
+AMD EPYC 7H12
+AMD EPYC 9124
+AMD EPYC 9174F
+AMD EPYC 9224
+AMD EPYC 9254
+AMD EPYC 9274F
+AMD EPYC 9334
+AMD EPYC 9354
+AMD EPYC 9354P
+AMD EPYC 9374F
+AMD EPYC 9454
+AMD EPYC 9454P
+AMD EPYC 9474F
+AMD EPYC 9534
+AMD EPYC 9554
+AMD EPYC 9554P
+AMD EPYC 9634
+AMD EPYC 9654
+AMD EPYC 9654P
+AMD EPYC Embedded 3251
+AMD FX 4120
+AMD FX 4130
+AMD FX 4150
+AMD FX 4170
+AMD FX 4320
+AMD FX 6120
+AMD FX 6130
+AMD FX 6200
+AMD FX 6330
+AMD FX 6350
+AMD FX 770K
+AMD FX 8100
+AMD FX 8140
+AMD FX 8170
+AMD FirePro A300
+AMD FirePro A320
+AMD Mobile Athlon 64 2700+
+AMD Mobile Athlon 64 2800+
+AMD Mobile Athlon 64 3000+
+AMD Mobile Athlon 64 3200+
+AMD Mobile Athlon 64 3400+
+AMD Mobile Athlon 64 3700+
+Intel Mobile Pentium 4 2.40
+Intel Mobile Pentium 4 2.66
+Intel Mobile Pentium 4 2.80
+Intel Mobile Pentium 4 3.06
+Intel Mobile Pentium 4 HT 2.66
+Intel Mobile Pentium 4 HT 2.80
+Intel Mobile Pentium 4 HT 3.06
+Intel Mobile Pentium 4 HT 3.20
+Intel Mobile Pentium 4 HT 518
+Intel Mobile Pentium 4 HT 532
+Intel Mobile Pentium 4 HT 538
+Intel Mobile Pentium 4 HT 548
+Intel Mobile Pentium 4 HT 552
+AMD Opteron 140
+AMD Opteron 140 EE
+AMD Opteron 142
+AMD Opteron 144
+AMD Opteron 146
+AMD Opteron 146 HE
+AMD Opteron 148
+AMD Opteron 148 HE
+AMD Opteron 150
+AMD Opteron 152
+AMD Opteron 154
+AMD Opteron 156
+AMD Opteron 2350 HE
+AMD Opteron 240
+AMD Opteron 240 EE
+AMD Opteron 242
+AMD Opteron 244
+AMD Opteron 246
+AMD Opteron 246 HE
+AMD Opteron 248
+AMD Opteron 248 HE
+AMD Opteron 250
+AMD Opteron 250 HE
+AMD Opteron 252
+AMD Opteron 254
+AMD Opteron 3320 EE
+AMD Opteron 3350 HE
+AMD Opteron 3380
+AMD Opteron 4310 EE
+AMD Opteron 4332 HE
+AMD Opteron 4334
+AMD Opteron 4340
+AMD Opteron 4376 HE
+AMD Opteron 4386
+AMD Opteron 43CX EE
+AMD Opteron 43GK HE
+AMD Opteron 6168
+AMD Opteron 6180 SE
+AMD Opteron 6262 HE
+AMD Opteron 6272
+AMD Opteron 6274
+AMD Opteron 6276
+AMD Opteron 6278
+AMD Opteron 6282 SE
+AMD Opteron 6284 SE
+AMD Opteron 6348
+AMD Opteron 6366 HE
+AMD Opteron 6376
+AMD Opteron 6378
+AMD Opteron 6380
+AMD Opteron 6386 SE
+AMD Opteron 840
+AMD Opteron 840 EE
+AMD Opteron 842
+AMD Opteron 844
+AMD Opteron 846
+AMD Opteron 846 HE
+AMD Opteron 848
+AMD Opteron 848 HE
+AMD Opteron 850
+AMD Opteron 850 HE
+AMD Opteron 852
+AMD Opteron 854
+AMD Opteron 856
+AMD Opteron A1120
+AMD Opteron A1150
+AMD Opteron A1170
+AMD Opteron X1150
+AMD Opteron X2 165
+AMD Opteron X2 170
+AMD Opteron X2 175
+AMD Opteron X2 180
+AMD Opteron X2 185
+AMD Opteron X2 260 HE
+AMD Opteron X2 265
+AMD Opteron X2 265 HE
+AMD Opteron X2 270
+AMD Opteron X2 270 HE
+AMD Opteron X2 275
+AMD Opteron X2 275 HE
+AMD Opteron X2 280
+AMD Opteron X2 285
+AMD Opteron X2 290
+AMD Opteron X2 860 HE
+AMD Opteron X2 865
+AMD Opteron X2 865 HE
+AMD Opteron X2 870
+AMD Opteron X2 870 HE
+AMD Opteron X2 875
+AMD Opteron X2 875 HE
+AMD Opteron X2 880
+AMD Opteron X2 885
+AMD Opteron X2 890
+AMD Opteron X2150
+AMD Opteron X2170
+AMD PRO A10 8750B
+AMD PRO A10 8770
+AMD PRO A10 8770E
+AMD PRO A10 8850B
+AMD PRO A10 9700
+AMD PRO A10 9700E
+AMD PRO A12 8870
+AMD PRO A12 8870E
+AMD PRO A12 9800
+AMD PRO A12 9800E
+AMD PRO A4 8350B
+AMD PRO A6 8550B
+AMD PRO A6 8570
+AMD PRO A6 8570E
+AMD PRO A6 9500
+AMD PRO A6 9500E
+AMD PRO A8 8650B
+AMD PRO A8 9600
+Intel Pentium 2030M
+Intel Pentium 2129Y
+Intel Pentium 350
+Intel Pentium 3556U
+Intel Pentium 3560Y
+Intel Pentium 3825U
+Intel Pentium 4 1.3
+Intel Pentium 4 1.4
+Intel Pentium 4 1.5
+Intel Pentium 4 1.6
+Intel Pentium 4 1.7
+Intel Pentium 4 1.80
+Intel Pentium 4 1.8A
+Intel Pentium 4 1.9
+Intel Pentium 4 2.0
+Intel Pentium 4 2.2
+Intel Pentium 4 2.26
+Intel Pentium 4 2.4
+Intel Pentium 4 2.40
+Intel Pentium 4 2.53
+Intel Pentium 4 2.60
+Intel Pentium 4 2.66
+Intel Pentium 4 2.80
+Intel Pentium 4 505
+Intel Pentium 4 505J
+Intel Pentium 4 506
+Intel Pentium 4 511
+Intel Pentium 4 519
+Intel Pentium 4 519K
+Intel Pentium 4 HT 2.40
+Intel Pentium 4 HT 2.60
+Intel Pentium 4 HT 2.80
+Intel Pentium 4 HT 2.8E
+Intel Pentium 4 HT 3.00
+Intel Pentium 4 HT 3.06
+Intel Pentium 4 HT 3.0E
+Intel Pentium 4 HT 3.20
+Intel Pentium 4 HT 3.2E
+Intel Pentium 4 HT 3.40
+Intel Pentium 4 HT 3.4E
+Intel Pentium 4 HT 3.6E
+Intel Pentium 4 HT 515
+Intel Pentium 4 HT 516
+Intel Pentium 4 HT 517
+Intel Pentium 4 HT 520
+Intel Pentium 4 HT 521
+Intel Pentium 4 HT 524
+Intel Pentium 4 HT 530
+Intel Pentium 4 HT 531
+Intel Pentium 4 HT 540
+Intel Pentium 4 HT 541
+Intel Pentium 4 HT 550
+Intel Pentium 4 HT 551
+Intel Pentium 4 HT 560
+Intel Pentium 4 HT 561
+Intel Pentium 4 HT 570
+Intel Pentium 4 HT 571
+Intel Pentium 4 HT 620
+Intel Pentium 4 HT 630
+Intel Pentium 4 HT 631
+Intel Pentium 4 HT 640
+Intel Pentium 4 HT 641
+Intel Pentium 4 HT 650
+Intel Pentium 4 HT 651
+Intel Pentium 4 HT 660
+Intel Pentium 4 HT 661
+Intel Pentium 4 HT 662
+Intel Pentium 4 HT 670
+Intel Pentium 4 HT 672
+Intel Pentium 4 HT EE 3.20
+Intel Pentium 4 HT EE 3.40
+Intel Pentium 4 HT EE 3.46
+Intel Pentium 4 HT EE 3.73
+Intel Pentium 4 M 1.40
+Intel Pentium 4 M 1.50
+Intel Pentium 4 M 1.60
+Intel Pentium 4 M 1.70
+Intel Pentium 4 M 1.80
+Intel Pentium 4 M 1.90
+Intel Pentium 4 M 2.00
+Intel Pentium 4 M 2.20
+Intel Pentium 4 M 2.40
+Intel Pentium 4 M 2.50
+Intel Pentium 4 M 2.60
+Intel Pentium 8500
+Intel Pentium 8505
+Intel Pentium 8505 (IPU)
+Intel Pentium 957
+Intel Pentium 977
+Intel Pentium 997
+Intel Pentium B915C
+Intel Pentium D 820
+Intel Pentium D 830
+Intel Pentium D 840
+Intel Pentium D 840 EE
+Intel Pentium D 915
+Intel Pentium D 920
+Intel Pentium D 925
+Intel Pentium D 930
+Intel Pentium D 935
+Intel Pentium D 940
+Intel Pentium D 945
+Intel Pentium D 950
+Intel Pentium D 955 EE
+Intel Pentium D 960
+Intel Pentium D 965 EE
+Intel Pentium Dual Core E2140
+Intel Pentium Dual Core E2160
+Intel Pentium Dual Core E2180
+Intel Pentium Dual Core E2200
+Intel Pentium Dual Core E2210
+Intel Pentium Dual Core E2220
+Intel Pentium Dual Core T4200
+Intel Pentium Dual Core T4300
+Intel Pentium Dual Core T4400
+Intel Pentium Dual Core T4500
+Intel Pentium E6500K
+Intel Pentium G2020T
+Intel Pentium G2100T
+Intel Pentium G3220T
+Intel Pentium G3250T
+Intel Pentium G3420T
+Intel Pentium G3450T
+Intel Pentium G4600T
+Intel Pentium G620T
+Intel Pentium G622
+Intel Pentium G630T
+Intel Pentium G632
+Intel Pentium G640T
+Intel Pentium G645T
+Intel Pentium G6951
+Intel Pentium G6960
+Intel Pentium G860T
+Intel Pentium Gold G5620
+Intel Pentium Gold G6405
+Intel Pentium Gold G6405T
+Intel Pentium Gold G6505
+Intel Pentium Gold G6505T
+Intel Pentium Gold G6605
+Intel Pentium Gold G7400E
+Intel Pentium Gold G7400T
+Intel Pentium Gold G7400TE
+Intel Pentium III 1000
+Intel Pentium III 1000S
+Intel Pentium III 1133
+Intel Pentium III 1133S
+Intel Pentium III 1200
+Intel Pentium III 1266S
+Intel Pentium III 1333
+Intel Pentium III 1400
+Intel Pentium III 1400S
+Intel Pentium III 800
+Intel Pentium III 866
+Intel Pentium III 933
+Intel Pentium M 1.30
+Intel Pentium M 1.40
+Intel Pentium M 1.50
+Intel Pentium M 1.60
+Intel Pentium M 1.70
+Intel Pentium M 715
+Intel Pentium M 725
+Intel Pentium M 730
+Intel Pentium M 735
+Intel Pentium M 740
+Intel Pentium M 745
+Intel Pentium M 750
+Intel Pentium M 755
+Intel Pentium M 760
+Intel Pentium M 765
+Intel Pentium M 770
+Intel Pentium M 780
+Intel Pentium P6000
+Intel Pentium P6300
+Intel Pentium SU2700
+Intel Pentium SU4100
+Intel Pentium U5400
+Intel Pentium U5600
+AMD Phenom II 42 TWKR Black Edition
+AMD Phenom II X2 550 BE
+AMD Phenom II X2 555 BE
+AMD Phenom II X2 560 BE
+AMD Phenom II X2 565 BE
+AMD Phenom II X2 570 BE
+AMD Phenom II X2 B53
+AMD Phenom II X2 B55
+AMD Phenom II X2 B57
+AMD Phenom II X3 700e
+AMD Phenom II X3 705e
+AMD Phenom II X3 715 BE
+AMD Phenom II X3 720 BE
+AMD Phenom II X3 740 BE
+AMD Phenom II X3 B73
+AMD Phenom II X3 B75
+AMD Phenom II X3 B77
+AMD Phenom II X4 650T
+AMD Phenom II X4 805
+AMD Phenom II X4 820
+AMD Phenom II X4 900e
+AMD Phenom II X4 910
+AMD Phenom II X4 940 BE
+AMD Phenom II X4 945 (125W)
+AMD Phenom II X4 945 (95W)
+AMD Phenom II X4 955 (125W)
+AMD Phenom II X4 955 (95W)
+AMD Phenom II X4 955 BE
+AMD Phenom II X4 960T BE
+AMD Phenom II X4 965 BE (125W)
+AMD Phenom II X4 965 BE (140W)
+AMD Phenom II X4 970 BE
+AMD Phenom II X4 975 BE
+AMD Phenom II X4 980 BE
+AMD Phenom II X4 B93
+AMD Phenom II X4 B95
+AMD Phenom II X4 B97
+AMD Phenom II X6 1055T (125W)
+AMD Phenom II X6 1055T (95W)
+AMD Phenom II X6 1065T
+AMD Phenom II X6 1090T BE
+AMD Phenom II X6 1100T BE
+AMD Phenom X3 8250e
+AMD Phenom X3 8400
+AMD Phenom X3 8450e
+AMD Phenom X3 8550
+AMD Phenom X3 8600
+AMD Phenom X3 8750
+AMD Phenom X3 8750 BE
+AMD Phenom X3 8850
+AMD Phenom X4 9100e
+AMD Phenom X4 9150e
+AMD Phenom X4 9350e
+AMD Phenom X4 9450e
+AMD Phenom X4 9500
+AMD Phenom X4 9550
+AMD Phenom X4 9600
+AMD Phenom X4 9600 BE
+AMD Phenom X4 9600B
+AMD Phenom X4 9650
+AMD Phenom X4 9750 (125W)
+AMD Phenom X4 9750 (95W)
+AMD Phenom X4 9750B
+AMD Phenom X4 9850 (125W)
+AMD Phenom X4 9850 (95W)
+AMD Phenom X4 9850 BE
+AMD Phenom X4 9850B
+AMD Phenom X4 9950 BE (125W)
+AMD Phenom X4 9950 BE (140W)
+Intel Processor N100
+Intel Processor N200
+Intel Processor N50
+Intel Processor N97
+Intel Processor U300
+Intel Processor U300E
+AMD Ryzen 3 1300
+AMD Ryzen 3 2300X
+AMD Ryzen 3 3200GE
+AMD Ryzen 3 3250U
+AMD Ryzen 3 4100
+AMD Ryzen 3 4300G
+AMD Ryzen 3 4300GE
+AMD Ryzen 3 5125C
+AMD Ryzen 3 5300U
+AMD Ryzen 3 5425C
+AMD Ryzen 3 5425U
+AMD Ryzen 3 7330U
+AMD Ryzen 3 7335U
+AMD Ryzen 3 PRO 1200
+AMD Ryzen 3 PRO 1300
+AMD Ryzen 3 PRO 2300U
+AMD Ryzen 3 PRO 3300U
+AMD Ryzen 3 PRO 4350G
+AMD Ryzen 3 PRO 4350GE
+AMD Ryzen 3 PRO 4450U
+AMD Ryzen 3 PRO 5350G
+AMD Ryzen 3 PRO 5350GE
+AMD Ryzen 3 PRO 5450U
+AMD Ryzen 3 PRO 5475U
+AMD Ryzen 5 2600E
+AMD Ryzen 5 3580U
+AMD Ryzen 5 4500
+AMD Ryzen 5 4600G
+AMD Ryzen 5 4600GE
+AMD Ryzen 5 5625C
+AMD Ryzen 5 5625U
+AMD Ryzen 5 6600HS
+AMD Ryzen 5 6600U
+AMD Ryzen 5 7530U
+AMD Ryzen 5 7535HS
+AMD Ryzen 5 7535U
+AMD Ryzen 5 7640HS
+AMD Ryzen 5 7645HX
+AMD Ryzen 5 PRO 1500
+AMD Ryzen 5 PRO 1600
+AMD Ryzen 5 PRO 2400G
+AMD Ryzen 5 PRO 2500U
+AMD Ryzen 5 PRO 2600
+AMD Ryzen 5 PRO 3500U
+AMD Ryzen 5 PRO 4650G
+AMD Ryzen 5 PRO 4650GE
+AMD Ryzen 5 PRO 4650U
+AMD Ryzen 5 PRO 5650G
+AMD Ryzen 5 PRO 5650GE
+AMD Ryzen 5 PRO 5650U
+AMD Ryzen 5 PRO 5675U
+AMD Ryzen 5 PRO 6650H
+AMD Ryzen 5 PRO 6650HS
+AMD Ryzen 5 PRO 6650U
+AMD Ryzen 7 2700E
+AMD Ryzen 7 2700X 50th Anniversary
+AMD Ryzen 7 3780U
+AMD Ryzen 7 4700GE
+AMD Ryzen 7 4750U
+AMD Ryzen 7 5800G
+AMD Ryzen 7 5825C
+AMD Ryzen 7 5825U
+AMD Ryzen 7 6800HS
+AMD Ryzen 7 6800U
+AMD Ryzen 7 7730U
+AMD Ryzen 7 7735U
+AMD Ryzen 7 7745HX
+AMD Ryzen 7 7800X3D
+AMD Ryzen 7 PRO 1700
+AMD Ryzen 7 PRO 1700X
+AMD Ryzen 7 PRO 2700
+AMD Ryzen 7 PRO 2700U
+AMD Ryzen 7 PRO 2700X
+AMD Ryzen 7 PRO 3700U
+AMD Ryzen 7 PRO 4750GE
+AMD Ryzen 7 PRO 5750GE
+AMD Ryzen 7 PRO 5850U
+AMD Ryzen 7 PRO 5875U
+AMD Ryzen 7 PRO 6850HS
+AMD Ryzen 9 7845HX
+AMD Ryzen 9 7940HS
+AMD Ryzen Embedded R1102G
+AMD Ryzen Embedded R1305G
+AMD Ryzen Embedded R1505G
+AMD Ryzen Embedded R1600
+AMD Ryzen Embedded R1606G
+AMD Ryzen Embedded V1202B
+AMD Ryzen Embedded V1605B
+AMD Ryzen Embedded V1756B
+AMD Ryzen Embedded V1807B
+AMD Ryzen Embedded V2516
+AMD Ryzen Embedded V2546
+AMD Ryzen Embedded V2718
+AMD Ryzen Embedded V2748
+AMD Ryzen Threadripper 1900
+AMD Ryzen Threadripper 1900X
+AMD Ryzen Threadripper 1920
+AMD Ryzen Threadripper 1920X
+AMD Ryzen Threadripper 1940
+AMD Ryzen Threadripper 1940X
+AMD Ryzen Threadripper 1950
+AMD Ryzen Threadripper 1950X
+AMD Ryzen Threadripper 2920X
+AMD Ryzen Threadripper 2950X
+AMD Ryzen Threadripper 2970WX
+AMD Ryzen Threadripper 2990WX
+AMD Ryzen Threadripper 3960X
+AMD Ryzen Threadripper 3970X
+AMD Ryzen Threadripper 3980X
+AMD Ryzen Threadripper 3990X
+AMD Ryzen Threadripper 5990X
+AMD Ryzen Threadripper PRO 3945WX
+AMD Ryzen Threadripper PRO 3955WX
+AMD Ryzen Threadripper PRO 3975WX
+AMD Ryzen Threadripper PRO 3995WX
+AMD Ryzen Threadripper PRO 5945WX
+AMD Ryzen Threadripper PRO 5955WX
+AMD Ryzen Threadripper PRO 5965WX
+AMD Ryzen Threadripper PRO 5975WX
+AMD Ryzen Threadripper PRO 5995WX
+AMD Sempron 130
+AMD Sempron 150
+AMD Sempron 180
+AMD Sempron 2200+
+AMD Sempron 2300+
+AMD Sempron 2400+
+AMD Sempron 2500+
+AMD Sempron 2600+
+AMD Sempron 2650
+AMD Sempron 3000+ EE SFF
+AMD Sempron 3100+
+AMD Sempron 3200+
+AMD Sempron 3200+ EE SFF
+AMD Sempron 3300+
+AMD Sempron 3400+ EE SFF
+AMD Sempron 3500+
+AMD Sempron 3500+ EE SFF
+AMD Sempron 3800+
+AMD Sempron 3850
+AMD Sempron LE 1100
+AMD Sempron LE 1150
+AMD Sempron LE 1200
+AMD Sempron LE 1250
+AMD Sempron LE 1300
+AMD Sempron X2 2100
+AMD Sempron X2 2200
+AMD Sempron X2 2300
+AMD Sempron X2 240
+AMD Turion 64 ML 28
+AMD Turion 64 ML 30
+AMD Turion 64 ML 32
+AMD Turion 64 ML 34
+AMD Turion 64 ML 37
+AMD Turion 64 ML 40
+AMD Turion 64 ML 42
+AMD Turion 64 ML 44
+AMD Turion 64 MT 28
+AMD Turion 64 MT 30
+AMD Turion 64 MT 32
+AMD Turion 64 MT 34
+AMD Turion 64 MT 37
+AMD Turion 64 MT 40
+AMD Turion X2 RM 70
+AMD Turion X2 RM 72
+AMD Turion X2 RM 74
+AMD Turion X2 RM 75
+AMD Turion X2 RM 77
+AMD Turion X2 Ultra ZM 80
+AMD Turion X2 Ultra ZM 82
+AMD Turion X2 Ultra ZM 84
+AMD Turion X2 Ultra ZM 85
+AMD Turion X2 Ultra ZM 86
+AMD Turion X2 Ultra ZM 87
+AMD Turion X2 Ultra ZM 88
+Intel Xeon 2.0
+Intel Xeon 2.4
+Intel Xeon 2.66
+Intel Xeon 2.8
+Intel Xeon 3.0
+Intel Xeon 3.06
+Intel Xeon 3.2
+Intel Xeon 3.20
+Intel Xeon 3.4
+Intel Xeon 3.6
+Intel Xeon 5020
+Intel Xeon 5030
+Intel Xeon 5040
+Intel Xeon 5050
+Intel Xeon 5060
+Intel Xeon 5063
+Intel Xeon 5080
+Intel Xeon 5110
+Intel Xeon 5120
+Intel Xeon 5130
+Intel Xeon 5140
+Intel Xeon 5148
+Intel Xeon 5150
+Intel Xeon 5160
+Intel Xeon 7110M
+Intel Xeon 7110N
+Intel Xeon 7120M
+Intel Xeon 7120N
+Intel Xeon 7130M
+Intel Xeon 7130N
+Intel Xeon 7140M
+Intel Xeon 7140N
+Intel Xeon 7150N
+Intel Xeon Bronze 3106
+Intel Xeon Bronze 3408U
+Intel Xeon D 1518
+Intel Xeon D 1520
+Intel Xeon D 1521
+Intel Xeon D 1527
+Intel Xeon D 1528
+Intel Xeon D 1531
+Intel Xeon D 1537
+Intel Xeon D 1540
+Intel Xeon D 1541
+Intel Xeon D 1548
+Intel Xeon D 1557
+Intel Xeon D 1567
+Intel Xeon D 1571
+Intel Xeon D 1577
+Intel Xeon D 1581
+Intel Xeon D 1587
+Intel Xeon E 2124
+Intel Xeon E 2124G
+Intel Xeon E 2314
+Intel Xeon E 2324G
+Intel Xeon E 2334
+Intel Xeon E 2336
+Intel Xeon E 2356G
+Intel Xeon E 2374G
+Intel Xeon E 2378
+Intel Xeon E 2378G
+Intel Xeon E 2386G
+Intel Xeon E 2388G
+Intel Xeon E3 1105C
+Intel Xeon E3 1125C
+Intel Xeon E3 1220
+Intel Xeon E3 1220L
+Intel Xeon E3 1220L v2
+Intel Xeon E3 1220L v3
+Intel Xeon E3 1225
+Intel Xeon E3 1230
+Intel Xeon E3 1230L v3
+Intel Xeon E3 1235
+Intel Xeon E3 1245
+Intel Xeon E3 1258L v4
+Intel Xeon E3 1260L
+Intel Xeon E3 1265L v2
+Intel Xeon E3 1265L v4
+Intel Xeon E3 1270
+Intel Xeon E3 1270L v4
+Intel Xeon E3 1275
+Intel Xeon E3 1278L v4
+Intel Xeon E3 1280
+Intel Xeon E3 1280 v2
+Intel Xeon E3 1280 v3
+Intel Xeon E3 1280 v5
+Intel Xeon E3 1283L v4
+Intel Xeon E3 1284L v4
+Intel Xeon E3 1285 v3
+Intel Xeon E3 1285 v4
+Intel Xeon E3 1285 v6
+Intel Xeon E3 1285L v3
+Intel Xeon E3 1285L v4
+Intel Xeon E3 1290
+Intel Xeon E3 1290 v2
+Intel Xeon E5 1410
+Intel Xeon E5 1428L
+Intel Xeon E5 1603 V3
+Intel Xeon E5 1607 V3
+Intel Xeon E5 1607 v2
+Intel Xeon E5 1620 V3
+Intel Xeon E5 1630 V3
+Intel Xeon E5 1660 V3
+Intel Xeon E5 1660 v2
+Intel Xeon E5 1680 V3
+Intel Xeon E5 1680 v2
+Intel Xeon E5 1681 V3
+Intel Xeon E5 1686 V3
+Intel Xeon E5 1691 V3
+Intel Xeon E5 2403
+Intel Xeon E5 2403 v2
+Intel Xeon E5 2407
+Intel Xeon E5 2407 v2
+Intel Xeon E5 2418L
+Intel Xeon E5 2420
+Intel Xeon E5 2420 v2
+Intel Xeon E5 2428L
+Intel Xeon E5 2430
+Intel Xeon E5 2430 v2
+Intel Xeon E5 2430L
+Intel Xeon E5 2440
+Intel Xeon E5 2440 v2
+Intel Xeon E5 2448L
+Intel Xeon E5 2450
+Intel Xeon E5 2450 v2
+Intel Xeon E5 2450L
+Intel Xeon E5 2470
+Intel Xeon E5 2470 v2
+Intel Xeon E5 2603
+Intel Xeon E5 2603 V3
+Intel Xeon E5 2603 v2
+Intel Xeon E5 2608L V3
+Intel Xeon E5 2609
+Intel Xeon E5 2609 V3
+Intel Xeon E5 2609 v2
+Intel Xeon E5 2618L V3
+Intel Xeon E5 2620
+Intel Xeon E5 2620 V3
+Intel Xeon E5 2622 V3
+Intel Xeon E5 2623 V3
+Intel Xeon E5 2628 V3
+Intel Xeon E5 2628L V3
+Intel Xeon E5 2629 V3
+Intel Xeon E5 2630
+Intel Xeon E5 2630 v2
+Intel Xeon E5 2630L
+Intel Xeon E5 2630L V3
+Intel Xeon E5 2630L v2
+Intel Xeon E5 2637
+Intel Xeon E5 2637 V3
+Intel Xeon E5 2637 v2
+Intel Xeon E5 2640
+Intel Xeon E5 2640 V3
+Intel Xeon E5 2640 v2
+Intel Xeon E5 2643
+Intel Xeon E5 2643 V3
+Intel Xeon E5 2643 v2
+Intel Xeon E5 2648L
+Intel Xeon E5 2648L V3
+Intel Xeon E5 2649 V3
+Intel Xeon E5 2650
+Intel Xeon E5 2650 V3
+Intel Xeon E5 2650 v2
+Intel Xeon E5 2650L V3
+Intel Xeon E5 2650L v2
+Intel Xeon E5 2652 V3
+Intel Xeon E5 2658
+Intel Xeon E5 2658 V3
+Intel Xeon E5 2658A V3
+Intel Xeon E5 2660
+Intel Xeon E5 2660 V3
+Intel Xeon E5 2663 V3
+Intel Xeon E5 2665
+Intel Xeon E5 2666 V3
+Intel Xeon E5 2667
+Intel Xeon E5 2667 V3
+Intel Xeon E5 2667 v2
+Intel Xeon E5 2669 V3
+Intel Xeon E5 2670 V3
+Intel Xeon E5 2673 V3
+Intel Xeon E5 2675 V3
+Intel Xeon E5 2676 V3
+Intel Xeon E5 2678 V3
+Intel Xeon E5 2680
+Intel Xeon E5 2680 V3
+Intel Xeon E5 2685 V3
+Intel Xeon E5 2686 V3
+Intel Xeon E5 2687W V3
+Intel Xeon E5 2687W v2
+Intel Xeon E5 2690 V3
+Intel Xeon E5 2692 V3
+Intel Xeon E5 2692 v2
+Intel Xeon E5 2693 V3
+Intel Xeon E5 2695 V3
+Intel Xeon E5 2695 v2
+Intel Xeon E5 2696 V3
+Intel Xeon E5 2697 v2
+Intel Xeon E5 2698 V3
+Intel Xeon E5 2698A V3
+Intel Xeon E5 2698B V3
+Intel Xeon E5 2699 V3
+Intel Xeon E5 4603
+Intel Xeon E5 4607
+Intel Xeon E5 4610
+Intel Xeon E5 4610 V3
+Intel Xeon E5 4617
+Intel Xeon E5 4620
+Intel Xeon E5 4620 V3
+Intel Xeon E5 4627 V3
+Intel Xeon E5 4640
+Intel Xeon E5 4640 V3
+Intel Xeon E5 4648 V3
+Intel Xeon E5 4650
+Intel Xeon E5 4650 V3
+Intel Xeon E5 4650L
+Intel Xeon E5 4655 V3
+Intel Xeon E5 4660 V3
+Intel Xeon E5 4667 V3
+Intel Xeon E5 4669 V3
+Intel Xeon E5502
+Intel Xeon E5503
+Intel Xeon E5603
+Intel Xeon E5606
+Intel Xeon E5607
+Intel Xeon E5630
+Intel Xeon E5640
+Intel Xeon E5645
+Intel Xeon E5649
+Intel Xeon E7 4809 v3
+Intel Xeon E7 4820 v3
+Intel Xeon E7 4830 v3
+Intel Xeon E7 4850 v3
+Intel Xeon E7 8850
+Intel Xeon E7 8860
+Intel Xeon E7 8860 v3
+Intel Xeon E7 8867 v3
+Intel Xeon E7 8870
+Intel Xeon E7 8870 v3
+Intel Xeon E7 8880 v3
+Intel Xeon E7 8880L v3
+Intel Xeon E7 8890 v3
+Intel Xeon E7 8891 v3
+Intel Xeon E7 8893 v3
+Intel Xeon Gold 5315Y
+Intel Xeon Gold 5317
+Intel Xeon Gold 5318H
+Intel Xeon Gold 5318N
+Intel Xeon Gold 5318S
+Intel Xeon Gold 5318Y
+Intel Xeon Gold 5320
+Intel Xeon Gold 5320H
+Intel Xeon Gold 5320T
+Intel Xeon Gold 5411N
+Intel Xeon Gold 5412U
+Intel Xeon Gold 5415+
+Intel Xeon Gold 5416S
+Intel Xeon Gold 5418N
+Intel Xeon Gold 5418Y
+Intel Xeon Gold 5420+
+Intel Xeon Gold 5423N
+Intel Xeon Gold 5433N
+Intel Xeon Gold 6154
+Intel Xeon Gold 6312U
+Intel Xeon Gold 6314U
+Intel Xeon Gold 6326
+Intel Xeon Gold 6328H
+Intel Xeon Gold 6328HL
+Intel Xeon Gold 6330
+Intel Xeon Gold 6330H
+Intel Xeon Gold 6334
+Intel Xeon Gold 6336Y
+Intel Xeon Gold 6338N
+Intel Xeon Gold 6338T
+Intel Xeon Gold 6342
+Intel Xeon Gold 6346
+Intel Xeon Gold 6348
+Intel Xeon Gold 6348H
+Intel Xeon Gold 6354
+Intel Xeon Gold 6414U
+Intel Xeon Gold 6416H
+Intel Xeon Gold 6418H
+Intel Xeon Gold 6421N
+Intel Xeon Gold 6426Y
+Intel Xeon Gold 6428N
+Intel Xeon Gold 6430
+Intel Xeon Gold 6434
+Intel Xeon Gold 6434H
+Intel Xeon Gold 6438M
+Intel Xeon Gold 6438N
+Intel Xeon Gold 6438Y+
+Intel Xeon Gold 6442Y
+Intel Xeon Gold 6444Y
+Intel Xeon Gold 6448H
+Intel Xeon Gold 6448Y
+Intel Xeon Gold 6454S
+Intel Xeon Gold 6458Q
+Intel Xeon L5506
+Intel Xeon L5508
+Intel Xeon L5518
+Intel Xeon L5530
+Intel Xeon L5609
+Intel Xeon L5618
+Intel Xeon L5630
+Intel Xeon L5638
+Intel Xeon L5640
+Intel Xeon MP 2.83
+Intel Xeon MP 3.0
+Intel Xeon MP 3.00
+Intel Xeon MP 3.16
+Intel Xeon MP 3.33
+Intel Xeon MP 3.50
+Intel Xeon MP 3.66
+Intel Xeon MP 7020 Dual Core
+Intel Xeon MP 7030 Dual Core
+Intel Xeon MP 7040 Dual Core
+Intel Xeon MP 7041 Dual Core
+Intel Xeon Max 9460
+Intel Xeon Max 9462
+Intel Xeon Max 9468
+Intel Xeon Max 9470
+Intel Xeon Max 9480
+Intel Xeon Phi 3110X
+Intel Xeon Phi 3120A
+Intel Xeon Phi 3120P
+Intel Xeon Phi 31S1P
+Intel Xeon Phi 5110P
+Intel Xeon Phi 5120D
+Intel Xeon Phi 7110P
+Intel Xeon Phi 7110X
+Intel Xeon Phi 7120A
+Intel Xeon Phi 7120D
+Intel Xeon Phi 7120P
+Intel Xeon Phi 7120X
+Intel Xeon Phi 7210
+Intel Xeon Phi 7210F
+Intel Xeon Phi 7230
+Intel Xeon Phi 7230F
+Intel Xeon Phi 7235
+Intel Xeon Phi 7250
+Intel Xeon Phi 7250F
+Intel Xeon Phi 7285
+Intel Xeon Phi 7290
+Intel Xeon Phi 7290F
+Intel Xeon Phi 7295
+Intel Xeon Phi SE10P
+Intel Xeon Phi SE10X
+Intel Xeon Platinum 8180
+Intel Xeon Platinum 8180M
+Intel Xeon Platinum 8253
+Intel Xeon Platinum 8256
+Intel Xeon Platinum 8260
+Intel Xeon Platinum 8260M
+Intel Xeon Platinum 8268
+Intel Xeon Platinum 8270
+Intel Xeon Platinum 8276
+Intel Xeon Platinum 8280
+Intel Xeon Platinum 8280M
+Intel Xeon Platinum 8351N
+Intel Xeon Platinum 8352M
+Intel Xeon Platinum 8352S
+Intel Xeon Platinum 8352V
+Intel Xeon Platinum 8353H
+Intel Xeon Platinum 8354H
+Intel Xeon Platinum 8356H
+Intel Xeon Platinum 8358
+Intel Xeon Platinum 8358P
+Intel Xeon Platinum 8360H
+Intel Xeon Platinum 8360HL
+Intel Xeon Platinum 8360Y
+Intel Xeon Platinum 8362
+Intel Xeon Platinum 8368
+Intel Xeon Platinum 8368Q
+Intel Xeon Platinum 8376H
+Intel Xeon Platinum 8376HL
+Intel Xeon Platinum 8380
+Intel Xeon Platinum 8380H
+Intel Xeon Platinum 8380HL
+Intel Xeon Platinum 8444H
+Intel Xeon Platinum 8450H
+Intel Xeon Platinum 8452Y
+Intel Xeon Platinum 8454H
+Intel Xeon Platinum 8458P
+Intel Xeon Platinum 8460H
+Intel Xeon Platinum 8460Y+
+Intel Xeon Platinum 8461V
+Intel Xeon Platinum 8462Y+
+Intel Xeon Platinum 8468
+Intel Xeon Platinum 8468H
+Intel Xeon Platinum 8468V
+Intel Xeon Platinum 8470
+Intel Xeon Platinum 8470N
+Intel Xeon Platinum 8470Q
+Intel Xeon Platinum 8471N
+Intel Xeon Platinum 8480+
+Intel Xeon Platinum 8490H
+Intel Xeon Platinum 9221
+Intel Xeon Platinum 9222
+Intel Xeon Platinum 9242
+Intel Xeon Platinum 9282
+Intel Xeon Silver 4116
+Intel Xeon Silver 4309Y
+Intel Xeon Silver 4310
+Intel Xeon Silver 4310T
+Intel Xeon Silver 4314
+Intel Xeon Silver 4316
+Intel Xeon Silver 4410T
+Intel Xeon Silver 4410Y
+Intel Xeon Silver 4416+
+Intel Xeon W 11855M
+Intel Xeon W 1290
+Intel Xeon W 1290P
+Intel Xeon W 2195
+Intel Xeon W 3323
+Intel Xeon W 3335
+Intel Xeon W 3345
+Intel Xeon W 3365
+Intel Xeon W 3375
+Intel Xeon W3540
+Intel Xeon W3580
+Intel Xeon W3670
+Intel Xeon W5580
+Intel Xeon W5590
+Intel Xeon X5550
+Intel Xeon X5647
+Intel Xeon X5670
+Intel Xeon X5672
+Intel Xeon X5675
+Intel Xeon X5677
+Intel Xeon X5680
+Intel Xeon X5687
+Intel Xeon X5698
+Intel Xeon w3 2423
+Intel Xeon w3 2425
+Intel Xeon w3 2435
+Intel Xeon w5 2445
+Intel Xeon w5 2455X
+Intel Xeon w5 2465X
+Intel Xeon w5 3425
+Intel Xeon w5 3435X
+Intel Xeon w7 2475X
+Intel Xeon w7 2495X
+Intel Xeon w7 3445
+Intel Xeon w7 3455
+Intel Xeon w7 3465X
+Intel Xeon w9 3475X
+Intel Xeon w9 3495X
+AMD Z 01
+AMD Z 60

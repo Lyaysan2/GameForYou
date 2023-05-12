@@ -3,22 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <title>Game for you</title>
+    {{ form.media.css }}
+    <style>
+        input, select {
+            width: 50%
+        }
+    </style>
 </head>
 <body>
 <nav>
     <a href="{% url 'main' %}">Главная</a>
     {% if user.is_anonymous %}
-        <div style="text-align: right">
-            <a href="{% url 'registration' %}">Регистрация</a>
-            <a href="{% url 'auth' %}">Авторизация</a>
-        </div>
+    <div style="text-align: right">
+        <a href="{% url 'registration' %}">Регистрация</a>
+        <a href="{% url 'auth' %}">Авторизация</a>
+    </div>
     {% else %}
-        <div style="text-align: right">
-            {% if not user.is_anonymous %}
-                Вы авторизованы как <b>{{ user.username }}</b>
-                <a href="{% url 'logout' %}">Выход</a>
-            {% endif %}
-        </div>
+    <div style="text-align: right">
+        {% if not user.is_anonymous %}
+        Вы авторизованы как <b>{{ user.username }}</b>
+        <a href="{% url 'logout' %}">Выход</a>
+        {% endif %}
+    </div>
     {% endif %}
 </nav>
 <hr>
