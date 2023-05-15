@@ -1,7 +1,7 @@
-from django.shortcuts import render, redirect
 from django.contrib.auth import get_user_model, authenticate, login, logout
+from django.shortcuts import render, redirect
 
-from web.forms import RegistrationForm, AuthForm
+from web.forms import RegistrationForm, AuthForm, SystemCharForm
 
 User = get_user_model()
 
@@ -25,7 +25,6 @@ def registration_view(request):
             is_success = True
             print(form)
             print(form.cleaned_data)
-
     return render(request, 'web/registration.html', {'form': form, 'is_success': is_success})
 
 
@@ -47,3 +46,13 @@ def logout_view(request):
     logout(request)
     return redirect('main')
 
+
+# @login_required
+def syst_char_add_view(request):
+    form = SystemCharForm()
+    if request.method == 'POST':
+        form = SystemCharForm(data=request.POST, initial={'user': request.user})
+        if form.is_valid():
+            form.save()
+            return redirect('main')
+    return render(request, 'web/syst_char_form.html', {'form': form})
