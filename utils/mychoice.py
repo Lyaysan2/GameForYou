@@ -1,28 +1,16 @@
-with open('txt_static_list/os.txt') as f:
-    os_lines = [l.strip() for l in f.readlines()]
+def create_choice_list(file_name, ):
+    choice_list = []
+    with open(f'txt_static_list/{file_name}') as f:
+        file_lines = [l.strip() for l in f.readlines()]
+    for i in file_lines:
+        choice_list.append((i, i))
+    return choice_list
 
-with open('txt_static_list/processor.txt') as f:
-    processor_lines = [l.strip() for l in f.readlines()]
 
-with open('txt_static_list/graphics.txt') as f:
-    graphics_lines = [l.strip() for l in f.readlines()]
+OS_CHOICES = create_choice_list('os.txt')
 
-with open('txt_static_list/directx.txt') as f:
-    directx_lines = [l.strip() for l in f.readlines()]
+PROCESSOR_CHOICES = create_choice_list('processor.txt')
 
-OS_CHOICES = []
-for i in os_lines:
-    OS_CHOICES.append((i, i))
+GRAPHICS_CHOICES = create_choice_list('graphics.txt')
 
-PROCESSOR_CHOICES = []
-for i in processor_lines:
-    PROCESSOR_CHOICES.append((i, i))
-
-GRAPHICS_CHOICES = []
-for i in graphics_lines:
-    GRAPHICS_CHOICES.append((i, i))
-
-DIRECTX_CHOICES = []
-for i in directx_lines:
-    DIRECTX_CHOICES.append((i, i))
-
+DIRECTX_CHOICES = create_choice_list('directx.txt')
