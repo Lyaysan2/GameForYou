@@ -1,7 +1,9 @@
 from django.contrib.auth import get_user_model, authenticate, login, logout
-from django.shortcuts import render, redirect
+from django.contrib.auth.decorators import login_required
+from django.shortcuts import render, redirect, get_object_or_404
 
 from web.forms import RegistrationForm, AuthForm, SystemCharForm
+from web.models import SystemCharacteristics, Game
 
 User = get_user_model()
 
@@ -47,7 +49,7 @@ def logout_view(request):
     return redirect('main')
 
 
-# @login_required
+@login_required
 def syst_char_add_view(request):
     form = SystemCharForm()
     if request.method == 'POST':
@@ -56,3 +58,26 @@ def syst_char_add_view(request):
             form.save()
             return redirect('main')
     return render(request, 'web/syst_char_form.html', {'form': form})
+
+
+@login_required
+def profile_view(request):
+    user = request.user
+    syst_char_list = SystemCharacteristics.objects.all().filter(user=user)
+    favourite_games = Game.objects.all().filter(users=user)
+    return render(request, 'web/profile.html', {'user': user,
+                                                'syst_char_list': syst_char_list,
+                                                'favourite_games': favourite_games})
+
+
+@login_required
+def syst_char_delete_view(request, id):
+    syst_char = get_object_or_404(SystemCharacteristics, user=request.user, id=id)
+    syst_char.delete()
+    return redirect('profile')
+
+@login_required
+def favourite_game_delete_view(request, id):
+    favourite_game = get_object_or_404(Game, users=request.user, id=id)
+    favourite_game.users.clear()
+    return redirect('profile')

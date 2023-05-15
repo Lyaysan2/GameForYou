@@ -1,0 +1,29 @@
+{% extends 'web/base.html' %}
+{% block content %}
+{{ user.username }}
+{{ user.email }}
+<p>Сохраненные системные характеристики</p>
+<ul>
+    {% for syst_char in syst_char_list %}
+    <li>
+        <br>
+        {{ syst_char.id }}: {{ syst_char.os }} - {{ syst_char.processor }} - {{ syst_char.memory }} -
+        {{ syst_char.graphics }} - {{ syst_char.directx }} - {{ syst_char.storage }}
+        <br>
+        <small><a href="{% url 'syst_char_delete' syst_char.id %}">удалить</a></small>
+    </li>
+    {% endfor %}
+</ul>
+<a href="{% url 'syst_char_add' %}">Добавить системные характеристики</a>
+<p>Сохраненные игры</p>
+<ul>
+    {% for favourite_game in favourite_games %}
+    <li>
+        <br>
+        {{ favourite_game.id }}: {{ favourite_game.name }} - {{ favourite_game.link }}
+        <br>
+        <small><a href="{% url 'favourite_game_delete' favourite_game.id %}">удалить</a></small>
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}
