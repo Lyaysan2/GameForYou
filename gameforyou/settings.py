@@ -38,10 +38,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'web',
     'django_select2',
-    'dal',
-    'dal_select2',
-    'crispy_forms',
-    'crispy_bootstrap4'
 ]
 
 MIDDLEWARE = [
@@ -153,5 +149,3 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 LOGIN_URL = 'auth'
 LOGIN_REDIRECT_URL = 'main'
-
-CRISPY_TEMPLATE_PACK = 'bootstrap4'
