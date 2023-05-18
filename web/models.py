@@ -19,3 +19,6 @@ class Game(models.Model):
     name = models.CharField(max_length=256, blank=True, verbose_name='Название игры')
     link = models.CharField(max_length=256, blank=True, verbose_name='Ссылка на игру')
     users = models.ManyToManyField(User, verbose_name='Пользователь')
+
+    def __str__(self):
+        return self.name

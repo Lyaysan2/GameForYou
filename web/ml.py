@@ -191,7 +191,8 @@ def recommend_game(video_game_name):
         recommended_video_game_list = pd.concat([video_game_list,
                                                  pd.DataFrame(recommended_distances, columns=['Similarity_Distance'])],
                                                 axis=1)
-        print(recommended_video_game_list)
+        return recommended_video_game_list
+        # print(recommended_video_game_list)
 
 
 def prepare_static_txt_files():

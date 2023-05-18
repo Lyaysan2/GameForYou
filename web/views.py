@@ -2,7 +2,7 @@ from django.contrib.auth import get_user_model, authenticate, login, logout
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect, get_object_or_404
 
-from web.forms import RegistrationForm, AuthForm, SystemCharForm
+from web.forms import RegistrationForm, AuthForm, SystemCharForm, SimilarGameForm
 from web.ml import recommend_game
 from web.models import SystemCharacteristics, Game
 
@@ -26,8 +26,6 @@ def registration_view(request):
             user.set_password(form.cleaned_data['password'])
             user.save()
             is_success = True
-            print(form)
-            print(form.cleaned_data)
     return render(request, 'web/registration.html', {'form': form, 'is_success': is_success})
 
 
@@ -77,8 +75,20 @@ def syst_char_delete_view(request, id):
     syst_char.delete()
     return redirect('profile')
 
+
 @login_required
 def favourite_game_delete_view(request, id):
     favourite_game = get_object_or_404(Game, users=request.user, id=id)
     favourite_game.users.clear()
     return redirect('profile')
+
+
+def similar_games_view(request):
+    form = SimilarGameForm(request.GET or None)
+    similar_games = []
+    if form.is_valid():
+        game = get_object_or_404(Game, id=form.cleaned_data['name'])
+        similar_games = recommend_game(game.name)[['name', 'reviews']].values.tolist()
+        for game in similar_games:
+            print(game[0])
+    return render(request, 'web/similar_games.html', {'form': form, 'similar_games': similar_games})
