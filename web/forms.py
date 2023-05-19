@@ -2,8 +2,9 @@ from django import forms
 from django.contrib.auth import get_user_model
 from django.forms import ModelForm, Form
 from django_select2 import forms as s2forms
+from django_select2.forms import ModelSelect2Widget, ModelSelect2Mixin
 
-from web.models import SystemCharacteristics
+from web.models import SystemCharacteristics, Game
 
 User = get_user_model()
 
@@ -52,6 +53,13 @@ class DirectxWidget(s2forms.Select2Widget):
     ]
 
 
+class GameNameWidget(ModelSelect2Widget):
+    queryset = Game.objects.all()
+    search_fields = [
+        'name__icontains',
+    ]
+
+
 class SystemCharForm(ModelForm):
     def save(self, commit=True):
         self.instance.user = self.initial['user']
@@ -65,4 +73,13 @@ class SystemCharForm(ModelForm):
             'processor': ProcessorWidget,
             'graphics': GraphicsWidget,
             'directx': DirectxWidget,
+        }
+
+
+class SimilarGameForm(ModelForm):
+    class Meta:
+        model = Game
+        fields = ('name',)
+        widgets = {
+            'name': GameNameWidget,
         }

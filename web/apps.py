@@ -1,6 +1,8 @@
 import os
-from .ml import init_video_game_model
+
 from django.apps import AppConfig
+
+from .ml import init_video_game_model
 
 
 class WebConfig(AppConfig):

@@ -8,6 +8,7 @@ from sklearn.neighbors import NearestNeighbors
 from sklearn.feature_extraction.text import TfidfVectorizer, CountVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
+
 warnings.filterwarnings("ignore")
 
 os_df = None
@@ -31,10 +32,9 @@ def init_video_game_model():
     print('prepare_static_txt_files')
 
     global video_games_df
-    video_games_df = pd.read_csv("ready_data.csv")
+    video_games_df = pd.read_csv("export_data.csv")
 
     video_games_df.columns = video_games_df.columns.str.lower()
-    video_games_df['release date'] = video_games_df['release date'].replace('00:00:00', '')
     video_games_df['release date month'] = video_games_df['release date'].str[5:7]
     video_games_df['release date day'] = video_games_df['release date'].str[8:10]
     video_games_df['release date'] = video_games_df['release date'].str[0:4]
@@ -56,6 +56,7 @@ def init_video_game_model():
     steps = [8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384]
     steps = np.array(steps)
     video_games_df["memory"] = video_games_df["memory"].apply(lambda x: steps[np.argmin(np.abs(x - steps))])
+
     video_games_df = video_games_df.dropna(subset=['popularity'])
     video_games_df['popularity'] = video_games_df['popularity'].div(100)
     video_games_df['critics score'] = video_games_df['critics score'].fillna(video_games_df['critics score'].mean() - 10)
@@ -76,7 +77,6 @@ def init_video_game_model():
     video_games_df['os_min'] = video_games_df.os.apply(lambda x: min(x))
     video_games_df['os_max'] = video_games_df.os.apply(lambda x: max(x))
 
-    video_games_df["directx"] = video_games_df["directx"].replace('16 bit directx compatible sound card', '')
     video_games_df["directx"] = video_games_df["directx"].replace('90c', '9.0c')
     video_games_df["directx"] = video_games_df["directx"].replace('7', '7.0')
     video_games_df["directx"] = video_games_df["directx"].replace('8', '8.0')
@@ -114,7 +114,7 @@ def init_video_game_model():
                  'os_max', 'developer', 'directx', 'release date month', 'release date day'], axis=1)
     video_games_df_dummy = pd.get_dummies(data=video_games_df_recommend, columns=['reviews'])
 
-    features = video_games_df_dummy.drop(columns=['name'], axis=1)
+    features = video_games_df_dummy.drop(columns=['name', 'link'], axis=1)
 
     scale = StandardScaler()
     scaled_features = scale.fit_transform(features)
@@ -191,7 +191,7 @@ def recommend_game(video_game_name):
         recommended_video_game_list = pd.concat([video_game_list,
                                                  pd.DataFrame(recommended_distances, columns=['Similarity_Distance'])],
                                                 axis=1)
-        print(recommended_video_game_list)
+        return recommended_video_game_list
 
 
 def prepare_static_txt_files():
