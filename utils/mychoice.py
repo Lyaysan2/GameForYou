@@ -1,4 +1,4 @@
-def create_choice_list(file_name, ):
+def create_choice_list(file_name):
     choice_list = []
     with open(f'txt_static_list/{file_name}') as f:
         file_lines = [l.strip() for l in f.readlines()]

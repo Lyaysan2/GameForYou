@@ -1,3 +1,4 @@
+import pandas as pd
 from django.contrib.auth import get_user_model, authenticate, login, logout
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect, get_object_or_404
@@ -83,12 +84,27 @@ def favourite_game_delete_view(request, id):
     return redirect('profile')
 
 
+@login_required
+def favourite_game_add_view(request, id):
+    game = get_object_or_404(Game, id=id)
+    user = request.user
+    game.users.add(user)
+    return redirect('similar_games')
+
+
+@login_required
 def similar_games_view(request):
     form = SimilarGameForm(request.GET or None)
-    similar_games = []
+    user = request.user
+    games = []
     if form.is_valid():
-        game = get_object_or_404(Game, id=form.cleaned_data['name'])
-        similar_games = recommend_game(game.name)[['name', 'reviews']].values.tolist()
+        selected_game = get_object_or_404(Game, id=form.cleaned_data['name'])
+        similar_games = recommend_game(selected_game.name)[['name', 'link']].values.tolist()
+        similar_games = similar_games
         for game in similar_games:
-            print(game[0])
-    return render(request, 'web/similar_games.html', {'form': form, 'similar_games': similar_games})
+            found_game = Game.objects.filter(name=game[0]).first()
+            if found_game is not None:
+                games.append(found_game)
+
+    return render(request, 'web/similar_games.html', {'form': form, 'similar_games': games, 'user': user})
+

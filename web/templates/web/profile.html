@@ -7,7 +7,7 @@
     {% for syst_char in syst_char_list %}
     <li>
         <br>
-        {{ syst_char.id }}: {{ syst_char.os }} - {{ syst_char.processor }} - {{ syst_char.memory }} -
+        {{ syst_char.os }} - {{ syst_char.processor }} - {{ syst_char.memory }} -
         {{ syst_char.graphics }} - {{ syst_char.directx }} - {{ syst_char.storage }}
         <br>
         <small><a href="{% url 'syst_char_delete' syst_char.id %}">удалить</a></small>
@@ -20,7 +20,7 @@
     {% for favourite_game in favourite_games %}
     <li>
         <br>
-        {{ favourite_game.id }}: {{ favourite_game.name }} - {{ favourite_game.link }}
+        {{ favourite_game.name }} - <a href="{{favourite_game.link}}">{{ favourite_game.link }}</a>
         <br>
         <small><a href="{% url 'favourite_game_delete' favourite_game.id %}">удалить</a></small>
     </li>

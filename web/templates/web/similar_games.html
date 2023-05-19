@@ -9,10 +9,32 @@
 <ul>
     {% for game in similar_games %}
     <li>
-        {{ game.0 }}: {{ game.1 }}
+        <br>
+        {{ game.name }}: <a href="{{game.link}}">{{ game.link }}</a>
+        <br>
+        {% if user not in game.users.all %}
+        <small><a href="#" class="favourite_game_add_js" data-game-id="{{ game.id }}">в избранное</a></small>
+        {% endif %}
     </li>
     {% endfor %}
 </ul>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 {{ form.media.js }}
+
+<script>
+    $(document).ready(function () {
+        console.log('tuuuuut')
+        $('.favourite_game_add_js').click(function (event) {
+            event.preventDefault();
+            var game_id = $(this).data('game-id');
+            $.ajax({
+                url: "/favourite_game/" + game_id + "/add",
+                type: "POST",
+                data: {'id': game_id, 'csrfmiddlewaretoken': '{{ csrf_token }}'},
+                dataType: "json",
+            });
+            window.location.reload();
+        });
+    });
+</script>
 {% endblock %}
