@@ -1,13 +1,21 @@
+import matplotlib
+import matplotlib.pyplot as plt
+import seaborn as sns
+from pandas import DataFrame
+
+from web.models import Game
+
+matplotlib.use('agg')
 import warnings
+
 import numpy as np
 import pandas as pd
-from sklearn.preprocessing import MultiLabelBinarizer
-from sklearn.preprocessing import LabelEncoder
-from sklearn.preprocessing import StandardScaler
-from sklearn.neighbors import NearestNeighbors
-from sklearn.feature_extraction.text import TfidfVectorizer, CountVectorizer
+from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
-
+from sklearn.neighbors import NearestNeighbors
+from sklearn.preprocessing import LabelEncoder
+from sklearn.preprocessing import MultiLabelBinarizer
+from sklearn.preprocessing import StandardScaler
 
 warnings.filterwarnings("ignore")
 
@@ -32,16 +40,18 @@ def init_video_game_model():
     print('prepare_static_txt_files')
 
     global video_games_df
-    video_games_df = pd.read_csv("export_data.csv")
+
+    video_games_df = DataFrame([o.__dict__ for o in Game.objects.all()]).drop(columns=['_state'], axis=1)
 
     video_games_df.columns = video_games_df.columns.str.lower()
-    video_games_df['release date month'] = video_games_df['release date'].str[5:7]
-    video_games_df['release date day'] = video_games_df['release date'].str[8:10]
-    video_games_df['release date'] = video_games_df['release date'].str[0:4]
-    video_games_df['release date'] = pd.to_numeric(video_games_df['release date'], errors='coerce')
-    video_games_df['release date'].fillna('2022', inplace=True)
-    video_games_df['release date'].unique()
-    video_games_df["release date"] = pd.to_numeric(video_games_df["release date"], errors='coerce')
+    video_games_df['release_date'] = video_games_df['release_date'].astype(str)
+    video_games_df['release_date_month'] = video_games_df['release_date'].str[5:7]
+    video_games_df['release_date_day'] = video_games_df['release_date'].str[8:10]
+    video_games_df['release_date'] = video_games_df['release_date'].str[0:4]
+    video_games_df['release_date'] = pd.to_numeric(video_games_df['release_date'], errors='coerce')
+    video_games_df['release_date'].fillna('2022', inplace=True)
+    video_games_df['release_date'].unique()
+    video_games_df["release_date"] = pd.to_numeric(video_games_df["release_date"], errors='coerce')
     video_games_df["reviews"] = video_games_df["reviews"].replace(['1 user reviews',
                                                                    '2 user reviews',
                                                                    '3 user reviews',
@@ -51,27 +61,25 @@ def init_video_game_model():
                                                                    '7 user reviews',
                                                                    '8 user reviews',
                                                                    '9 user reviews', ], 'No user reviews')
-    video_games_df["memory"] = pd.to_numeric(video_games_df["memory"], errors='coerce')
-    video_games_df = video_games_df.dropna(subset=['memory'])
+    video_games_df["ram"] = pd.to_numeric(video_games_df["ram"], errors='coerce')
+    video_games_df = video_games_df.dropna(subset=['ram'])
     steps = [8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384]
     steps = np.array(steps)
-    video_games_df["memory"] = video_games_df["memory"].apply(lambda x: steps[np.argmin(np.abs(x - steps))])
+    video_games_df["ram"] = video_games_df["ram"].apply(lambda x: steps[np.argmin(np.abs(x - steps))])
 
     video_games_df = video_games_df.dropna(subset=['popularity'])
     video_games_df['popularity'] = video_games_df['popularity'].div(100)
-    video_games_df['critics score'] = video_games_df['critics score'].fillna(video_games_df['critics score'].mean() - 10)
-    video_games_df['processor'] = video_games_df['processor'].fillna('AMD Ryzen 9 7950X3D')
-    video_games_df["processor"] = video_games_df["processor"].astype(str).str.replace(" ", "")
+    video_games_df['critics_score'] = video_games_df['critics_score'].fillna(
+        video_games_df['critics_score'].mean() - 10)
+    video_games_df['processor'] = video_games_df['processor'].fillna('AMDRyzen97950X3D')
     video_games_df['processor'] = video_games_df['processor'].apply(lambda x: x.split(','))
-    video_games_df["developer"] = video_games_df["developer"].astype(str).str.replace(" ", "")
     video_games_df['developer'] = video_games_df['developer'].apply(lambda x: x.split(','))
 
     mlb = MultiLabelBinarizer()
     video_games_df["os"] = video_games_df["os"].fillna('7')
-    video_games_df["os"] = video_games_df["os"].astype(str).str.replace("Windows", "")
+    video_games_df["os"] = video_games_df["os"].astype(str).str.replace("Windows ", "")
     video_games_df["os"] = video_games_df["os"].astype(str).str.replace("Vista", "6")
     video_games_df["os"] = video_games_df["os"].astype(str).str.replace("XP", "5.2")
-    video_games_df["os"] = video_games_df["os"].astype(str).str.replace(" ", "")
     video_games_df['os'] = video_games_df['os'].apply(lambda x: x.split(','))
     video_games_df['os'] = video_games_df['os'].apply(lambda x: [float(el) for el in x])
     video_games_df['os_min'] = video_games_df.os.apply(lambda x: min(x))
@@ -84,21 +92,20 @@ def init_video_game_model():
     video_games_df["directx"] = video_games_df["directx"].replace('10', '10.0')
     video_games_df["directx"] = video_games_df["directx"].replace('11', '11.0')
     video_games_df["directx"] = video_games_df["directx"].replace('12', '12.0')
-    video_games_df["directx"] = video_games_df["directx"].fillna('10')
+    video_games_df["directx"] = video_games_df["directx"].fillna('10.0')
 
     video_games_df = video_games_df.dropna(subset=['storage'])
     video_games_df["storage"] = pd.to_numeric(video_games_df["storage"], errors='coerce')
     video_games_df['popularity'] = video_games_df['popularity'].fillna(video_games_df['popularity'].mean().round(0))
 
     video_games_df['graphics'] = video_games_df['graphics'].fillna('Nvidia RTX 4090')
-    video_games_df["graphics"] = video_games_df["graphics"].astype(str).str.replace(" ", "")
     video_games_df["graphics"] = video_games_df['graphics'].apply(lambda x: x.split(','))
 
-    video_games_df['tags'] = video_games_df['tags'].astype(str).str.replace(" ", "")
     video_games_df['tags'] = video_games_df['tags'].apply(lambda x: x.split(','))
 
     global video_games_df_plots
     video_games_df_plots = video_games_df.copy()
+    video_games_df_plots.rename(columns={'release_date': 'date'}, inplace=True)
     video_games_df = video_games_df.join(pd.DataFrame(mlb.fit_transform(video_games_df.pop("tags")),
                                                       columns=mlb.classes_,
                                                       index=video_games_df.index))
@@ -110,8 +117,8 @@ def init_video_game_model():
 
     global video_games_df_recommend
     video_games_df_recommend = video_games_df.drop(
-        columns=['processor', 'memory', 'price', 'release date', 'graphics', 'critics score', 'storage', 'os', 'os_min',
-                 'os_max', 'developer', 'directx', 'release date month', 'release date day'], axis=1)
+        columns=['processor', 'ram', 'price', 'release_date', 'graphics', 'critics_score', 'storage', 'os', 'os_min',
+                 'os_max', 'developer', 'directx', 'release_date_month', 'release_date_day'], axis=1)
     video_games_df_dummy = pd.get_dummies(data=video_games_df_recommend, columns=['reviews'])
 
     features = video_games_df_dummy.drop(columns=['name', 'link'], axis=1)
@@ -120,7 +127,7 @@ def init_video_game_model():
     scaled_features = scale.fit_transform(features)
     scaled_features = pd.DataFrame(scaled_features, columns=features.columns)
 
-    model = NearestNeighbors(n_neighbors=11, metric='cosine', algorithm='brute').fit(scaled_features)
+    model = NearestNeighbors(n_neighbors=2, metric='cosine', algorithm='brute').fit(scaled_features)
 
     global vg_distances
     global vg_indices
@@ -132,6 +139,9 @@ def init_video_game_model():
 
     global vectorizer
     vectorizer = TfidfVectorizer(use_idf=True).fit(game_names)
+
+    video_games_df_recommend = video_games_df_recommend.reset_index()
+    video_games_df_recommend = video_games_df_recommend.drop_duplicates(subset=['link'], keep='first')
 
     global game_title_vectors
     game_title_vectors = vectorizer.transform(game_names)
@@ -182,16 +192,53 @@ def recommend_game(video_game_name):
         video_game_list = video_game_list.drop_duplicates(subset=['name'], keep='first')
 
         # Get the first 10 games in the list
-        video_game_list = video_game_list.head(10)
+        video_game_list = video_game_list.head()
 
         # Get the distance of the games similar to the input
-        recommended_distances = np.array(vg_combined_dist_idx_df['distance'].head(10))
+        recommended_distances = np.array(vg_combined_dist_idx_df['distance'].head())
 
         video_game_list = video_game_list.reset_index(drop=True)
         recommended_video_game_list = pd.concat([video_game_list,
                                                  pd.DataFrame(recommended_distances, columns=['Similarity_Distance'])],
                                                 axis=1)
         return recommended_video_game_list
+
+
+def get_less(df, column, value):
+    df = df.reset_index()
+    value_str_num = df[df[column] == value].index
+    result = []
+    for index, row in df.iterrows():
+        if index >= value_str_num:
+            result.append(row[column])
+    return result
+
+
+def compare_pc(df, list_to_comp):
+    result = []
+    for index, row in df.items():
+        result.append(any(value in row for value in list_to_comp))
+    return result
+
+
+def get_games_by_PC(os=0, processor=0, graphics=0, directx=0, ram=0):
+    df_user_pc_filtered = video_games_df_plots.copy()
+    filterarr = {'os': os, 'processor': processor, 'graphics': graphics, 'directx': directx, 'ram': ram}
+    for key, value in filterarr.items():
+        if value != 0:
+            if key != 'ram':
+                try:
+                    values_list = get_less(globals()[f'{key}_df'], key, value)
+                    mask = compare_pc(df_user_pc_filtered[key].astype(str), np.array(values_list).astype(str))
+                    df_user_pc_filtered = df_user_pc_filtered[mask]
+                except KeyError:
+                    pass
+            else:
+                try:
+                    df_user_pc_filtered = df_user_pc_filtered[df_user_pc_filtered[key] <= value]
+                except KeyError:
+                    pass
+    return df_user_pc_filtered
 
 
 def prepare_static_txt_files():
@@ -202,16 +249,24 @@ def prepare_static_txt_files():
     graphics_df = pd.read_csv("txt_static_list/graphics.txt")
     directx_df = pd.read_csv("txt_static_list/directx.txt")
 
-    processor_df["processor"] = processor_df["processor"].astype(str).str.replace(" ", "")
-    graphics_df["graphics"] = graphics_df["graphics"].astype(str).str.replace(" ", "")
-    directx_df["directx"] = directx_df["directx"].astype(str).str.replace(" ", "")
-
-    os_df["os"] = os_df["os"].astype(str).str.replace("Windows", "")
+    os_df["os"] = os_df["os"].astype(str).str.replace("Windows ", "")
     os_df["os"] = os_df["os"].astype(str).str.replace("Vista", "6")
     os_df["os"] = os_df["os"].astype(str).str.replace("XP", "5.2")
+    os_df["os"] = os_df["os"].astype(float).astype(str)
 
     os_df = os_df.drop_duplicates()
     processor_df = processor_df.drop_duplicates()
     graphics_df = graphics_df.drop_duplicates()
     directx_df = directx_df.drop_duplicates()
 
+
+def plots_by_parameter():
+    features = video_games_df_plots[['date', 'reviews', 'ram']].columns
+
+    for idx, feature in enumerate(features):
+        plt.figure(figsize=(10, 8))
+        sns.countplot(data=video_games_df_plots, x=feature)
+        plt.xlabel(feature)
+        plt.ylabel('Frequency')
+        plt.title("Data Distribution of Video Game " + feature + "s")
+        plt.savefig(f"media/plots/{feature}_plot.png")

@@ -15,6 +15,7 @@
     <a href="{% url 'main' %}">Главная</a>
     <a href="{% url 'profile' %}">Профиль</a>
     <a href="{% url 'similar_games' %}">Похожая игра</a>
+    <a href="{% url 'syst_char_games' %}">Игра по хар-кам</a>
     {% if user.is_anonymous %}
     <div style="text-align: right">
         <a href="{% url 'registration' %}">Регистрация</a>

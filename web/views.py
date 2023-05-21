@@ -1,16 +1,18 @@
-import pandas as pd
 from django.contrib.auth import get_user_model, authenticate, login, logout
 from django.contrib.auth.decorators import login_required
+from django.core.paginator import Paginator
 from django.shortcuts import render, redirect, get_object_or_404
 
 from web.forms import RegistrationForm, AuthForm, SystemCharForm, SimilarGameForm
-from web.ml import recommend_game
+from web.ml import get_games_by_PC, recommend_game
 from web.models import SystemCharacteristics, Game
 
 User = get_user_model()
 
 
 def main_view(request):
+    # pars_pages()
+    # init_video_game_model()
     return render(request, 'web/main.html')
 
 
@@ -56,7 +58,7 @@ def syst_char_add_view(request):
         form = SystemCharForm(data=request.POST, initial={'user': request.user})
         if form.is_valid():
             form.save()
-            return redirect('main')
+            return redirect('profile')
     return render(request, 'web/syst_char_form.html', {'form': form})
 
 
@@ -65,9 +67,16 @@ def profile_view(request):
     user = request.user
     syst_char_list = SystemCharacteristics.objects.all().filter(user=user)
     favourite_games = Game.objects.all().filter(users=user)
+    for i in range(len(favourite_games)):
+        favourite_games[i].developer = favourite_games[i].developer.split(', ')
+        favourite_games[i].tags = favourite_games[i].tags.split(', ')
+    total_count = len(favourite_games)
+    page_number = request.GET.get("page", 1)
+    paginator = Paginator(favourite_games, per_page=7)
     return render(request, 'web/profile.html', {'user': user,
                                                 'syst_char_list': syst_char_list,
-                                                'favourite_games': favourite_games})
+                                                'favourite_games': paginator.get_page(page_number),
+                                                'total_count': total_count})
 
 
 @login_required
@@ -89,22 +98,69 @@ def favourite_game_add_view(request, id):
     game = get_object_or_404(Game, id=id)
     user = request.user
     game.users.add(user)
-    return redirect('similar_games')
+    return redirect('profile')
 
 
 @login_required
 def similar_games_view(request):
     form = SimilarGameForm(request.GET or None)
     user = request.user
-    games = []
+    similar_games = None
     if form.is_valid():
         selected_game = get_object_or_404(Game, id=form.cleaned_data['name'])
-        similar_games = recommend_game(selected_game.name)[['name', 'link']].values.tolist()
-        similar_games = similar_games
-        for game in similar_games:
-            found_game = Game.objects.filter(name=game[0]).first()
-            if found_game is not None:
-                games.append(found_game)
+        similar_games_df = recommend_game(selected_game.name)
+        similar_games = []
+        if similar_games_df is not None:
+            similar_games_df = similar_games_df[['id']].values.tolist()
+            for game in similar_games_df:
+                found_game = Game.objects.filter(id=game[0]).first()
+                found_game.developer = found_game.developer.split(', ')
+                found_game.tags = found_game.tags.split(', ')
+                if found_game is not None:
+                    similar_games.append(found_game)
+            total_count = len(similar_games)
+            page_number = request.GET.get("page", 1)
+            paginator = Paginator(similar_games, per_page=7)
+            return render(request, 'web/similar_games.html',
+                          {'form': form, 'similar_games': paginator.get_page(page_number), 'user': user,
+                           'total_count': total_count, 'selected_game_id': selected_game.id})
+    return render(request, 'web/similar_games.html', {'form': form, 'similar_games': similar_games, 'user': user})
 
-    return render(request, 'web/similar_games.html', {'form': form, 'similar_games': games, 'user': user})
 
+@login_required()
+def syst_char_games_view(request):
+    syst_char_by_user = SystemCharacteristics.objects.all().filter(user=request.user)
+    selected_syst_char = None
+    games = None
+    if len(request.GET) != 0:
+        selected_syst_char = get_object_or_404(SystemCharacteristics, id=request.GET['syst_char'])
+
+        games_df = get_games_by_PC(str(float(selected_syst_char.os.replace('Windows ', ''))),
+                                   selected_syst_char.processor,
+                                   selected_syst_char.graphics,
+                                   selected_syst_char.directx,
+                                   int(selected_syst_char.ram) * 1024)
+        games = []
+        if not games_df.empty:
+            games_df = games_df[
+                ['name']].values.tolist()
+            for game in games_df:
+                found_game = Game.objects.filter(name=game[0]).first()
+                found_game.developer = found_game.developer.split(', ')
+                found_game.tags = found_game.tags.split(', ')
+                if found_game is not None:
+                    games.append(found_game)
+
+        total_count = len(games)
+        page_number = request.GET.get("page", 1)
+        paginator = Paginator(games, per_page=7)
+        return render(request, 'web/syst_char_games.html', {'syst_char_by_user': syst_char_by_user,
+                                                            'selected_syst_char': selected_syst_char,
+                                                            'games': paginator.get_page(page_number),
+                                                            'user': request.user,
+                                                            'total_count': total_count})
+
+    return render(request, 'web/syst_char_games.html', {'syst_char_by_user': syst_char_by_user,
+                                                        'selected_syst_char': selected_syst_char,
+                                                        'games': games,
+                                                        'user': request.user})

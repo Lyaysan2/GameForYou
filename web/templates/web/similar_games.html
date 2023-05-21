@@ -6,24 +6,53 @@
     {{ form.as_p }}
     <button type="submit">Найти</button>
 </form>
+{% if similar_games is not None %}
+{% if similar_games %}
 <ul>
     {% for game in similar_games %}
     <li>
-        <br>
-        {{ game.name }}: <a href="{{game.link}}">{{ game.link }}</a>
-        <br>
+        {{ game.name }}: <a href="{{game.link}}">{{ game.link }}</a><br>
+        Price: {{ game.price }}<br>
+        Date: {{ game.release_date }}<br>
+        Reviews: {{ game.reviews }}<br>
+        Popularity: {{ game.popularity }}<br>
+        Developer:
+        {% for dev in game.developer %}
+        {{ dev }},
+        {% endfor %}<br>
+        Tags:
+        {% for tag in game.tags %}
+        {{ tag }},
+        {% endfor %}<br>
         {% if user not in game.users.all %}
         <small><a href="#" class="favourite_game_add_js" data-game-id="{{ game.id }}">в избранное</a></small>
         {% endif %}
     </li>
     {% endfor %}
 </ul>
+всего {{ total_count }} записей. {{ similar_games|length }} на этой странице.
+
+    <nav>
+        {% if similar_games.has_previous %}
+            <a href="?page=1&name={{ selected_game_id }}&csrfmiddlewaretoken={{ csrf_token }}">в начало</a>
+            <a href="?page={{ similar_games.previous_page_number }}&name={{ selected_game_id }}&csrfmiddlewaretoken={{ csrf_token }}">предыдующая страница</a>
+        {% endif %}
+
+        страница {{ similar_games.number }} из {{ similar_games.paginator.num_pages }}
+
+        {% if similar_games.has_next %}
+            <a href="?page={{ similar_games.next_page_number }}&name={{ selected_game_id }}&csrfmiddlewaretoken={{ csrf_token }}">следующая страница</a>
+            <a href="?page={{ similar_games.paginator.num_pages }}&name={{ selected_game_id }}&csrfmiddlewaretoken={{ csrf_token }}">в конец</a>
+        {% endif %}
+    </nav>
+{% else %}
+Похожих игр пока нет
+{% endif %}
+{% endif %}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 {{ form.media.js }}
-
 <script>
     $(document).ready(function () {
-        console.log('tuuuuut')
         $('.favourite_game_add_js').click(function (event) {
             event.preventDefault();
             var game_id = $(this).data('game-id');

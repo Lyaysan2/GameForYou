@@ -1,0 +1,86 @@
+{% extends 'web/base.html' %}
+{% block content %}
+<h2>Найти игру по характеристикам ПК</h2>
+<form method="GET">
+    {% csrf_token %}
+    <label for="syst_char">Выберите систему характеристик:</label>
+    <select name="syst_char" id="syst_char" data-placeholder="Выберите из списка">
+        <option selected="true" disabled="disabled">choose option</option>
+        {% for syst_char in syst_char_by_user %}
+        <option value="{{ syst_char.id }}">{{ syst_char.os }}, {{ syst_char.processor }}, {{ syst_char.memory }} GB,
+            {{ syst_char.graphics }}, {{ syst_char.directx }}, {{ syst_char.storage }} GB
+        </option>
+        {% endfor %}
+    </select>
+    <button type="submit">Выбрать</button>
+</form>
+{% if selected_syst_char is not None %}
+<h3>Вы выбрали:</h3>
+ОС: {{ selected_syst_char.os }}<br>
+Процессор: {{ selected_syst_char.processor }}<br>
+Оперативная память: {{ selected_syst_char.memory }} GB<br>
+Видеокарта: {{ selected_syst_char.graphics }}<br>
+DirectX: {{ selected_syst_char.directx }}<br>
+Свободное место: {{ selected_syst_char.storage }} GB<br>
+{% endif %}
+{% if games is not None %}
+{% if games %}
+<ul>
+    {% for game in games %}
+    <li>
+        {{ game.name }}: <a href="{{game.link}}">{{ game.link }}</a><br>
+        Price: {{ game.price }}<br>
+        Date: {{ game.release_date }}<br>
+        Reviews: {{ game.reviews }}<br>
+        Popularity: {{ game.popularity }}<br>
+        Developer:
+        {% for dev in game.developer %}
+        {{ dev }},
+        {% endfor %}<br>
+        Tags:
+        {% for tag in game.tags %}
+        {{ tag }},
+        {% endfor %}<br>
+        {% if user not in game.users.all %}
+        <small><a href="#" class="favourite_game_add_js" data-game-id="{{ game.id }}">в избранное</a></small>
+        {% endif %}
+    </li>
+    {% endfor %}
+</ul>
+всего {{ total_count }} записей. {{ games|length }} на этой странице.
+
+    <nav>
+        {% if games.has_previous %}
+            <a href="?page=1&syst_char={{ selected_syst_char.id }}&csrfmiddlewaretoken={{ csrf_token }}">в начало</a>
+            <a href="?page={{ games.previous_page_number }}&syst_char={{ selected_syst_char.id }}&csrfmiddlewaretoken={{ csrf_token }}">предыдующая страница</a>
+        {% endif %}
+
+        страница {{ games.number }} из {{ games.paginator.num_pages }}
+
+        {% if games.has_next %}
+            <a href="?page={{ games.next_page_number }}&syst_char={{ selected_syst_char.id }}&csrfmiddlewaretoken={{ csrf_token }}">следующая страница</a>
+            <a href="?page={{ games.paginator.num_pages }}&syst_char={{ selected_syst_char.id }}&csrfmiddlewaretoken={{ csrf_token }}">в конец</a>
+        {% endif %}
+    </nav>
+{% else %}
+Игр с такими характеристиками пока нет
+{% endif %}
+{% endif %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+{{ form.media.js }}
+<script>
+    $(document).ready(function () {
+        $('.favourite_game_add_js').click(function (event) {
+            event.preventDefault();
+            var game_id = $(this).data('game-id');
+            $.ajax({
+                url: "/favourite_game/" + game_id + "/add",
+                type: "POST",
+                data: {'id': game_id, 'csrfmiddlewaretoken': '{{ csrf_token }}'},
+                dataType: "json",
+            });
+            window.location.reload();
+        });
+    });
+</script>
+{% endblock %}

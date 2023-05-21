@@ -11,6 +11,12 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
+from web.ml import init_video_game_model, plots_by_parameter
+
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'gameforyou.settings')
 
 application = get_wsgi_application()
+
+# initialize the model on startup
+init_video_game_model()
+plots_by_parameter()
