@@ -67,7 +67,7 @@ class SystemCharForm(ModelForm):
 
     class Meta:
         model = SystemCharacteristics
-        fields = ('os', 'processor', 'memory', 'graphics', 'directx', 'storage')
+        fields = ('os', 'processor', 'ram', 'graphics', 'directx', 'storage')
         widgets = {
             'os': OSWidget,
             'processor': ProcessorWidget,

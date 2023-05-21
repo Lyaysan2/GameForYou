@@ -1,7 +1,7 @@
 from django.urls import path, include
 
 from web.views import main_view, registration_view, auth_view, logout_view, syst_char_add_view, profile_view, \
-    syst_char_delete_view, favourite_game_delete_view, similar_games_view, favourite_game_add_view
+    syst_char_delete_view, favourite_game_delete_view, similar_games_view, favourite_game_add_view, syst_char_games_view
 
 urlpatterns = [
     path('', main_view, name='main'),
@@ -15,4 +15,5 @@ urlpatterns = [
     path('favourite_game/<int:id>/delete', favourite_game_delete_view, name='favourite_game_delete'),
     path('favourite_game/<int:id>/add', favourite_game_add_view, name='favourite_game_add'),
     path('similar_games/', similar_games_view, name='similar_games'),
+    path('syst_char_games/', syst_char_games_view, name='syst_char_games'),
 ]
