@@ -47,6 +47,8 @@ def convert_to_mb(text):
             text = int(match_memory.group(1)) * 1024
         elif match_memory.group(2) == 'mb':
             text = int(match_memory.group(1))
+        else:
+            return None
         return text
     else:
         return None
@@ -72,7 +74,7 @@ def replace_with_real_name(game_field, property_list):
 
 
 def pars_pages():
-    for page in range(1, 20):
+    for page in range(1, pages):
         print("--------", page)
         r = requests.get(url + str(page))
         soup = BeautifulSoup(r.content, 'html.parser')
@@ -274,8 +276,8 @@ def pars_pages():
             except KeyError:
                 storage = None
 
-            Game.objects.update_or_create(
-                link=link, name=name, price=price, release_date=release_date, reviews=reviews,
-                popularity=popularity, developer=developer, tags=tags, critics_score=critics_score,
-                os=os, processor=processor, ram=ram, graphics=graphics, directx=directx, storage=storage
+            Game.objects.update_or_create(name=name, defaults={
+                "link": link, "name": name, "price": price, "release_date": release_date, "reviews": reviews,
+                "popularity": popularity, "developer": developer, "tags": tags, "critics_score": critics_score,
+                "os": os, "processor": processor, "ram": ram, "graphics": graphics, "directx": directx, "storage": storage}
             )
