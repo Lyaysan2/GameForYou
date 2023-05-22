@@ -11,8 +11,6 @@ User = get_user_model()
 
 
 def main_view(request):
-    # pars_pages()
-    # init_video_game_model()
     return render(request, 'web/main.html')
 
 
