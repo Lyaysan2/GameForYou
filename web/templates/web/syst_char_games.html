@@ -4,15 +4,15 @@
 <form method="GET">
     {% csrf_token %}
     <label for="syst_char">Выберите систему характеристик:</label>
-    <select name="syst_char" id="syst_char" data-placeholder="Выберите из списка">
-        <option selected="true" disabled="disabled">choose option</option>
+    <select name="syst_char" id="syst_char" class="select" data-placeholder="Выберите из списка">
+        <option selected="true" disabled="disabled" class="select">Выберите опцию</option>
         {% for syst_char in syst_char_by_user %}
-        <option value="{{ syst_char.id }}">{{ syst_char.os }}, {{ syst_char.processor }}, {{ syst_char.memory }} GB,
+        <option class="select" value="{{ syst_char.id }}">{{ syst_char.os }}, {{ syst_char.processor }}, {{ syst_char.memory }} GB,
             {{ syst_char.graphics }}, {{ syst_char.directx }}, {{ syst_char.storage }} GB
         </option>
         {% endfor %}
     </select>
-    <button type="submit">Выбрать</button>
+    <button type="submit" class="btn">Выбрать</button>
 </form>
 {% if selected_syst_char is not None %}
 <h3>Вы выбрали:</h3>
