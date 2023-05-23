@@ -13,6 +13,8 @@
     </select>
     <button type="submit" class="btn">Выбрать</button>
 </form>
+    {% if games is not None %}
+        {% if games %}
     <div class="content">
     <div class="content_games">
     <div class="content_left">
@@ -27,8 +29,6 @@
         {% endif %}
     </div>
     <div class="content_right">
-        {% if games is not None %}
-        {% if games %}
         <ul class="list">
             {% for game in games %}
             <li class="list_game">
