@@ -19,6 +19,6 @@ os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'gameforyou.settings')
 application = get_wsgi_application()
 
 # initialize the model on startup
-pars_pages()
+# pars_pages()
 init_video_game_model()
 plots_by_parameter()

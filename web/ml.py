@@ -127,7 +127,7 @@ def init_video_game_model():
     scaled_features = scale.fit_transform(features)
     scaled_features = pd.DataFrame(scaled_features, columns=features.columns)
 
-    model = NearestNeighbors(n_neighbors=2, metric='cosine', algorithm='brute').fit(scaled_features)
+    model = NearestNeighbors(n_neighbors=15, metric='cosine', algorithm='brute').fit(scaled_features)
 
     global vg_distances
     global vg_indices
@@ -214,6 +214,13 @@ def get_less(df, column, value):
     return result
 
 
+def compare(df, list_to_comp):
+    result = []
+    for index, row in df.iteritems():
+        result.append(all(value in row for value in list_to_comp))
+    return result
+
+
 def compare_pc(df, list_to_comp):
     result = []
     for index, row in df.items():
@@ -270,3 +277,29 @@ def plots_by_parameter():
         plt.ylabel('Frequency')
         plt.title("Data Distribution of Video Game " + feature + "s")
         plt.savefig(f"media/plots/{feature}_plot.png")
+
+    video_games_df_plots.tags.explode().value_counts().head(30).plot(kind='bar', figsize=(10, 8),
+                                                                     color=plt.cm.Set2(np.arange(5)))
+    plt.savefig('media/plots/tags_plot.png')
+
+    video_games_df_plots.os.explode().value_counts().head(30).plot(kind='bar', figsize=(10, 8),
+                                                                   color=plt.cm.Set2(np.arange(5)))
+    plt.savefig('media/plots/os_plot.png')
+
+
+def get_filtered_games(popularity=False, date=False, price=False, tags=[]):
+    df_filtered = video_games_df_plots.copy()
+    filterarr = {'popularity': popularity, 'date': date, 'price': price, 'tags': tags}
+    print(filterarr)
+    for key, value in filterarr.items():
+        if value != False and key != 'tags':
+            df_filtered.sort_values(['popularity', 'date', 'price'],
+                                    ascending=[filterarr['popularity'], filterarr['date'], filterarr['price']],
+                                    inplace=True)
+        elif key == 'tags':
+            if tags:
+                mask = compare(df_filtered[key].astype(str), tags)
+                df_filtered = df_filtered[mask]
+            else:
+                df_filtered = video_games_df_plots.copy()
+    return df_filtered

@@ -1,0 +1,28 @@
+{% extends 'web/base.html' %}
+{% block content %}
+<form action="" method="GET">
+    <label for="price_sort">Сортировка по цене:</label>
+    <select name="price_sort" id="price_sort">
+        <option selected="true" disabled="disabled">-- выберите --</option>
+        <option value="price_asc">По цене (возрастание)</option>
+        <option value="price_desc">По цене (убывание)</option>
+    </select>
+    <label for="date_sort">Сортировка по дате выхода:</label>
+    <select name="date_sort" id="date_sort">
+        <option selected="true" disabled="disabled">-- выберите --</option>
+        <option value="date_desc">Сначала новые</option>
+        <option value="date_asc">Сначала старые</option>
+    </select>
+    <label for="popularity_sort">Сортировка по популярности:</label>
+    <select name="popularity_sort" id="popularity_sort">
+        <option selected="true" disabled="disabled">-- выберите --</option>
+        <option value="popularity_desc">Сначала популярные</option>
+        <option value="popularity_asc">Сначала непопулярные</option>
+    </select>
+    {{ form.as_p }}
+    <button type="submit">Применить</button>
+</form>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+{{ form.media.js }}
+
+{% endblock %}
