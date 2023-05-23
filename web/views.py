@@ -3,7 +3,7 @@ from django.contrib.auth.decorators import login_required
 from django.core.paginator import Paginator
 from django.shortcuts import render, redirect, get_object_or_404
 
-from web.forms import RegistrationForm, AuthForm, SystemCharForm, SimilarGameForm
+from web.forms import RegistrationForm, AuthForm, SystemCharForm, SimilarGameForm, GameFilterForm, TagFilterForm
 from web.ml import get_games_by_PC, recommend_game
 from web.models import SystemCharacteristics, Game
 
@@ -162,3 +162,26 @@ def syst_char_games_view(request):
                                                         'selected_syst_char': selected_syst_char,
                                                         'games': games,
                                                         'user': request.user})
+
+
+def game_filter_view(request):
+    price_sort = request.GET.get('price_sort')
+    date_sort = request.GET.get('date_sort')
+    popularity_sort = request.GET.get('popularity_sort')
+
+    print(price_sort)
+    print(date_sort)
+    print(popularity_sort)
+
+    tags_form = TagFilterForm(request.GET)
+
+    # применяем соответствующую сортировку к играм
+    # if price_sort == 'price_asc':
+    #     games = games.order_by('price')
+    # elif price_sort == 'price_desc':
+    #     games = games.order_by('-price')
+
+    # передаем игры и параметры сортировки в шаблон
+    context = {'form': tags_form}
+    return render(request, 'web/game_filter.html', context)
+
