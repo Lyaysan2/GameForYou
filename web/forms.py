@@ -1,8 +1,8 @@
 from django import forms
 from django.contrib.auth import get_user_model
-from django.forms import ModelForm, Form, CheckboxSelectMultiple
+from django.forms import ModelForm, Form
 from django_select2 import forms as s2forms
-from django_select2.forms import ModelSelect2Widget, ModelSelect2Mixin
+from django_select2.forms import ModelSelect2Widget
 
 from web.models import SystemCharacteristics, Game
 
@@ -92,7 +92,8 @@ class SimilarGameForm(ModelForm):
 
 
 class GameFilterForm(Form):
-    price = forms.ChoiceField(choices=(('asc', 'Цена по возрастанию'), ('desc', 'Цена по убыванию'), ('default', 'Выберите опцию')))
+    price = forms.ChoiceField(
+        choices=(('asc', 'Цена по возрастанию'), ('desc', 'Цена по убыванию'), ('default', 'Выберите опцию')))
 
 
 class TagFilterForm(Form):
