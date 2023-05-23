@@ -3,8 +3,8 @@ from django.contrib.auth.decorators import login_required
 from django.core.paginator import Paginator
 from django.shortcuts import render, redirect, get_object_or_404
 
-from web.forms import RegistrationForm, AuthForm, SystemCharForm, SimilarGameForm, GameFilterForm, TagFilterForm
-from web.ml import get_games_by_PC, recommend_game
+from web.forms import RegistrationForm, AuthForm, SystemCharForm, SimilarGameForm, TagFilterForm
+from web.ml import get_games_by_PC, recommend_game, get_tags_list_choices
 from web.models import SystemCharacteristics, Game
 
 User = get_user_model()
@@ -174,7 +174,9 @@ def game_filter_view(request):
     print(date_sort)
     print(popularity_sort)
 
-    tags_form = TagFilterForm(request.GET)
+    choices = get_tags_list_choices()
+    tags_form = TagFilterForm(request.GET, choices)
+
 
     # применяем соответствующую сортировку к играм
     # if price_sort == 'price_asc':
@@ -185,4 +187,3 @@ def game_filter_view(request):
     # передаем игры и параметры сортировки в шаблон
     context = {'form': tags_form}
     return render(request, 'web/game_filter.html', context)
-

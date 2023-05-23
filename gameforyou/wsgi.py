@@ -11,7 +11,7 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-from web.ml import init_video_game_model, plots_by_parameter
+from web.ml import init_video_game_model, plots_by_parameter, get_tags_list
 from web.parsing import pars_pages
 
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'gameforyou.settings')

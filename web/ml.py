@@ -34,14 +34,20 @@ game_names = None
 video_games_df_recommend = None
 game_title_vectors = None
 
+tags_list = []
+
 
 def init_video_game_model():
     prepare_static_txt_files()
     print('prepare_static_txt_files')
 
+    mlb = MultiLabelBinarizer()
     global video_games_df
 
     video_games_df = DataFrame([o.__dict__ for o in Game.objects.all()]).drop(columns=['_state'], axis=1)
+
+    video_games_df['tags'] = video_games_df['tags'].apply(lambda x: x.split(', '))
+    get_tags_list(mlb)
 
     video_games_df.columns = video_games_df.columns.str.lower()
     video_games_df['release_date'] = video_games_df['release_date'].astype(str)
@@ -75,7 +81,7 @@ def init_video_game_model():
     video_games_df['processor'] = video_games_df['processor'].apply(lambda x: x.split(','))
     video_games_df['developer'] = video_games_df['developer'].apply(lambda x: x.split(','))
 
-    mlb = MultiLabelBinarizer()
+    # mlb = MultiLabelBinarizer()
     video_games_df["os"] = video_games_df["os"].fillna('7')
     video_games_df["os"] = video_games_df["os"].astype(str).str.replace("Windows ", "")
     video_games_df["os"] = video_games_df["os"].astype(str).str.replace("Vista", "6")
@@ -100,8 +106,6 @@ def init_video_game_model():
 
     video_games_df['graphics'] = video_games_df['graphics'].fillna('Nvidia RTX 4090')
     video_games_df["graphics"] = video_games_df['graphics'].apply(lambda x: x.split(','))
-
-    video_games_df['tags'] = video_games_df['tags'].apply(lambda x: x.split(','))
 
     global video_games_df_plots
     video_games_df_plots = video_games_df.copy()
@@ -303,3 +307,17 @@ def get_filtered_games(popularity=False, date=False, price=False, tags=[]):
             else:
                 df_filtered = video_games_df_plots.copy()
     return df_filtered
+
+
+def get_tags_list(mlb):
+    video_games_df_copy = video_games_df.copy()
+    global tags_list
+    tags_list = pd.DataFrame(mlb.fit_transform(video_games_df_copy.pop("tags")),
+                                                      columns=mlb.classes_).columns
+
+
+def get_tags_list_choices():
+    choice_tags_list = []
+    for tag in tags_list:
+        choice_tags_list.append((tag, tag))
+    return choice_tags_list
