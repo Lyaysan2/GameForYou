@@ -4,49 +4,51 @@
 <form action="" method="get" enctype="multipart/form-data">
     {% csrf_token %}
     {{ form.as_p }}
-    <button type="submit">Найти</button>
+    <button type="submit" class="btn">Найти</button>
 </form>
 {% if similar_games is not None %}
 {% if similar_games %}
-<ul>
+<ul class="list">
     {% for game in similar_games %}
-    <li>
-        {{ game.name }}: <a href="{{game.link}}">{{ game.link }}</a><br>
-        Price: {{ game.price }}<br>
-        Date: {{ game.release_date }}<br>
-        Reviews: {{ game.reviews }}<br>
-        Popularity: {{ game.popularity }}<br>
-        Developer:
-        {% for dev in game.developer %}
-        {{ dev }},
-        {% endfor %}<br>
-        Tags:
-        {% for tag in game.tags %}
-        {{ tag }},
-        {% endfor %}<br>
-        {% if user not in game.users.all %}
-        <small><a href="#" class="favourite_game_add_js" data-game-id="{{ game.id }}">в избранное</a></small>
-        {% endif %}
-    </li>
+            <li class="list_game">
+                <div class="game_info_block">
+                    <h3>{{ game.name }} ({{ game.release_date }})</h3>
+                    <p>{{ game.reviews }} reviews ({{ game.popularity }})</p>
+                    <p>{{ game.price }} Руб.</p><br>
+                </div>
+                    <a href="{{game.link}}" class="link">{{ game.link }}</a><br>
+                <span style="display: flex; flex-direction: row">
+                    {% for dev in game.developer %}
+                        <h4 style="color: #BFBFBF">{{ dev }},</h4>
+                    {% endfor %}
+                </span>
+                <br>
+                    Tags:
+                    {% for tag in game.tags %}
+                    {{ tag }},
+                    {% endfor %}<br>
+                <br>
+                    {% if user not in game.users.all %}
+                    <small><a href="#" class="favourite_game_add_js" data-game-id="{{ game.id }}">В избранное</a></small>
+                    {% endif %}
+            </li>
     {% endfor %}
 </ul>
-всего {{ total_count }} записей. {{ similar_games|length }} на этой странице.
-
-    <nav>
-        {% if similar_games.has_previous %}
-            <a href="?page=1&name={{ selected_game_id }}&csrfmiddlewaretoken={{ csrf_token }}">в начало</a>
-            <a href="?page={{ similar_games.previous_page_number }}&name={{ selected_game_id }}&csrfmiddlewaretoken={{ csrf_token }}">предыдующая страница</a>
+    <nav class="pagination">
+        {% if games.has_previous %}
+            <a href="?page=1&syst_char={{ selected_syst_char.id }}&csrfmiddlewaretoken={{ csrf_token }}">в начало</a>
+            <a href="?page={{ games.previous_page_number }}&syst_char={{ selected_syst_char.id }}&csrfmiddlewaretoken={{ csrf_token }}">назад</a>
         {% endif %}
 
-        страница {{ similar_games.number }} из {{ similar_games.paginator.num_pages }}
+        страница {{ games.number }} из {{ games.paginator.num_pages }}
 
-        {% if similar_games.has_next %}
-            <a href="?page={{ similar_games.next_page_number }}&name={{ selected_game_id }}&csrfmiddlewaretoken={{ csrf_token }}">следующая страница</a>
-            <a href="?page={{ similar_games.paginator.num_pages }}&name={{ selected_game_id }}&csrfmiddlewaretoken={{ csrf_token }}">в конец</a>
+        {% if games.has_next %}
+            <a href="?page={{ games.next_page_number }}&syst_char={{ selected_syst_char.id }}&csrfmiddlewaretoken={{ csrf_token }}">вперед</a>
+            <a href="?page={{ games.paginator.num_pages }}&syst_char={{ selected_syst_char.id }}&csrfmiddlewaretoken={{ csrf_token }}">в конец</a>
         {% endif %}
     </nav>
 {% else %}
-Похожих игр пока нет
+    <h2>Похожих игр пока нет</h2>
 {% endif %}
 {% endif %}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
