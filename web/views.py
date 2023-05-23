@@ -105,23 +105,24 @@ def similar_games_view(request):
     user = request.user
     similar_games = None
     if form.is_valid():
-        selected_game = get_object_or_404(Game, id=form.cleaned_data['name'])
-        similar_games_df = recommend_game(selected_game.name)
-        similar_games = []
-        if similar_games_df is not None:
-            similar_games_df = similar_games_df[['id']].values.tolist()
-            for game in similar_games_df:
-                found_game = Game.objects.filter(id=game[0]).first()
-                found_game.developer = found_game.developer.split(', ')
-                found_game.tags = found_game.tags.split(', ')
-                if found_game is not None:
-                    similar_games.append(found_game)
-            total_count = len(similar_games)
-            page_number = request.GET.get("page", 1)
-            paginator = Paginator(similar_games, per_page=7)
-            return render(request, 'web/similar_games.html',
-                          {'form': form, 'similar_games': paginator.get_page(page_number), 'user': user,
-                           'total_count': total_count, 'selected_game_id': selected_game.id})
+        if form.cleaned_data['name']:
+            selected_game = get_object_or_404(Game, id=form.cleaned_data['name'])
+            similar_games_df = recommend_game(selected_game.name)
+            similar_games = []
+            if similar_games_df is not None:
+                similar_games_df = similar_games_df[['id']].values.tolist()
+                for game in similar_games_df:
+                    found_game = Game.objects.filter(id=game[0]).first()
+                    found_game.developer = found_game.developer.split(', ')
+                    found_game.tags = found_game.tags.split(', ')
+                    if found_game is not None:
+                        similar_games.append(found_game)
+                total_count = len(similar_games)
+                page_number = request.GET.get("page", 1)
+                paginator = Paginator(similar_games, per_page=7)
+                return render(request, 'web/similar_games.html',
+                              {'form': form, 'similar_games': paginator.get_page(page_number), 'user': user,
+                               'total_count': total_count, 'selected_game_id': selected_game.id})
     return render(request, 'web/similar_games.html', {'form': form, 'similar_games': similar_games, 'user': user})
 
 
