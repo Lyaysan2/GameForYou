@@ -4,6 +4,7 @@ from django.forms import ModelForm, Form
 from django_select2 import forms as s2forms
 from django_select2.forms import ModelSelect2Widget
 
+from web.ml import get_tags_list_choices
 from web.models import SystemCharacteristics, Game
 
 User = get_user_model()
@@ -97,10 +98,7 @@ class GameFilterForm(Form):
 
 
 class TagFilterForm(Form):
-    CHOICES = (('afff', 'afffffffffff'),
-               ('baa', 'baa'),
-               ('bca', 'bca'),
-               ('bui', 'bui'),
-               ('c', 'c'),
-               ('d', 'd'),)
-    tags = forms.MultipleChoiceField(choices=CHOICES, widget=TagsWidget)
+    def __init__(self, *args, **kwargs):
+        self.choices = args[1]
+        super(TagFilterForm, self).__init__(*args, **kwargs)
+        self.fields['tags'] = forms.MultipleChoiceField(choices=self.choices, widget=TagsWidget, required=False)

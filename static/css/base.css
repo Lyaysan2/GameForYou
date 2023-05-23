@@ -1,65 +1,65 @@
 
-.body{
-    background-color: #0E1947;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    font-family: Inter;
-    color: white;
-}
+/*.body{*/
+/*    background-color: #0E1947;*/
+/*    margin: 0;*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    font-family: Inter;*/
+/*    color: white;*/
+/*}*/
 
-a{
-    color: #939AB0;
-    text-decoration: none;
-    padding: 0 4px;
-    font-size: 16px;
-}
+/*a{*/
+/*    color: #939AB0;*/
+/*    text-decoration: none;*/
+/*    padding: 0 4px;*/
+/*    font-size: 16px;*/
+/*}*/
 
-a:active, a:hover{
-    color: white;
-}
+/*a:active, a:hover{*/
+/*    color: white;*/
+/*}*/
 
-.btn{
-    background-color: #1E90FF;
-    border: 3px solid #1E90FF;
-    cursor: pointer;
-    border-radius: 4px;
-    padding: 10px;
-    color: white;
-    font-family: Inter;
-    font-weight: bold;
-    font-size: 16px;
-}
+/*.btn{*/
+/*    background-color: #1E90FF;*/
+/*    border: 3px solid #1E90FF;*/
+/*    cursor: pointer;*/
+/*    border-radius: 4px;*/
+/*    padding: 10px;*/
+/*    color: white;*/
+/*    font-family: Inter;*/
+/*    font-weight: bold;*/
+/*    font-size: 16px;*/
+/*}*/
 
-.btn:hover, btn:active{
-    background-color: transparent;
-    border: 3px solid #1E90FF;
-}
+/*.btn:hover, btn:active{*/
+/*    background-color: transparent;*/
+/*    border: 3px solid #1E90FF;*/
+/*}*/
 
-.select{
-    width: 60vh;
-    border-radius: 3px;
-    height: 44px;
-}
+/*.select{*/
+/*    width: 60vh;*/
+/*    border-radius: 3px;*/
+/*    height: 44px;*/
+/*}*/
 
-.header{
-    width: 94%;
-    position: fixed;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #353D62;
-    height: 8vh;
-    padding-right: 3%;
-    padding-left: 3%;
-}
+/*.header{*/
+/*    width: 94%;*/
+/*    position: fixed;*/
+/*    display: flex;*/
+/*    flex-direction: row;*/
+/*    justify-content: space-between;*/
+/*    align-items: center;*/
+/*    background-color: #353D62;*/
+/*    height: 8vh;*/
+/*    padding-right: 3%;*/
+/*    padding-left: 3%;*/
+/*}*/
 
-.content{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 12vh;
-    padding-left: 8vh;
-    padding-right: 8vh;
-}
+/*.content{*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    justify-content: center;*/
+/*    margin-top: 12vh;*/
+/*    padding-left: 8vh;*/
+/*    padding-right: 8vh;*/
+/*}*/
