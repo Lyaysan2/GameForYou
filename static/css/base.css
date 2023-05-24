@@ -15,19 +15,9 @@
 /*    font-size: 16px;*/
 /*}*/
 
-<<<<<<< HEAD
-/*h1, h2, h3, h4, h5, p{*/
-/*    margin: 0 0 10px;*/
-/*}*/
-
-a:active, a:hover{
-    color: white;
-}
-=======
 /*a:active, a:hover{*/
 /*    color: white;*/
 /*}*/
->>>>>>> + tags filter view
 
 /*.btn{*/
 /*    background-color: #1E90FF;*/
@@ -46,25 +36,11 @@ a:active, a:hover{
 /*    border: 3px solid #1E90FF;*/
 /*}*/
 
-<<<<<<< HEAD
-.select{
-    width: 70vh;
-    border-radius: 3px;
-    height: 45px;
-    background-color: #353D62;
-    border: 2px solid #939AB0;
-    color: #939AB0;
-    font-family: Inter;
-    font-size: 16px;
-    margin-top: 10px;
-}
-=======
 /*.select{*/
 /*    width: 60vh;*/
 /*    border-radius: 3px;*/
 /*    height: 44px;*/
 /*}*/
->>>>>>> + tags filter view
 
 /*.header{*/
 /*    width: 94%;*/
@@ -79,93 +55,6 @@ a:active, a:hover{
 /*    padding-left: 3%;*/
 /*}*/
 
-<<<<<<< HEAD
-.content{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 12vh;
-    padding-left: 8vh;
-    padding-right: 8vh;
-}
-
-.content_games{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.content_left{
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    height: fit-content;
-    background-color: #353D62;
-    border: 2px solid #939AB0;
-    border-radius: 4px;
-    padding: 20px;
-}
-
-.content_right{
-    display: flex;
-    flex-direction: column;
-}
-
-.list{
-    display: flex;
-    flex-direction: column;
-    background-color: #262D4F;
-    border: none;
-    border-radius: 8px;
-    gap: 20px;
-    list-style-type: none;
-    margin: 0 0 0 5vh;
-    padding: 20px;
-}
-
-.list_game{
-    background-color: #353D62;
-    padding: 20px;
-    border: none;
-    border-radius: 8px;
-}
-
-.link{
-    color: #1E90FF;
-    margin: 0 0 10px;
-    padding: 0;
-}
-
-.game_info_block{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.pagination{
-    display: flex;
-    flex-direction: row;
-    justify-content:end;
-    margin-bottom: 30px;
-    margin-top: 30px;
-}
-
-.form{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 60vh;
-    gap: 20px;
-}
-
-select{
-    min-width: 60vh;
-    height: 45px;
-    background-color: #353D62;
-}
-=======
 /*.content{*/
 /*    display: flex;*/
 /*    flex-direction: column;*/
@@ -174,4 +63,3 @@ select{
 /*    padding-left: 8vh;*/
 /*    padding-right: 8vh;*/
 /*}*/
->>>>>>> + tags filter view
