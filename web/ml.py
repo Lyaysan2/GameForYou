@@ -220,7 +220,7 @@ def get_less(df, column, value):
 
 def compare(df, list_to_comp):
     result = []
-    for index, row in df.iteritems():
+    for index, row in df.items():
         result.append(all(value in row for value in list_to_comp))
     return result
 
@@ -291,21 +291,16 @@ def plots_by_parameter():
     plt.savefig('media/plots/os_plot.png')
 
 
-def get_filtered_games(popularity=False, date=False, price=False, tags=[]):
+def get_filtered_games(price_asc=None, date_asc=None, popularity_asc=None, tags=[]):
     df_filtered = video_games_df_plots.copy()
-    filterarr = {'popularity': popularity, 'date': date, 'price': price, 'tags': tags}
-    print(filterarr)
+    filterarr = {'price': price_asc, 'date': date_asc, 'popularity': popularity_asc, 'tags': tags}
     for key, value in filterarr.items():
-        if value != False and key != 'tags':
-            df_filtered.sort_values(['popularity', 'date', 'price'],
-                                    ascending=[filterarr['popularity'], filterarr['date'], filterarr['price']],
-                                    inplace=True)
+        if key != 'tags' and value is not None:
+            df_filtered.sort_values(by=key, ascending=value, inplace=True)
         elif key == 'tags':
-            if tags:
+            if len(tags) != 0:
                 mask = compare(df_filtered[key].astype(str), tags)
                 df_filtered = df_filtered[mask]
-            else:
-                df_filtered = video_games_df_plots.copy()
     return df_filtered
 
 

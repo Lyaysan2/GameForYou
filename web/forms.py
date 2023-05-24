@@ -92,13 +92,11 @@ class SimilarGameForm(ModelForm):
         }
 
 
-class GameFilterForm(Form):
-    price = forms.ChoiceField(
-        choices=(('asc', 'Цена по возрастанию'), ('desc', 'Цена по убыванию'), ('default', 'Выберите опцию')))
-
-
 class TagFilterForm(Form):
     def __init__(self, *args, **kwargs):
         self.choices = args[1]
         super(TagFilterForm, self).__init__(*args, **kwargs)
         self.fields['tags'] = forms.MultipleChoiceField(choices=self.choices, widget=TagsWidget, required=False)
+    price = forms.ChoiceField(choices=[(None, 'default'), (True, 'По возрастанию цены'), (False, 'По убыванию цены')], required=False)
+    date = forms.ChoiceField(choices=[(None, 'default'), (False, 'Сначала новые'), (True, 'Сначала старые')], required=False)
+    popularity = forms.ChoiceField(choices=[(None, 'default'), (False, 'Сначала популярные'), (True, 'Сначала непопулярные')], required=False)

@@ -4,7 +4,7 @@ from django.core.paginator import Paginator
 from django.shortcuts import render, redirect, get_object_or_404
 
 from web.forms import RegistrationForm, AuthForm, SystemCharForm, SimilarGameForm, TagFilterForm
-from web.ml import get_games_by_PC, recommend_game, get_tags_list_choices
+from web.ml import get_games_by_PC, recommend_game, get_tags_list_choices, get_filtered_games
 from web.models import SystemCharacteristics, Game
 
 User = get_user_model()
@@ -166,27 +166,26 @@ def syst_char_games_view(request):
 
 
 def game_filter_view(request):
-    price_sort = request.GET.get('price_sort')
-    date_sort = request.GET.get('date_sort')
-    popularity_sort = request.GET.get('popularity_sort')
-
-    print(price_sort)
-    print(date_sort)
-    print(popularity_sort)
+    games = None
 
     choices = get_tags_list_choices()
     form = TagFilterForm(request.GET or None, choices)
     if form.is_valid():
-        if form.cleaned_data['tags']:
-            print(form.cleaned_data)
-
-
-    # применяем соответствующую сортировку к играм
-    # if price_sort == 'price_asc':
-    #     games = games.order_by('price')
-    # elif price_sort == 'price_desc':
-    #     games = games.order_by('-price')
-
-    # передаем игры и параметры сортировки в шаблон
-    context = {'form': form}
-    return render(request, 'web/game_filter.html', context)
+        convert = lambda i: eval(i) if i != '' else None
+        games_df = get_filtered_games(price_asc=convert(form.cleaned_data['price']),
+                                      date_asc=convert(form.cleaned_data['date']),
+                                      popularity_asc=convert(form.cleaned_data['popularity']),
+                                      tags=form.cleaned_data['tags']).values.tolist()
+        games = []
+        for game in games_df:
+            found_game = Game.objects.filter(id=game[0]).first()
+            found_game.developer = found_game.developer.split(', ')
+            found_game.tags = found_game.tags.split(', ')
+            if found_game is not None:
+                games.append(found_game)
+        page_number = request.GET.get("page", 1)
+        paginator = Paginator(games, per_page=7)
+        total_count = len(games)
+        return render(request, 'web/game_filter.html', {'form': form, 'games': paginator.get_page(page_number),
+                                                        'total_count': total_count})
+    return render(request, 'web/game_filter.html', {'form': form, 'games': games})
