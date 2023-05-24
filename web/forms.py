@@ -2,8 +2,9 @@ from django import forms
 from django.contrib.auth import get_user_model
 from django.forms import ModelForm, Form
 from django_select2 import forms as s2forms
-from django_select2.forms import ModelSelect2Widget, ModelSelect2Mixin
+from django_select2.forms import ModelSelect2Widget
 
+from web.ml import get_tags_list_choices
 from web.models import SystemCharacteristics, Game
 
 User = get_user_model()
@@ -60,6 +61,12 @@ class GameNameWidget(ModelSelect2Widget):
     ]
 
 
+class TagsWidget(s2forms.Select2MultipleWidget):
+    search_fields = [
+        "tags__icontains",
+    ]
+
+
 class SystemCharForm(ModelForm):
     def save(self, commit=True):
         self.instance.user = self.initial['user']
@@ -83,3 +90,13 @@ class SimilarGameForm(ModelForm):
         widgets = {
             'name': GameNameWidget,
         }
+
+
+class TagFilterForm(Form):
+    def __init__(self, *args, **kwargs):
+        self.choices = args[1]
+        super(TagFilterForm, self).__init__(*args, **kwargs)
+        self.fields['tags'] = forms.MultipleChoiceField(choices=self.choices, widget=TagsWidget, required=False)
+    price = forms.ChoiceField(choices=[(None, 'default'), (True, 'По возрастанию цены'), (False, 'По убыванию цены')], required=False)
+    date = forms.ChoiceField(choices=[(None, 'default'), (False, 'Сначала новые'), (True, 'Сначала старые')], required=False)
+    popularity = forms.ChoiceField(choices=[(None, 'default'), (False, 'Сначала популярные'), (True, 'Сначала непопулярные')], required=False)

@@ -1,0 +1,53 @@
+{% extends 'web/base.html' %}
+{% block content %}
+<form action="" method="GET">
+    {{ form.as_p }}<br>
+    <button type="submit">Применить</button>
+</form>
+{% if games is not None %}
+<div class="content_right">
+    <ul class="list">
+        {% for game in games %}
+        <li class="list_game">
+            <div class="game_info_block">
+                <h3>{{ game.name }} ({{ game.release_date }})</h3>
+                <p>{{ game.reviews }} reviews ({{ game.popularity }})</p>
+                <p>{{ game.price }} Руб.</p><br>
+            </div>
+            <a href="{{game.link}}" class="link">{{ game.link }}</a><br>
+            <span style="display: flex; flex-direction: row">
+                {% for dev in game.developer %}
+                    <h4 style="color: #BFBFBF">{{ dev }},</h4>
+                {% endfor %}
+            </span>
+            <br>
+            Tags:
+            {% for tag in game.tags %}
+            {{ tag }},
+            {% endfor %}<br>
+            <br>
+            {% if user not in game.users.all %}
+            <small><a href="#" class="favourite_game_add_js" data-game-id="{{ game.id }}">В избранное</a></small>
+            {% endif %}
+        </li>
+        {% endfor %}
+    </ul>
+        <nav class="pagination">
+        {% if similar_games.has_previous %}
+            <a href="?page=1&syst_char={{ selected_syst_char.id }}&csrfmiddlewaretoken={{ csrf_token }}">в начало</a>
+            <a href="?page={{ similar_games.previous_page_number }}&syst_char={{ selected_syst_char.id }}&csrfmiddlewaretoken={{ csrf_token }}">назад</a>
+        {% endif %}
+
+        страница {{ similar_games.number }} из {{ similar_games.paginator.num_pages }}
+
+        {% if similar_games.has_next %}
+            <a href="?page={{ similar_games.next_page_number }}&syst_char={{ selected_syst_char.id }}&csrfmiddlewaretoken={{ csrf_token }}">вперед</a>
+            <a href="?page={{ similar_games.paginator.num_pages }}&syst_char={{ selected_syst_char.id }}&csrfmiddlewaretoken={{ csrf_token }}">в конец</a>
+        {% endif %}
+    </nav>
+</div>
+{% endif %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+{{ form.media.js }}
+
+{% endblock %}

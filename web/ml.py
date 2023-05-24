@@ -34,14 +34,20 @@ game_names = None
 video_games_df_recommend = None
 game_title_vectors = None
 
+tags_list = []
+
 
 def init_video_game_model():
     prepare_static_txt_files()
     print('prepare_static_txt_files')
 
+    mlb = MultiLabelBinarizer()
     global video_games_df
 
     video_games_df = DataFrame([o.__dict__ for o in Game.objects.all()]).drop(columns=['_state'], axis=1)
+
+    video_games_df['tags'] = video_games_df['tags'].apply(lambda x: x.split(', '))
+    get_tags_list(mlb)
 
     video_games_df.columns = video_games_df.columns.str.lower()
     video_games_df['release_date'] = video_games_df['release_date'].astype(str)
@@ -75,7 +81,7 @@ def init_video_game_model():
     video_games_df['processor'] = video_games_df['processor'].apply(lambda x: x.split(','))
     video_games_df['developer'] = video_games_df['developer'].apply(lambda x: x.split(','))
 
-    mlb = MultiLabelBinarizer()
+    # mlb = MultiLabelBinarizer()
     video_games_df["os"] = video_games_df["os"].fillna('7')
     video_games_df["os"] = video_games_df["os"].astype(str).str.replace("Windows ", "")
     video_games_df["os"] = video_games_df["os"].astype(str).str.replace("Vista", "6")
@@ -101,8 +107,6 @@ def init_video_game_model():
     video_games_df['graphics'] = video_games_df['graphics'].fillna('Nvidia RTX 4090')
     video_games_df["graphics"] = video_games_df['graphics'].apply(lambda x: x.split(','))
 
-    video_games_df['tags'] = video_games_df['tags'].apply(lambda x: x.split(','))
-
     global video_games_df_plots
     video_games_df_plots = video_games_df.copy()
     video_games_df_plots.rename(columns={'release_date': 'date'}, inplace=True)
@@ -127,7 +131,7 @@ def init_video_game_model():
     scaled_features = scale.fit_transform(features)
     scaled_features = pd.DataFrame(scaled_features, columns=features.columns)
 
-    model = NearestNeighbors(n_neighbors=2, metric='cosine', algorithm='brute').fit(scaled_features)
+    model = NearestNeighbors(n_neighbors=15, metric='cosine', algorithm='brute').fit(scaled_features)
 
     global vg_distances
     global vg_indices
@@ -214,6 +218,13 @@ def get_less(df, column, value):
     return result
 
 
+def compare(df, list_to_comp):
+    result = []
+    for index, row in df.items():
+        result.append(all(value in row for value in list_to_comp))
+    return result
+
+
 def compare_pc(df, list_to_comp):
     result = []
     for index, row in df.items():
@@ -270,3 +281,38 @@ def plots_by_parameter():
         plt.ylabel('Frequency')
         plt.title("Data Distribution of Video Game " + feature + "s")
         plt.savefig(f"media/plots/{feature}_plot.png")
+
+    video_games_df_plots.tags.explode().value_counts().head(30).plot(kind='bar', figsize=(10, 8),
+                                                                     color=plt.cm.Set2(np.arange(5)))
+    plt.savefig('media/plots/tags_plot.png')
+
+    video_games_df_plots.os.explode().value_counts().head(30).plot(kind='bar', figsize=(10, 8),
+                                                                   color=plt.cm.Set2(np.arange(5)))
+    plt.savefig('media/plots/os_plot.png')
+
+
+def get_filtered_games(price_asc=None, date_asc=None, popularity_asc=None, tags=[]):
+    df_filtered = video_games_df_plots.copy()
+    filterarr = {'price': price_asc, 'date': date_asc, 'popularity': popularity_asc, 'tags': tags}
+    for key, value in filterarr.items():
+        if key != 'tags' and value is not None:
+            df_filtered.sort_values(by=key, ascending=value, inplace=True)
+        elif key == 'tags':
+            if len(tags) != 0:
+                mask = compare(df_filtered[key].astype(str), tags)
+                df_filtered = df_filtered[mask]
+    return df_filtered
+
+
+def get_tags_list(mlb):
+    video_games_df_copy = video_games_df.copy()
+    global tags_list
+    tags_list = pd.DataFrame(mlb.fit_transform(video_games_df_copy.pop("tags")),
+                                                      columns=mlb.classes_).columns
+
+
+def get_tags_list_choices():
+    choice_tags_list = []
+    for tag in tags_list:
+        choice_tags_list.append((tag, tag))
+    return choice_tags_list
