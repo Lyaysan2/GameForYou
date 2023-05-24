@@ -166,8 +166,7 @@ def syst_char_games_view(request):
 
 
 def game_filter_view(request):
-    games = None
-
+    games = []
     choices = get_tags_list_choices()
     form = TagFilterForm(request.GET or None, choices)
     if form.is_valid():
@@ -176,16 +175,15 @@ def game_filter_view(request):
                                       date_asc=convert(form.cleaned_data['date']),
                                       popularity_asc=convert(form.cleaned_data['popularity']),
                                       tags=form.cleaned_data['tags']).values.tolist()
-        games = []
         for game in games_df:
             found_game = Game.objects.filter(id=game[0]).first()
             found_game.developer = found_game.developer.split(', ')
             found_game.tags = found_game.tags.split(', ')
             if found_game is not None:
                 games.append(found_game)
-        page_number = request.GET.get("page", 1)
-        paginator = Paginator(games, per_page=7)
-        total_count = len(games)
-        return render(request, 'web/game_filter.html', {'form': form, 'games': paginator.get_page(page_number),
-                                                        'total_count': total_count})
-    return render(request, 'web/game_filter.html', {'form': form, 'games': games})
+    games = games[:20]
+    page_number = request.GET.get("page", 1)
+    paginator = Paginator(games, per_page=7)
+    total_count = len(games)
+    return render(request, 'web/game_filter.html', {'form': form, 'games': paginator.get_page(page_number),
+                                                        'total_count': total_count, 'selected_filters': form.cleaned_data})

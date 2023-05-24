@@ -54,8 +54,21 @@ class DirectxWidget(s2forms.Select2Widget):
     ]
 
 
-class GameNameWidget(ModelSelect2Widget):
-    queryset = Game.objects.all()
+class BaseAutocompleteModelSelect(s2forms.ModelSelect2Widget):
+    def __init__(self, **kwargs):
+        super().__init__(kwargs)
+
+    def build_attrs(self, base_attrs, extra_attrs=None):
+        base_attrs = super().build_attrs(base_attrs, extra_attrs)
+        base_attrs.update(
+            {"data-minimum-input-length": 0, "data-placeholder": self.empty_label}
+        )
+        return base_attrs
+
+
+class GameNameWidget(BaseAutocompleteModelSelect):
+    empty_label = "Select game"
+    queryset = Game.objects.order_by('-popularity')
     search_fields = [
         'name__icontains',
     ]

@@ -148,5 +148,14 @@ a:active, a:hover{
 select{
     min-width: 60vh;
     height: 45px;
-    background-color: #353D62;
 }
+
+.select2-results__option {
+    background-color: white;
+    color: black;
+}
+
+.select2-selection__choice{
+    color: black;
+}
+
