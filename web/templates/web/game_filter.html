@@ -4,7 +4,6 @@
     {{ form.as_p }}<br>
     <button type="submit">Применить</button>
 </form>
-{% if games is not None %}
 <div class="content_right">
     <ul class="list">
         {% for game in games %}
@@ -33,21 +32,19 @@
         {% endfor %}
     </ul>
         <nav class="pagination">
-        {% if similar_games.has_previous %}
-            <a href="?page=1&syst_char={{ selected_syst_char.id }}&csrfmiddlewaretoken={{ csrf_token }}">в начало</a>
-            <a href="?page={{ similar_games.previous_page_number }}&syst_char={{ selected_syst_char.id }}&csrfmiddlewaretoken={{ csrf_token }}">назад</a>
+        {% if games.has_previous %}
+            <a href="?page=1">в начало</a>
+            <a href="?page={{ games.previous_page_number }}&price={{ selected_filters.price }}&date=&popularity=&tags=">назад</a>
         {% endif %}
 
-        страница {{ similar_games.number }} из {{ similar_games.paginator.num_pages }}
+        страница {{ games.number }} из {{ games.paginator.num_pages }}
 
-        {% if similar_games.has_next %}
-            <a href="?page={{ similar_games.next_page_number }}&syst_char={{ selected_syst_char.id }}&csrfmiddlewaretoken={{ csrf_token }}">вперед</a>
-            <a href="?page={{ similar_games.paginator.num_pages }}&syst_char={{ selected_syst_char.id }}&csrfmiddlewaretoken={{ csrf_token }}">в конец</a>
+        {% if games.has_next %}
+            <a href="?page={{ games.next_page_number }}&price={{ selected_filters.price }}&date=&popularity=&tags=">вперед</a>
+            <a href="?page={{ games.paginator.num_pages }}&price={{ selected_filters.price }}&date=&popularity=&tags=">в конец</a>
         {% endif %}
     </nav>
 </div>
-{% endif %}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 {{ form.media.js }}
-
 {% endblock %}
