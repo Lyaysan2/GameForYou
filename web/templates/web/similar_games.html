@@ -1,7 +1,7 @@
 {% extends 'web/base.html' %}
 {% block content %}
 <h2>Найти похожую игру</h2>
-<form action="" method="get" enctype="multipart/form-data">
+<form action="" method="get" enctype="multipart/form-data" class="form">
     {% csrf_token %}
     {{ form.as_p }}
     <button type="submit" class="btn">Найти</button>
@@ -35,16 +35,16 @@
     {% endfor %}
 </ul>
     <nav class="pagination">
-        {% if games.has_previous %}
+        {% if similar_games.has_previous %}
             <a href="?page=1&syst_char={{ selected_syst_char.id }}&csrfmiddlewaretoken={{ csrf_token }}">в начало</a>
-            <a href="?page={{ games.previous_page_number }}&syst_char={{ selected_syst_char.id }}&csrfmiddlewaretoken={{ csrf_token }}">назад</a>
+            <a href="?page={{ similar_games.previous_page_number }}&syst_char={{ selected_syst_char.id }}&csrfmiddlewaretoken={{ csrf_token }}">назад</a>
         {% endif %}
 
-        страница {{ games.number }} из {{ games.paginator.num_pages }}
+        страница {{ similar_games.number }} из {{ similar_games.paginator.num_pages }}
 
-        {% if games.has_next %}
-            <a href="?page={{ games.next_page_number }}&syst_char={{ selected_syst_char.id }}&csrfmiddlewaretoken={{ csrf_token }}">вперед</a>
-            <a href="?page={{ games.paginator.num_pages }}&syst_char={{ selected_syst_char.id }}&csrfmiddlewaretoken={{ csrf_token }}">в конец</a>
+        {% if similar_games.has_next %}
+            <a href="?page={{ similar_games.next_page_number }}&syst_char={{ selected_syst_char.id }}&csrfmiddlewaretoken={{ csrf_token }}">вперед</a>
+            <a href="?page={{ similar_games.paginator.num_pages }}&syst_char={{ selected_syst_char.id }}&csrfmiddlewaretoken={{ csrf_token }}">в конец</a>
         {% endif %}
     </nav>
 {% else %}
