@@ -175,7 +175,10 @@ def game_filter_view(request):
     print(popularity_sort)
 
     choices = get_tags_list_choices()
-    tags_form = TagFilterForm(request.GET, choices)
+    form = TagFilterForm(request.GET or None, choices)
+    if form.is_valid():
+        if form.cleaned_data['tags']:
+            print(form.cleaned_data)
 
 
     # применяем соответствующую сортировку к играм
@@ -185,5 +188,5 @@ def game_filter_view(request):
     #     games = games.order_by('-price')
 
     # передаем игры и параметры сортировки в шаблон
-    context = {'form': tags_form}
+    context = {'form': form}
     return render(request, 'web/game_filter.html', context)
