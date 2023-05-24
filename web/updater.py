@@ -1,8 +1,12 @@
+from datetime import datetime
+
 from apscheduler.schedulers.background import BackgroundScheduler
 from .ml import init_video_game_model
+from .parsing import pars_pages
 
 
 def start():
     scheduler = BackgroundScheduler()
-    # scheduler.add_job(init_video_game_model, 'cron', day='*/2', hour=0, minute=0)
+    # time in UTC
+    scheduler.add_job(pars_pages, 'cron', day='*/2', hour=21, minute=0)
     scheduler.start()

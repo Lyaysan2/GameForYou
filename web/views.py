@@ -168,19 +168,22 @@ def syst_char_games_view(request):
 def game_filter_view(request):
     games = []
     choices = get_tags_list_choices()
-    form = TagFilterForm(request.GET or None, choices)
-    if form.is_valid():
-        convert = lambda i: eval(i) if i != '' else None
-        games_df = get_filtered_games(price_asc=convert(form.cleaned_data['price']),
-                                      date_asc=convert(form.cleaned_data['date']),
-                                      popularity_asc=convert(form.cleaned_data['popularity']),
-                                      tags=form.cleaned_data['tags']).values.tolist()
-        for game in games_df:
-            found_game = Game.objects.filter(id=game[0]).first()
-            found_game.developer = found_game.developer.split(', ')
-            found_game.tags = found_game.tags.split(', ')
-            if found_game is not None:
-                games.append(found_game)
+    form = TagFilterForm(request.GET, choices)
+    form.is_valid()
+
+    print(form.cleaned_data)
+    convert = lambda i: eval(i) if i != '' else None
+    games_df = get_filtered_games(price_asc=convert(form.cleaned_data['price']),
+                                  date_asc=convert(form.cleaned_data['date']),
+                                  popularity_asc=convert(form.cleaned_data['popularity']),
+                                  tags=form.cleaned_data['tags']).values.tolist()
+    for game in games_df:
+        found_game = Game.objects.filter(id=game[0]).first()
+        found_game.developer = found_game.developer.split(', ')
+        found_game.tags = found_game.tags.split(', ')
+        if found_game is not None:
+            games.append(found_game)
+
     games = games[:20]
     page_number = request.GET.get("page", 1)
     paginator = Paginator(games, per_page=7)
