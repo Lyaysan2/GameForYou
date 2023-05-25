@@ -279,6 +279,7 @@ def plots_by_parameter():
     plt.title("Data Distribution of Video Game prices")
     plt.savefig('media/plots/price_plot.png')
 
+    video_games_df_plots['ram'] = video_games_df_plots['ram'].div(1024).round(1)
     features = video_games_df_plots[['date', 'ram']].columns
     for idx, feature in enumerate(features):
         plt.figure(figsize=(10, 8))

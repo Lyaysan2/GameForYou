@@ -171,6 +171,7 @@ def syst_char_games_view(request):
                                                         'user': request.user})
 
 
+@login_required()
 @cache_page(3600)
 def game_filter_view(request):
     games = []
