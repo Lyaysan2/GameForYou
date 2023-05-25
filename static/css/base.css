@@ -15,10 +15,6 @@ a{
     font-size: 16px;
 }
 
-/*h1, h2, h3, h4, h5, p{*/
-/*    margin: 0 0 10px;*/
-/*}*/
-
 a:active, a:hover{
     color: white;
 }
@@ -33,6 +29,7 @@ a:active, a:hover{
     font-family: Inter;
     font-weight: bold;
     font-size: 16px;
+    height: 45px;
 }
 
 .btn:hover, btn:active{
@@ -121,6 +118,14 @@ a:active, a:hover{
     padding: 0;
 }
 
+#dev{
+    color: #BFBFBF;
+    padding: 5px;
+    border: 2px solid #1E90FF;
+    border-radius: 4px;
+    margin-left: 5px;
+}
+
 .game_info_block{
     width: 100%;
     display: flex;
@@ -141,13 +146,33 @@ a:active, a:hover{
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 60vh;
+    /*width: 100vh;*/
+    max-width: 100%;
     gap: 20px;
 }
 
 select{
-    min-width: 60vh;
+    min-width: 60%;
     height: 45px;
+}
+
+.tags{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-auto-rows: minmax(30px, auto);
+    grid-column-gap: 5px;
+    grid-row-gap: 1em;
+    margin-top: 20px;
+}
+
+.tag{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    margin: 0;
+    background-color: #353D62;
+    width: 100%;
 }
 
 .select2-results__option {
@@ -159,3 +184,63 @@ select{
     color: black;
 }
 
+.select2-selection, .select2-selection__rendered{
+    border-radius: 3px;
+    height: fit-content;
+    min-height: 45px;
+    background-color: #353D62;
+    border: 2px solid #939AB0;
+    color: #939AB0;
+    font-family: Inter;
+    font-size: 16px;
+}
+
+/*#id_tags{*/
+/*    width: 40vh;*/
+/*}*/
+
+#id_price, #id_date, #id_popularity{
+    border-radius: 3px;
+    max-height: 100px;
+    background-color: #353D62;
+    border: 2px solid #939AB0;
+    color: #939AB0;
+    font-family: Inter;
+    font-size: 16px;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__rendered li{
+    font-family: Inter;
+    background-color: white;
+    border: 2px solid #1E90FF;
+    border-radius: 3px;
+}
+.select2-search__field, .select2-search{
+    display: none;
+    border: none;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove, .select2-selection__clear{
+    color: #1E90FF;
+}
+
+.select2-container--default .select2-selection--multiple{
+    background-color: #0E1947;
+    border: none;
+}
+
+#select2-id_name-container{
+    color: white;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    width: 100vh;
+}
+
+#id_name{
+    width: 297px;
+}

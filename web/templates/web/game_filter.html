@@ -1,8 +1,8 @@
 {% extends 'web/base.html' %}
 {% block content %}
-<form action="" method="GET">
+<form action="" method="GET" class="form">
     {{ form.as_p }}<br>
-    <button type="submit">Применить</button>
+    <button type="submit" class="btn">Применить</button>
 </form>
 <div class="content_right">
     <ul class="list">
@@ -16,14 +16,16 @@
             <a href="{{game.link}}" class="link">{{ game.link }}</a><br>
             <span style="display: flex; flex-direction: row">
                 {% for dev in game.developer %}
-                    <h4 style="color: #BFBFBF">{{ dev }},</h4>
+                    <h4 id="dev">{{ dev }}</h4>
                 {% endfor %}
             </span>
             <br>
             Tags:
+        <div class="tags">
             {% for tag in game.tags %}
-            {{ tag }},
+                <div class="tag">{{ tag }}</div>
             {% endfor %}<br>
+        </div>
             <br>
             {% if user not in game.users.all %}
             <small><a href="#" class="favourite_game_add_js" data-game-id="{{ game.id }}">В избранное</a></small>
@@ -31,17 +33,17 @@
         </li>
         {% endfor %}
     </ul>
-        <nav class="pagination">
+    <nav class="pagination">
         {% if games.has_previous %}
-            <a href="?page=1">в начало</a>
-            <a href="?page={{ games.previous_page_number }}&price={{ selected_filters.price }}&date=&popularity=&tags=">назад</a>
+        <a href="?page=1">в начало</a>
+        <a href="?page={{ games.previous_page_number }}&price={{ selected_filters.price }}&date={{ selected_filters.date }}&popularity={{ selected_filters.popularity }}{% if selected_filters.tags %}{% for tag in selected_filters.tags %}&tags={{ tag }}{% endfor %}{% endif %}">назад</a>
         {% endif %}
 
         страница {{ games.number }} из {{ games.paginator.num_pages }}
 
         {% if games.has_next %}
-            <a href="?page={{ games.next_page_number }}&price={{ selected_filters.price }}&date=&popularity=&tags=">вперед</a>
-            <a href="?page={{ games.paginator.num_pages }}&price={{ selected_filters.price }}&date=&popularity=&tags=">в конец</a>
+        <a href="?page={{ games.next_page_number }}&price={{ selected_filters.price }}&date={{ selected_filters.date }}&popularity={{ selected_filters.popularity }}{% if selected_filters.tags %}{% for tag in selected_filters.tags %}&tags={{ tag }}{% endfor %}{% endif %}">вперед</a>
+        <a href="?page={{ games.paginator.num_pages }}&price={{ selected_filters.price }}&date={{ selected_filters.date }}&popularity={{ selected_filters.popularity }}{% if selected_filters.tags %}{% for tag in selected_filters.tags %}&tags={{ tag }}{% endfor %}{% endif %}">в конец</a>
         {% endif %}
     </nav>
 </div>
