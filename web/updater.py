@@ -1,7 +1,5 @@
-from datetime import datetime
-
 from apscheduler.schedulers.background import BackgroundScheduler
-from .ml import init_video_game_model
+
 from .parsing import pars_pages
 
 

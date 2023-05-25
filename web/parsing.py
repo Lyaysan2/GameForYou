@@ -5,6 +5,7 @@ from datetime import datetime
 from collections import Counter
 from thefuzz import fuzz
 from utils.mychoice import *
+from web.ml import init_video_game_model, plots_by_parameter
 from web.models import Game
 
 proc_list = PROCESSOR_CHOICES
@@ -281,3 +282,5 @@ def pars_pages():
                 "popularity": popularity, "developer": developer, "tags": tags, "critics_score": critics_score,
                 "os": os, "processor": processor, "ram": ram, "graphics": graphics, "directx": directx, "storage": storage}
             )
+    init_video_game_model()
+    plots_by_parameter()

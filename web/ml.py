@@ -272,31 +272,47 @@ def prepare_static_txt_files():
 
 
 def plots_by_parameter():
-    features = video_games_df_plots[['date', 'reviews', 'ram']].columns
+    cut_bins = [0, 250, 500, 1000, 2000, 4000, 6000]
+    df_price = pd.DataFrame()
+    df_price['price'] = pd.cut(video_games_df_plots['price'], bins=cut_bins)
+    df_price.price.explode().value_counts().plot(kind='pie', figsize=(6, 4), colors=plt.cm.Set2(np.arange(5)))
+    plt.title("Data Distribution of Video Game prices")
+    plt.savefig('media/plots/price_plot.png')
 
+    features = video_games_df_plots[['date', 'ram']].columns
     for idx, feature in enumerate(features):
         plt.figure(figsize=(10, 8))
         sns.countplot(data=video_games_df_plots, x=feature)
-        plt.xlabel(feature)
         plt.ylabel('Frequency')
         plt.title("Data Distribution of Video Game " + feature + "s")
         plt.savefig(f"media/plots/{feature}_plot.png")
 
-    video_games_df_plots.tags.explode().value_counts().head(30).plot(kind='bar', figsize=(10, 8),
+    plt.figure(figsize=(19, 8))
+    sns.countplot(data=video_games_df_plots, x='reviews')
+    plt.ylabel('Frequency')
+    plt.title("Data Distribution of Video Game reviews")
+    plt.savefig(f"media/plots/reviews_plot.png")
+
+    video_games_df_plots.tags.explode().value_counts().head(30).plot(kind='bar', figsize=(10, 14),
                                                                      color=plt.cm.Set2(np.arange(5)))
+    plt.title("Data Distribution of Video Game tags")
     plt.savefig('media/plots/tags_plot.png')
 
     video_games_df_plots.os.explode().value_counts().head(30).plot(kind='bar', figsize=(10, 8),
                                                                    color=plt.cm.Set2(np.arange(5)))
+    plt.title("Data Distribution of Video Game os")
     plt.savefig('media/plots/os_plot.png')
 
 
 def get_filtered_games(price_asc=None, date_asc=None, popularity_asc=None, tags=[]):
     df_filtered = video_games_df_plots.copy()
+    print(df_filtered.columns)
     filterarr = {'price': price_asc, 'date': date_asc, 'popularity': popularity_asc, 'tags': tags}
     for key, value in filterarr.items():
-        if key != 'tags' and value is not None:
+        if key != 'tags' and key != 'date' and value is not None:
             df_filtered.sort_values(by=key, ascending=value, inplace=True)
+        elif key == 'date' and value is not None:
+            df_filtered.sort_values(by=[key, 'release_date_month', 'release_date_day'], ascending=value, inplace=True)
         elif key == 'tags':
             if len(tags) != 0:
                 mask = compare(df_filtered[key].astype(str), tags)
@@ -308,7 +324,7 @@ def get_tags_list(mlb):
     video_games_df_copy = video_games_df.copy()
     global tags_list
     tags_list = pd.DataFrame(mlb.fit_transform(video_games_df_copy.pop("tags")),
-                                                      columns=mlb.classes_).columns
+                             columns=mlb.classes_).columns
 
 
 def get_tags_list_choices():

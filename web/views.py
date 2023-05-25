@@ -2,6 +2,7 @@ from django.contrib.auth import get_user_model, authenticate, login, logout
 from django.contrib.auth.decorators import login_required
 from django.core.paginator import Paginator
 from django.shortcuts import render, redirect, get_object_or_404
+from django.views.decorators.cache import cache_page
 
 from web.forms import RegistrationForm, AuthForm, SystemCharForm, SimilarGameForm, TagFilterForm
 from web.ml import get_games_by_PC, recommend_game, get_tags_list_choices, get_filtered_games
@@ -61,6 +62,7 @@ def syst_char_add_view(request):
 
 
 @login_required
+@cache_page(3600)
 def profile_view(request):
     user = request.user
     syst_char_list = SystemCharacteristics.objects.all().filter(user=user)
@@ -101,6 +103,7 @@ def favourite_game_add_view(request, id):
 
 
 @login_required
+@cache_page(3600)
 def similar_games_view(request):
     form = SimilarGameForm(request.GET or None)
     user = request.user
@@ -129,6 +132,7 @@ def similar_games_view(request):
 
 
 @login_required()
+@cache_page(3600)
 def syst_char_games_view(request):
     syst_char_by_user = SystemCharacteristics.objects.all().filter(user=request.user)
     selected_syst_char = None
@@ -167,18 +171,18 @@ def syst_char_games_view(request):
                                                         'user': request.user})
 
 
+@cache_page(3600)
 def game_filter_view(request):
     games = []
     choices = get_tags_list_choices()
     form = TagFilterForm(request.GET, choices)
     form.is_valid()
 
-    print(form.cleaned_data)
     convert = lambda i: eval(i) if i != '' else None
     games_df = get_filtered_games(price_asc=convert(form.cleaned_data['price']),
                                   date_asc=convert(form.cleaned_data['date']),
                                   popularity_asc=convert(form.cleaned_data['popularity']),
-                                  tags=form.cleaned_data['tags']).values.tolist()[:20]
+                                  tags=form.cleaned_data['tags']).values.tolist()[:40]
     for game in games_df:
         found_game = Game.objects.filter(id=game[0]).first()
         if found_game is not None:
