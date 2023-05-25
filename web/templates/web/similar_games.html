@@ -12,7 +12,7 @@
     <li class="list_game">
         <div class="game_info_block">
             <h3>{{ game.name }} ({{ game.release_date }})</h3>
-            <p>{{ game.reviews }} reviews ({{ game.popularity }})</p>
+            <p style="color: {{ game.ram }}">{{ game.reviews }} reviews ({{ game.popularity }})</p>
             <p>{{ game.price }} Руб.</p><br>
         </div>
         <a href="{{game.link}}" class="link">{{ game.link }}</a><br>

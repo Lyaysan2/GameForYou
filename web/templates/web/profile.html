@@ -19,10 +19,12 @@
 <ul>
     {% for game in favourite_games %}
     <li>
-        {{ game.name }}: <a href="{{game.link}}">{{ game.link }}</a><br>
+        {{ game.name }}: <a href="{{ game.link }}">{{ game.link }}</a><br>
         Price: {{ game.price }}<br>
         Date: {{ game.release_date }}<br>
-        Reviews: {{ game.reviews }}<br>
+        <div style="color: {{ game.ram }}">
+            Reviews: {{ game.reviews }}<br>
+        </div>
         Popularity: {{ game.popularity }}<br>
         Developer:
         {% for dev in game.developer %}
@@ -38,17 +40,17 @@
 </ul>
 всего {{ total_count }} записей. {{ favourite_games|length }} на этой странице.
 
-    <nav>
-        {% if favourite_games.has_previous %}
-            <a href="?page=1">в начало</a>
-            <a href="?page={{ favourite_games.previous_page_number }}">предыдующая страница</a>
-        {% endif %}
+<nav>
+    {% if favourite_games.has_previous %}
+    <a href="?page=1">в начало</a>
+    <a href="?page={{ favourite_games.previous_page_number }}">предыдующая страница</a>
+    {% endif %}
 
-        страница {{ favourite_games.number }} из {{ favourite_games.paginator.num_pages }}
+    страница {{ favourite_games.number }} из {{ favourite_games.paginator.num_pages }}
 
-        {% if favourite_games.has_next %}
-            <a href="?page={{ favourite_games.next_page_number }}">следующая страница</a>
-            <a href="?page={{ favourite_games.paginator.num_pages }}">в конец</a>
-        {% endif %}
-    </nav>
+    {% if favourite_games.has_next %}
+    <a href="?page={{ favourite_games.next_page_number }}">следующая страница</a>
+    <a href="?page={{ favourite_games.paginator.num_pages }}">в конец</a>
+    {% endif %}
+</nav>
 {% endblock %}

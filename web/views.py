@@ -2,6 +2,7 @@ from django.contrib.auth import get_user_model, authenticate, login, logout
 from django.contrib.auth.decorators import login_required
 from django.core.paginator import Paginator
 from django.shortcuts import render, redirect, get_object_or_404
+from django.views.decorators.cache import cache_page
 
 from web.forms import RegistrationForm, AuthForm, SystemCharForm, SimilarGameForm, TagFilterForm
 from web.ml import get_games_by_PC, recommend_game, get_tags_list_choices, get_filtered_games
@@ -61,6 +62,7 @@ def syst_char_add_view(request):
 
 
 @login_required
+@cache_page(3600)
 def profile_view(request):
     user = request.user
     syst_char_list = SystemCharacteristics.objects.all().filter(user=user)
@@ -68,6 +70,7 @@ def profile_view(request):
     for i in range(len(favourite_games)):
         favourite_games[i].developer = favourite_games[i].developer.split(', ')
         favourite_games[i].tags = favourite_games[i].tags.split(', ')
+        favourite_games[i].ram = get_review_color(favourite_games[i])
     total_count = len(favourite_games)
     page_number = request.GET.get("page", 1)
     paginator = Paginator(favourite_games, per_page=7)
@@ -100,6 +103,7 @@ def favourite_game_add_view(request, id):
 
 
 @login_required
+@cache_page(3600)
 def similar_games_view(request):
     form = SimilarGameForm(request.GET or None)
     user = request.user
@@ -113,9 +117,10 @@ def similar_games_view(request):
                 similar_games_df = similar_games_df[['id']].values.tolist()
                 for game in similar_games_df:
                     found_game = Game.objects.filter(id=game[0]).first()
-                    found_game.developer = found_game.developer.split(', ')
-                    found_game.tags = found_game.tags.split(', ')
                     if found_game is not None:
+                        found_game.developer = found_game.developer.split(', ')
+                        found_game.tags = found_game.tags.split(', ')
+                        found_game.ram = get_review_color(found_game)
                         similar_games.append(found_game)
                 total_count = len(similar_games)
                 page_number = request.GET.get("page", 1)
@@ -127,6 +132,7 @@ def similar_games_view(request):
 
 
 @login_required()
+@cache_page(3600)
 def syst_char_games_view(request):
     syst_char_by_user = SystemCharacteristics.objects.all().filter(user=request.user)
     selected_syst_char = None
@@ -165,28 +171,47 @@ def syst_char_games_view(request):
                                                         'user': request.user})
 
 
+@cache_page(3600)
 def game_filter_view(request):
     games = []
     choices = get_tags_list_choices()
     form = TagFilterForm(request.GET, choices)
     form.is_valid()
 
-    print(form.cleaned_data)
     convert = lambda i: eval(i) if i != '' else None
     games_df = get_filtered_games(price_asc=convert(form.cleaned_data['price']),
                                   date_asc=convert(form.cleaned_data['date']),
                                   popularity_asc=convert(form.cleaned_data['popularity']),
-                                  tags=form.cleaned_data['tags']).values.tolist()
+                                  tags=form.cleaned_data['tags']).values.tolist()[:40]
     for game in games_df:
         found_game = Game.objects.filter(id=game[0]).first()
-        found_game.developer = found_game.developer.split(', ')
-        found_game.tags = found_game.tags.split(', ')
         if found_game is not None:
+            found_game.developer = found_game.developer.split(', ')
+            found_game.tags = found_game.tags.split(', ')
+            found_game.ram = get_review_color(found_game)
             games.append(found_game)
 
-    games = games[:20]
     page_number = request.GET.get("page", 1)
     paginator = Paginator(games, per_page=7)
     total_count = len(games)
     return render(request, 'web/game_filter.html', {'form': form, 'games': paginator.get_page(page_number),
                                                         'total_count': total_count, 'selected_filters': form.cleaned_data})
+
+
+def get_review_color(game):
+    revies_list = (('Very Positive', 'Overwhelmingly Positive', 'Mostly Positive', 'Positive'), \
+                  ('Mixed'), \
+                  ('Mostly Negative', 'Overwhelmingly Negative', 'Negative', 'Very Negative'),\
+                  ('9 user reviews', '8 user reviews', '7 user reviews', '6 user reviews', '5 user reviews',
+                   '4 user reviews', '3 user reviews', '2 user reviews', '1 user reviews', 'No user reviews'))
+    ram = None
+
+    if game.reviews in revies_list[0]:
+        ram = '#23FD10'
+    elif game.reviews in revies_list[1]:
+        ram = '#FDBB10'
+    elif game.reviews in revies_list[2]:
+        ram = '#FD1057'
+    elif game.reviews in revies_list[3]:
+        ram = '#939AB0'
+    return ram
