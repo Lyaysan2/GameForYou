@@ -4,7 +4,7 @@
     margin: 0;
     display: flex;
     flex-direction: column;
-    font-family: Inter;
+    font-family: Inter, sans-serif;
     color: white;
 }
 
@@ -243,4 +243,27 @@ select{
 
 #id_name{
     width: 297px;
+}
+
+.main_text{
+    width: 50%;
+}
+
+.main_content{
+    width: 70%;
+    height: 50px;
+}
+
+.main_img{
+    position: absolute;
+    right: 0;
+}
+
+.plot{
+    width: 100%;
+    height: auto;
+}
+
+.plot img {
+    width: 100%;
 }
