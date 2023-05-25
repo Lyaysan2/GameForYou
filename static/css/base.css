@@ -118,6 +118,14 @@ a:active, a:hover{
     padding: 0;
 }
 
+#dev{
+    color: #BFBFBF;
+    padding: 5px;
+    border: 2px solid #1E90FF;
+    border-radius: 4px;
+    margin-left: 5px;
+}
+
 .game_info_block{
     width: 100%;
     display: flex;
@@ -146,6 +154,25 @@ a:active, a:hover{
 select{
     min-width: 60%;
     height: 45px;
+}
+
+.tags{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-auto-rows: minmax(30px, auto);
+    grid-column-gap: 5px;
+    grid-row-gap: 1em;
+    margin-top: 20px;
+}
+
+.tag{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    margin: 0;
+    background-color: #353D62;
+    width: 100%;
 }
 
 .select2-results__option {

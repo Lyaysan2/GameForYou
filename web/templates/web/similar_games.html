@@ -18,14 +18,16 @@
         <a href="{{game.link}}" class="link">{{ game.link }}</a><br>
         <span style="display: flex; flex-direction: row">
                     {% for dev in game.developer %}
-                        <h4 style="color: #BFBFBF">{{ dev }},</h4>
+                        <h4 id="dev">{{ dev }}</h4>
                     {% endfor %}
                 </span>
         <br>
         Tags:
-        {% for tag in game.tags %}
-        {{ tag }},
-        {% endfor %}<br>
+        <div class="tags">
+            {% for tag in game.tags %}
+                <div class="tag">{{ tag }}</div>
+            {% endfor %}<br>
+        </div>
         <br>
         {% if user not in game.users.all %}
         <small><a href="#" class="favourite_game_add_js" data-game-id="{{ game.id }}">В избранное</a></small>
