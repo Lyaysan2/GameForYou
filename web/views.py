@@ -128,7 +128,7 @@ def similar_games_view(request):
                 return render(request, 'web/similar_games.html',
                               {'form': form, 'similar_games': paginator.get_page(page_number), 'user': user,
                                'total_count': total_count, 'selected_game': selected_game})
-    return render(request, 'web/similar_games.html', {'form': form, 'similar_games': similar_games, 'user': user})
+    return render(request, 'web/similar_games.html', {'form': form, 'similar_games': similar_games, 'user': user, 'selected_game': selected_game})
 
 
 @login_required()
