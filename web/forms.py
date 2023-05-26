@@ -57,6 +57,7 @@ class DirectxWidget(s2forms.Select2Widget):
 class BaseAutocompleteModelSelect(s2forms.ModelSelect2Widget):
     def __init__(self, **kwargs):
         super().__init__(kwargs)
+        self.attrs = {"style": "width: 800px"}
 
     def build_attrs(self, base_attrs, extra_attrs=None):
         base_attrs = super().build_attrs(base_attrs, extra_attrs)
@@ -67,7 +68,7 @@ class BaseAutocompleteModelSelect(s2forms.ModelSelect2Widget):
 
 
 class GameNameWidget(BaseAutocompleteModelSelect):
-    empty_label = "Select game"
+    empty_label = "Выберите игру"
     queryset = Game.objects.order_by('-popularity')
     search_fields = [
         'name__icontains',

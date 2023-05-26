@@ -62,7 +62,7 @@ def syst_char_add_view(request):
 
 
 @login_required
-@cache_page(3600)
+@cache_page(60)
 def profile_view(request):
     user = request.user
     syst_char_list = SystemCharacteristics.objects.all().filter(user=user)
@@ -73,7 +73,7 @@ def profile_view(request):
         favourite_games[i].ram = get_review_color(favourite_games[i])
     total_count = len(favourite_games)
     page_number = request.GET.get("page", 1)
-    paginator = Paginator(favourite_games, per_page=7)
+    paginator = Paginator(favourite_games, per_page=5)
     return render(request, 'web/profile.html', {'user': user,
                                                 'syst_char_list': syst_char_list,
                                                 'favourite_games': paginator.get_page(page_number),
@@ -103,7 +103,7 @@ def favourite_game_add_view(request, id):
 
 
 @login_required
-@cache_page(3600)
+@cache_page(60)
 def similar_games_view(request):
     form = SimilarGameForm(request.GET or None)
     user = request.user
@@ -124,15 +124,15 @@ def similar_games_view(request):
                         similar_games.append(found_game)
                 total_count = len(similar_games)
                 page_number = request.GET.get("page", 1)
-                paginator = Paginator(similar_games, per_page=7)
+                paginator = Paginator(similar_games, per_page=5)
                 return render(request, 'web/similar_games.html',
                               {'form': form, 'similar_games': paginator.get_page(page_number), 'user': user,
-                               'total_count': total_count, 'selected_game_id': selected_game.id})
+                               'total_count': total_count, 'selected_game': selected_game})
     return render(request, 'web/similar_games.html', {'form': form, 'similar_games': similar_games, 'user': user})
 
 
 @login_required()
-@cache_page(3600)
+@cache_page(60)
 def syst_char_games_view(request):
     syst_char_by_user = SystemCharacteristics.objects.all().filter(user=request.user)
     selected_syst_char = None
@@ -172,7 +172,7 @@ def syst_char_games_view(request):
 
 
 @login_required()
-@cache_page(3600)
+@cache_page(60)
 def game_filter_view(request):
     games = []
     choices = get_tags_list_choices()

@@ -307,7 +307,6 @@ def plots_by_parameter():
 
 def get_filtered_games(price_asc=None, date_asc=None, popularity_asc=None, tags=[]):
     df_filtered = video_games_df_plots.copy()
-    print(df_filtered.columns)
     filterarr = {'price': price_asc, 'date': date_asc, 'popularity': popularity_asc, 'tags': tags}
     for key, value in filterarr.items():
         if key != 'tags' and key != 'date' and value is not None:
