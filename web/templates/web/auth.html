@@ -1,9 +1,22 @@
 {% extends 'web/base.html' %}
 {% block content %}
-    <h2>Авторизация</h2>
-    <form action="" method="post">
-      {% csrf_token %}
-      {{ form.as_p }}
-      <button>Войти</button>
-    </form>
+    <div class="sign_form_wrapper">
+        <h2>Авторизация</h2>
+        <form action="" method="post" class="sign_form">
+            {% csrf_token %}
+            <div class="inputs">
+                <div class="form_input">
+                    <h4>Логин</h4>
+                    {{ form.username }}
+                </div>
+                <div class="form_input">
+                    <h4>Пароль</h4>
+                    {{ form.password }}
+                </div>
+            </div>
+            <div>
+                <button class="btn">Войти</button>
+            </div>
+        </form>
+    </div>
 {% endblock %}

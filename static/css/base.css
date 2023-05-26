@@ -26,7 +26,7 @@ a:active, a:hover{
     border-radius: 4px;
     padding: 10px;
     color: white;
-    font-family: Inter;
+    font-family: Inter, sans-serif;
     font-weight: bold;
     font-size: 16px;
     height: 45px;
@@ -44,7 +44,7 @@ a:active, a:hover{
     background-color: #353D62;
     border: 2px solid #939AB0;
     color: #939AB0;
-    font-family: Inter;
+    font-family: Inter, sans-serif;
     font-size: 16px;
     margin-top: 10px;
 }
@@ -102,6 +102,17 @@ a:active, a:hover{
     gap: 20px;
     list-style-type: none;
     margin: 0 0 0 5vh;
+    padding: 20px;
+}
+
+.list_profile{
+    display: flex;
+    flex-direction: column;
+    background-color: #262D4F;
+    border: none;
+    border-radius: 8px;
+    gap: 20px;
+    list-style-type: none;
     padding: 20px;
 }
 
@@ -184,15 +195,18 @@ select{
     color: black;
 }
 
-.select2-selection, .select2-selection__rendered{
+.select2-selection, .select2-selection__rendered, #id_ram, #id_storage{
     border-radius: 3px;
     height: fit-content;
     min-height: 45px;
     background-color: #353D62;
     border: 2px solid #939AB0;
     color: #939AB0;
-    font-family: Inter;
+    font-family: Inter, sans-serif;
     font-size: 16px;
+}
+
+.char_form {
 }
 
 /*#id_tags{*/
@@ -205,12 +219,12 @@ select{
     background-color: #353D62;
     border: 2px solid #939AB0;
     color: #939AB0;
-    font-family: Inter;
+    font-family: Inter, sans-serif;
     font-size: 16px;
 }
 
 .select2-container--default .select2-selection--multiple .select2-selection__rendered li{
-    font-family: Inter;
+    font-family: Inter, sans-serif;
     background-color: white;
     border: 2px solid #1E90FF;
     border-radius: 3px;
@@ -257,6 +271,11 @@ select{
 .main_img{
     position: absolute;
     right: 0;
+    z-index: -10;
+}
+
+.plot_name{
+    font-size: 20px;
 }
 
 .plot{
@@ -266,4 +285,98 @@ select{
 
 .plot img {
     width: 100%;
+}
+
+#id_email, #id_username, #id_password, #id_password2{
+    width: 50vh;
+    border-radius: 3px;
+    height: 45px;
+    background-color: #262D4F;
+    border: 2px solid #939AB0;
+    color: #939AB0;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.helptext{
+    display: none;
+}
+
+label[for="id_email"], label[for="id_username"], label[for="id_password"], label[for="id_password2"]{
+    display: none;
+}
+
+.sign_form_wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    background-color: #262D4F;
+    border: 2px solid #939AB0;
+    border-radius: 4px;
+    padding: 20px;
+    position: relative;
+    left: 25%
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: end;
+}
+
+.sign_form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.form_input{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.profile_info_content{
+    display: flex;
+    flex-direction: column;
+    background-color: #353D62;
+    width: 47%;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.profile_info_wrapper{
+    background-color: #262D4F;
+    border: 2px solid #939AB0;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    padding-top: 10px;
+}
+
+.profile_info{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.profile_info_text{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile_text{
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.profile_char{
+    padding: 10px 0 10px 0;
 }

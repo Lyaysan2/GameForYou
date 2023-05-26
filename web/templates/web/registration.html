@@ -1,13 +1,32 @@
 {% extends 'web/base.html' %}
 {% block content %}
-    <h2>Регистрация</h2>
-    {% if is_success %}
-        <p><b>Спасибо за регистрацию!</b></p>
-    {% else %}
-        <form action="" method="post">
-            {% csrf_token %}
-            {{ form.as_p }}
-            <button>Зарегистрироваться</button>
-        </form>
-    {% endif %}
+    <div class="sign_form_wrapper">
+        <h2>Регистрация</h2>
+        {% if is_success %}
+            <p><b>Спасибо за регистрацию!</b></p>
+        {% else %}
+            <form action="" method="post" class="sign_form">
+                {% csrf_token %}
+                <div class="inputs">
+                    <div class="form_input">
+                        <h4>Email</h4>
+                        {{ form.email }}
+                    </div>
+                    <div class="form_input">
+                        <h4>Логин</h4>
+                        {{ form.username }}
+                    </div>
+                    <div class="form_input">
+                        <h4>Пароль</h4>
+                        {{ form.password }}
+                    </div>
+                    <div class="form_input">
+                        <h4>Повторите пароль</h4>
+                        {{ form.password2 }}
+                    </div>
+                </div>
+                <button class="btn">Зарегистрироваться</button>
+            </form>
+        {% endif %}
+    </div>
 {% endblock %}
