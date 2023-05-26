@@ -9,7 +9,8 @@
             Войти</button>
        {% endif %}
    </div>
-   <img src="media/plots/main_img.png" class="main_img">
+    {% load static %}
+   <img src="{% static "assets/main_img.png" %}" class="main_img"/>
 </div>
 <div class="main_content">
    <h2>Статистика по играм</h2>
