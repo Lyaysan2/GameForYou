@@ -6,7 +6,7 @@
     <select name="syst_char" id="syst_char" class="select" data-placeholder="Выберите из списка">
         <option selected="true" disabled="disabled" class="select">Выберите систему характеристик:</option>
         {% for syst_char in syst_char_by_user %}
-        <option class="select" value="{{ syst_char.id }}">{{ syst_char.os }}, {{ syst_char.processor }}, {{ syst_char.memory }} GB,
+        <option class="select" value="{{ syst_char.id }}">{{ syst_char.os }}, {{ syst_char.processor }}, {{ syst_char.ram }} GB,
             {{ syst_char.graphics }}, {{ syst_char.directx }}, {{ syst_char.storage }} GB
         </option>
         {% endfor %}
@@ -22,7 +22,7 @@
             <h3>Вы выбрали:</h3>
             ОС: {{ selected_syst_char.os }}<br>
             Процессор: {{ selected_syst_char.processor }}<br>
-            Оперативная память: {{ selected_syst_char.memory }} GB<br>
+            Оперативная память: {{ selected_syst_char.ram }} GB<br>
             Видеокарта: {{ selected_syst_char.graphics }}<br>
             DirectX: {{ selected_syst_char.directx }}<br>
             Свободное место: {{ selected_syst_char.storage }} GB<br>

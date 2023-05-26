@@ -6,11 +6,11 @@
         <div class="profile_info_content">
             <h3>Данные профиля</h3>
             <div class="profile_info_text">
-                <h class="profile_text">Логин:</h>
+                <h class="profile_text">Логин:  </h>
                 {{ user.username }}
             </div>
             <div class="profile_info_text">
-                <h class="profile_text">Email:</h>
+                <h class="profile_text">Email:  </h>
                 {{ user.email }}
             </div>
         </div>
@@ -19,27 +19,27 @@
                 {% for syst_char in syst_char_list %}
                     <div class="profile_char">
                     <div class="profile_info_text">
-                            <h class="profile_text">ОС:</h>
+                            <h class="profile_text">ОС:  </h>
                             {{ syst_char.os }}
                         </div>
                         <div class="profile_info_text">
-                            <h class="profile_text">Процессор:</h>
+                            <h class="profile_text">Процессор:  </h>
                             {{ syst_char.processor }}
                         </div>
                         <div class="profile_info_text">
-                            <h class="profile_text">Оперативная память:</h>
+                            <h class="profile_text">Оперативная память:  </h>
                             {{ syst_char.ram }}GB
                         </div>
                         <div class="profile_info_text">
-                            <h class="profile_text">Видеокарта:</h>
+                            <h class="profile_text">Видеокарта:  </h>
                             {{ syst_char.graphics }}
                         </div>
                         <div class="profile_info_text">
-                            <h class="profile_text">DirectX:</h>
+                            <h class="profile_text">DirectX:  </h>
                             {{ syst_char.directx }}
                         </div>
                         <div class="profile_info_text">
-                            <h class="profile_text">Свободное место:</h>
+                            <h class="profile_text">Свободное место:  </h>
                             {{ syst_char.storage }}GB
                         </div>
                         <small><a href="{% url 'syst_char_delete' syst_char.id %}">удалить</a></small>
