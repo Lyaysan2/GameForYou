@@ -6,7 +6,7 @@
     <button type="submit" class="btn">Найти</button>
 </form>
 {% if similar_games is not None %}
-Вы выбрали {{ selected_game.name }}
+<p>Вы выбрали {{ selected_game.name }}</p>
 {% if similar_games %}
 <ul class="list">
     {% for game in similar_games %}

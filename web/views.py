@@ -108,6 +108,7 @@ def similar_games_view(request):
     form = SimilarGameForm(request.GET or None)
     user = request.user
     similar_games = None
+    selected_game = None
     if form.is_valid():
         if form.cleaned_data['name']:
             selected_game = get_object_or_404(Game, id=form.cleaned_data['name'])
