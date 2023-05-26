@@ -1,7 +1,42 @@
 {% extends 'web/base.html' %}
 {% block content %}
-<h1>Main page</h1>
-<img src="media/plots/date_plot.png">
-<img src="media/plots/reviews_plot.png">
-<img src="media/plots/ram_plot.png">
+<div class="content_games">
+   <div class="main_text">
+       <h1>Добро пожаловать в Game for you!</h1>
+       <p class="plot_name">Здесь можно найти игру, подходящую по характеристикам своего компьютера, подобрать игру, похожую на уже понравившуюся, а также посмотреть статистику по разным играм. Только зарегистрированные пользователя получают доступ ко всем возможностям сервиса</p>
+       {% if user.is_anonymous %}
+           <button onclick="location.href='{% url 'auth' %}'" type="button" class='btn'>
+            Войти</button>
+       {% endif %}
+   </div>
+   <img src="media/plots/main_img.png" class="main_img">
+</div>
+<div class="main_content">
+   <h2>Статистика по играм</h2>
+   <div class="plot">
+       <p class="plot_name">По дате выхода</p>
+       <img src="media/plots/date_plot.png">
+   </div>
+   <div class="plot">
+       <p class="plot_name">По отзывам пользователей</p>
+       <img src="media/plots/reviews_plot.png">
+   </div>
+   <div class="plot">
+       <p class="plot_name">По операционной системе</p>
+       <img src="media/plots/os_plot.png">
+   </div>
+   <div class="plot">
+       <p class="plot_name">По цене</p>
+       <img src="media/plots/price_plot.png">
+   </div>
+   <div class="plot">
+       <p class="plot_name">По тегам</p>
+       <img src="media/plots/tags_plot.png">
+   </div>
+   <div class="plot">
+       <p class="plot_name">По дате выхода</p>
+       <img src="media/plots/ram_plot.png">
+   </div>
+</div>
 {% endblock %}
+
